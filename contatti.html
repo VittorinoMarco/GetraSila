@@ -1,0 +1,844 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contatti — Salumificio Getra Sila</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&family=Allura&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="image-slot.js"></script>
+  <script src="menu.js" defer></script>
+</head>
+<body data-screen-label="04 Contatti">
+
+<header class="topbar topbar--cream">
+  <div class="topbar__inner">
+    <a href="index.html" class="brand">
+      <svg viewBox="0 0 280 188" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g fill="none" stroke="currentColor" style="color: var(--wine);">
+          <line x1="78" y1="11" x2="108" y2="11" stroke-width="0.6"/>
+          <line x1="172" y1="11" x2="202" y2="11" stroke-width="0.6"/>
+          <text x="140" y="15" text-anchor="middle" font-family="Jost" font-size="9.5" letter-spacing="3.2" fill="currentColor" stroke="none" style="font-weight:500;">DAL 2002</text>
+          <path d="M 78 56 C 64 70, 62 92, 78 104" stroke-width="0.8"/>
+          <g fill="currentColor" stroke="none" opacity="0.92">
+            <ellipse cx="70" cy="62" rx="6" ry="2.3" transform="rotate(-40 70 62)"/>
+            <ellipse cx="66" cy="72" rx="6.5" ry="2.4" transform="rotate(-25 66 72)"/>
+            <ellipse cx="64" cy="84" rx="6.5" ry="2.4" transform="rotate(-5 64 84)"/>
+            <ellipse cx="67" cy="96" rx="6.2" ry="2.3" transform="rotate(20 67 96)"/>
+            <ellipse cx="74" cy="106" rx="5.8" ry="2.2" transform="rotate(40 74 106)"/>
+          </g>
+          <path d="M 202 56 C 216 70, 218 92, 202 104" stroke-width="0.8"/>
+          <g fill="currentColor" stroke="none" opacity="0.92">
+            <ellipse cx="210" cy="62" rx="6" ry="2.3" transform="rotate(40 210 62)"/>
+            <ellipse cx="214" cy="72" rx="6.5" ry="2.4" transform="rotate(25 214 72)"/>
+            <ellipse cx="216" cy="84" rx="6.5" ry="2.4" transform="rotate(5 216 84)"/>
+            <ellipse cx="213" cy="96" rx="6.2" ry="2.3" transform="rotate(-20 213 96)"/>
+            <ellipse cx="206" cy="106" rx="5.8" ry="2.2" transform="rotate(-40 206 106)"/>
+          </g>
+          <path d="M 130 50 Q 140 44 150 50" stroke-width="0.8"/>
+          <path d="M 130 50 Q 134 56 140 53 Q 146 56 150 50" stroke-width="0.6"/>
+          <g fill="currentColor" stroke="none">
+            <path d="M 92 96 L 102 88 L 110 92 L 118 84 L 124 88 L 130 78 L 138 86 L 148 80 L 158 86 L 166 82 L 174 90 L 184 88 L 188 96 Z" opacity="0.88"/>
+            <rect x="135.5" y="68" width="2.6" height="14"/>
+            <polygon points="134.5,68 136.8,62 139.1,68"/>
+          </g>
+          <line x1="84" y1="100" x2="196" y2="100" stroke-width="0.5" opacity="0.7"/>
+          <text x="140" y="124" text-anchor="middle" font-family="Jost" font-size="11" letter-spacing="4.2" fill="currentColor" stroke="none" style="font-weight:500;">SALUMIFICIO</text>
+          <text x="140" y="160" text-anchor="middle" font-family="Cormorant Garamond" font-weight="600" font-size="34" letter-spacing="2.2" fill="currentColor" stroke="none">GETRA SILA</text>
+          <line x1="78" y1="178" x2="100" y2="178" stroke-width="0.5"/>
+          <line x1="180" y1="178" x2="202" y2="178" stroke-width="0.5"/>
+          <text x="140" y="182" text-anchor="middle" font-family="Jost" font-size="8" letter-spacing="3.4" fill="currentColor" stroke="none" style="font-weight:500;">BOCCHIGLIERO</text>
+        </g>
+      </svg>
+    </a>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="chi-siamo.html" class="nav-link">Chi Siamo</a>
+      <a href="prodotti.html" class="nav-link">Prodotti</a>
+      <a href="contatti.html" class="nav-link nav-link--active">Contatti</a>
+    </nav>
+    <div class="topbar__right">
+      <span class="lang">IT
+        <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1"/></svg>
+      </span>
+      <a href="#form" class="topbar__cta">Scrivici</a>
+    </div>
+
+    <button class="burger" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span class="burger__lines"><span></span><span></span><span></span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu di navigazione" aria-hidden="true">
+  <button class="mobile-menu__close" type="button" aria-label="Chiudi menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+  </button>
+  <div class="mobile-menu__inner">
+    <p class="mobile-menu__eyebrow">Salumificio · Getra Sila</p>
+    <nav class="mobile-menu__nav" aria-label="Menu principale">
+      <a href="index.html">Home</a>
+      <a href="chi-siamo.html">Chi Siamo</a>
+      <a href="prodotti.html">Prodotti</a>
+      <a href="contatti.html">Contatti</a>
+    </nav>
+    <hr class="mobile-menu__divider" />
+    <a href="#form" class="mobile-menu__cta">Scrivici</a>
+    <p class="mobile-menu__addr">Bocchigliero (CS)<br/>Calabria — Italia</p>
+    <div class="mobile-menu__socials">
+      <a href="#" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M8 14V8h2l.3-2.4H8V4c0-.7.2-1.2 1.2-1.2H10.4V.6C10.2.6 9.5.5 8.7.5c-1.7 0-2.9 1-2.9 3v2H3.6V8h2.2v6H8z"/></svg></a>
+      <a href="#" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="1.5" y="1.5" width="11" height="11" rx="3"/><circle cx="7" cy="7" r="2.8"/><circle cx="10.4" cy="3.6" r="0.6" fill="currentColor"/></svg></a>
+      <a href="#" aria-label="WhatsApp"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M7 0a7 7 0 00-6 10.5L0 14l3.6-1A7 7 0 107 0zm0 12.7a5.7 5.7 0 01-3-.8l-.2-.1-2.1.5.6-2-.2-.2A5.7 5.7 0 117 12.7zm3.3-4.3l-.8-.4c-.2-.1-.4-.2-.5 0-.2.2-.6.7-.7.8 0 .1-.1.1-.3 0-.6-.3-1.1-.6-1.5-1.3-.1-.2 0-.3.1-.4 0-.1.2-.3.3-.4 0-.1 0-.2.1-.3 0-.1 0-.2 0-.3l-.5-1.2c-.2-.3-.3-.3-.4-.3h-.4c-.1 0-.3 0-.5.2-.2.2-.7.7-.7 1.6 0 1 .7 1.9.8 2 .1.2 1.4 2.2 3.4 3 1.6.6 1.9.5 2.3.5.3 0 1-.4 1.2-.8.1-.4.1-.8.1-.8 0-.1-.2-.1-.4-.2z"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<main>
+
+<!-- ========== HERO ========== -->
+<section class="ct-hero">
+  <svg class="botanical" style="right: 0; top: 60px; width: 180px; height: 380px;" viewBox="0 0 180 380" fill="none">
+    <g stroke="var(--sepia)" stroke-width="0.6" opacity="0.55">
+      <path d="M 160 0 Q 110 80, 130 160 Q 150 240, 100 320 Q 60 380, 80 380"/>
+      <g fill="var(--sepia)" stroke="none" opacity="0.45">
+        <ellipse cx="140" cy="50" rx="14" ry="5" transform="rotate(-40 140 50)"/>
+        <ellipse cx="126" cy="100" rx="14" ry="5" transform="rotate(20 126 100)"/>
+        <ellipse cx="142" cy="160" rx="14" ry="5" transform="rotate(-40 142 160)"/>
+        <ellipse cx="124" cy="220" rx="14" ry="5" transform="rotate(20 124 220)"/>
+        <ellipse cx="108" cy="290" rx="14" ry="5" transform="rotate(-30 108 290)"/>
+      </g>
+    </g>
+  </svg>
+
+  <div class="ct-hero__inner">
+    <div class="section-head" style="margin-bottom: 0; text-align: left; align-items: flex-start;">
+      <p class="eyebrow">Restiamo in contatto</p>
+      <h1 class="ct-hero__title">Vieni a trovarci<br/>a <em>Bocchigliero.</em></h1>
+      <p class="lead" style="text-align: left; max-width: 580px;">
+        Ti aspettiamo nel cuore della Sila Greca per farti scoprire
+        i nostri salumi, le cantine di stagionatura e la storia che
+        portano con sé. Oppure scrivici — rispondiamo entro 24 ore.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== INFO CARDS ========== -->
+<section class="ct-info">
+  <div class="ct-info__inner">
+    <article class="ct-card card--ornate">
+      <div class="ct-card__icon">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
+          <path d="M24 6 C 16 6, 10 12, 10 20 C 10 32, 24 42, 24 42 C 24 42, 38 32, 38 20 C 38 12, 32 6, 24 6 Z"/>
+          <circle cx="24" cy="20" r="5"/>
+        </svg>
+      </div>
+      <p class="eyebrow">Dove siamo</p>
+      <h3>Via Roma, 12<br/>Bocchigliero (CS)</h3>
+      <p class="ct-card__cap">87060 · Calabria, Italia</p>
+      <a href="#map" class="link-arrow">Indicazioni
+        <svg viewBox="0 0 24 12" fill="none"><path d="M0 6h22m0 0L17 1m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg>
+      </a>
+    </article>
+
+    <article class="ct-card card--ornate">
+      <div class="ct-card__icon">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
+          <rect x="8" y="12" width="32" height="24"/>
+          <path d="M8 14 L 24 26 L 40 14"/>
+        </svg>
+      </div>
+      <p class="eyebrow">Scrivici</p>
+      <h3><a href="mailto:info@getrasila.it" class="ct-link">info@getrasila.it</a></h3>
+      <p class="ct-card__cap">Rispondiamo entro 24 ore lavorative.</p>
+      <a href="mailto:info@getrasila.it" class="link-arrow">Invia un'email
+        <svg viewBox="0 0 24 12" fill="none"><path d="M0 6h22m0 0L17 1m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg>
+      </a>
+    </article>
+
+    <article class="ct-card card--ornate">
+      <div class="ct-card__icon">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
+          <path d="M14 8 L 20 8 L 22 18 L 18 22 C 20 28, 24 32, 30 34 L 34 30 L 44 32 L 44 38 C 44 40, 42 42, 40 42 C 24 42, 10 28, 10 12 C 10 10, 12 8, 14 8 Z"/>
+        </svg>
+      </div>
+      <p class="eyebrow">Chiamaci</p>
+      <h3><a href="tel:+390983845000" class="ct-link">+39 0983 845 000</a></h3>
+      <p class="ct-card__cap">Lun–Ven · 9:00–13:00 · 15:00–18:00</p>
+      <a href="https://wa.me/390983845000" class="link-arrow">WhatsApp
+        <svg viewBox="0 0 24 12" fill="none"><path d="M0 6h22m0 0L17 1m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg>
+      </a>
+    </article>
+  </div>
+</section>
+
+<!-- ========== MAP + ORARI ========== -->
+<section class="ct-map" id="map">
+  <div class="ct-map__inner">
+    <div class="ct-map__art">
+      <svg viewBox="0 0 480 540" xmlns="http://www.w3.org/2000/svg" class="ct-map__svg">
+        <rect width="480" height="540" fill="#1c1108"/>
+        <g stroke="#3a2818" stroke-width="0.8" fill="none" opacity="0.6">
+          <path d="M 60 80 Q 180 100, 280 80 T 460 90"/>
+          <path d="M 40 120 Q 160 130, 260 120 T 460 130"/>
+          <path d="M 20 180 Q 140 170, 240 180 T 460 170"/>
+          <path d="M 30 240 Q 150 230, 250 240 T 460 240"/>
+          <path d="M 50 300 Q 170 290, 270 300 T 460 290"/>
+          <path d="M 70 360 Q 190 350, 290 360 T 460 360"/>
+          <path d="M 90 420 Q 210 410, 310 420 T 460 420"/>
+          <path d="M 100 480 Q 220 470, 320 480 T 460 480"/>
+        </g>
+        <g fill="#2a1a10" stroke="#c9a366" stroke-width="1.2" opacity="0.95">
+          <path d="M 140 50 C 180 40, 230 50, 270 80 C 300 100, 320 130, 320 170 C 320 200, 310 220, 320 250 C 330 280, 360 300, 380 340 C 400 380, 400 420, 380 460 L 320 480 C 310 460, 290 450, 270 440 C 230 420, 210 390, 200 360 C 190 330, 180 310, 160 290 C 130 270, 100 250, 90 220 C 80 190, 80 160, 100 130 C 110 100, 120 70, 140 50 Z"/>
+        </g>
+        <g stroke="#c9a366" stroke-width="0.8" stroke-dasharray="3 4" fill="none" opacity="0.4">
+          <path d="M 170 110 C 200 130, 220 160, 230 200"/>
+          <path d="M 220 240 C 240 270, 270 300, 290 340"/>
+        </g>
+        <g transform="translate(220, 200)">
+          <circle r="8" fill="#a4222e"/>
+          <circle r="14" fill="none" stroke="#a4222e" stroke-width="1.2"/>
+          <circle r="22" fill="none" stroke="#a4222e" stroke-width="0.8" opacity="0.5"/>
+          <line x1="22" y1="0" x2="60" y2="-30" stroke="#c9a366" stroke-width="0.8"/>
+          <g transform="translate(64, -50)">
+            <text font-family="Cormorant Garamond" font-style="italic" font-size="22" fill="#f4d27c">Bocchigliero</text>
+            <text y="18" font-family="Jost" font-size="9" letter-spacing="2.5" fill="#c9a366">SILA GRECA · CS</text>
+          </g>
+        </g>
+        <g transform="translate(165, 240)">
+          <circle r="3" fill="#c9a366"/>
+          <text x="-46" y="14" font-family="Jost" font-size="8" letter-spacing="2" fill="rgba(201,163,102,0.8)">COSENZA</text>
+        </g>
+        <g transform="translate(280, 370)">
+          <circle r="3" fill="#c9a366"/>
+          <text x="8" y="4" font-family="Jost" font-size="8" letter-spacing="2" fill="rgba(201,163,102,0.8)">CATANZARO</text>
+        </g>
+        <g transform="translate(330, 480)">
+          <circle r="3" fill="#c9a366"/>
+          <text x="-22" y="16" font-family="Jost" font-size="8" letter-spacing="2" fill="rgba(201,163,102,0.8)">REGGIO C.</text>
+        </g>
+        <g transform="translate(420, 80)" fill="none" stroke="#c9a366" stroke-width="0.8">
+          <circle r="22"/>
+          <path d="M 0 -18 L 4 0 L 0 18 L -4 0 Z" fill="#c9a366"/>
+          <text y="-26" text-anchor="middle" font-family="Jost" font-size="8" letter-spacing="2" fill="#c9a366" stroke="none">N</text>
+        </g>
+        <g transform="translate(80, 80)" fill="none" stroke="#c9a366" stroke-width="0.6" opacity="0.55">
+          <circle r="32"/>
+          <circle r="28"/>
+          <defs><path id="map-stamp-t" d="M -22 0 A 22 22 0 0 1 22 0" fill="none"/></defs>
+          <text font-family="Jost" font-size="4.6" letter-spacing="2" fill="#c9a366" stroke="none">
+            <textPath href="#map-stamp-t" startOffset="50%" text-anchor="middle">GETRA SILA · CALABRIA</textPath>
+          </text>
+          <text font-family="Cormorant Garamond" font-style="italic" font-size="10" fill="#c9a366" stroke="none" text-anchor="middle" y="4">Sila</text>
+        </g>
+      </svg>
+      <a href="https://maps.google.com/?q=Bocchigliero+CS" target="_blank" class="ct-map__cta">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Apri su Google Maps
+      </a>
+    </div>
+
+    <div class="ct-map__copy">
+      <p class="eyebrow eyebrow--gold">Come raggiungerci</p>
+      <h2>Nel cuore della<br/><em>Sila Greca.</em></h2>
+      <p>
+        Bocchigliero si trova a 870 m s.l.m., nell'altopiano silano.
+        Il salumificio è in centro paese, raggiungibile dall'A2
+        (uscita Sibari) o dalla SS 177 dei laghi.
+      </p>
+
+      <div class="reach">
+        <div class="reach__item">
+          <p class="reach__label">Da Cosenza</p>
+          <p class="reach__val">~ 1h 30'</p>
+          <p class="reach__cap">SS 107 silana-crotonese</p>
+        </div>
+        <div class="reach__item">
+          <p class="reach__label">Da Sibari</p>
+          <p class="reach__val">~ 1h 10'</p>
+          <p class="reach__cap">SS 177 dei laghi</p>
+        </div>
+        <div class="reach__item">
+          <p class="reach__label">Da Lamezia</p>
+          <p class="reach__val">~ 2h 00'</p>
+          <p class="reach__cap">A2 + SS 107</p>
+        </div>
+      </div>
+
+      <div class="hours-box">
+        <p class="eyebrow eyebrow--gold">Orari bottega</p>
+        <dl class="hours">
+          <dt>Lunedì — Venerdì</dt>
+          <dd>08:30 — 13:00 · 15:00 — 18:30</dd>
+          <dt>Sabato</dt>
+          <dd>09:00 — 12:30</dd>
+          <dt>Domenica</dt>
+          <dd><em>Su appuntamento</em></dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FORM ========== -->
+<section class="ct-form" id="form">
+  <div class="ct-form__inner">
+    <div class="ct-form__head">
+      <p class="eyebrow">Scrivici</p>
+      <h2>Una domanda, un ordine,<br/>una <em>visita.</em></h2>
+      <p class="ct-form__lead">
+        Compila il modulo — ti risponderemo personalmente entro 24 ore.
+      </p>
+    </div>
+
+    <form class="form" onsubmit="event.preventDefault(); this.style.display='none'; document.getElementById('form-success').style.display='flex';">
+      <div class="form-grid">
+        <label class="field">
+          <span>Nome <em>*</em></span>
+          <input type="text" name="nome" required placeholder="Il tuo nome" />
+        </label>
+        <label class="field">
+          <span>Cognome <em>*</em></span>
+          <input type="text" name="cognome" required placeholder="Il tuo cognome" />
+        </label>
+        <label class="field">
+          <span>Email <em>*</em></span>
+          <input type="email" name="email" required placeholder="nome@esempio.it" />
+        </label>
+        <label class="field">
+          <span>Telefono</span>
+          <input type="tel" name="tel" placeholder="+39 ..." />
+        </label>
+      </div>
+
+      <fieldset class="field-set">
+        <legend>Di cosa vuoi parlarci?</legend>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="topic" value="info" checked /><span>Informazioni sui prodotti</span></label>
+          <label class="chip"><input type="radio" name="topic" value="ordine" /><span>Ordine privato</span></label>
+          <label class="chip"><input type="radio" name="topic" value="rivendita" /><span>Rivendita / Ho.Re.Ca.</span></label>
+          <label class="chip"><input type="radio" name="topic" value="visita" /><span>Visita al salumificio</span></label>
+          <label class="chip"><input type="radio" name="topic" value="altro" /><span>Altro</span></label>
+        </div>
+      </fieldset>
+
+      <label class="field field--full">
+        <span>Messaggio <em>*</em></span>
+        <textarea name="msg" rows="5" required placeholder="Raccontaci la tua richiesta..."></textarea>
+      </label>
+
+      <label class="consent">
+        <input type="checkbox" required />
+        <span>Ho letto e accetto la <a href="#">Privacy Policy</a> e il trattamento dei dati per rispondere alla mia richiesta.</span>
+      </label>
+
+      <div class="form-foot">
+        <button type="submit" class="btn">Invia messaggio
+          <svg width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M0 7h20m0 0L15 2m5 5l-5 5" stroke="currentColor" stroke-width="1.4"/></svg>
+        </button>
+        <p class="form-foot__note">Ti risponderemo entro 24 ore lavorative.</p>
+      </div>
+    </form>
+
+    <div class="form-success" id="form-success">
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
+        <circle cx="24" cy="24" r="20"/>
+        <path d="M14 24l7 7 13-13"/>
+      </svg>
+      <h3>Grazie!</h3>
+      <p>Il tuo messaggio è in viaggio verso la Sila.<br/>Ti risponderemo entro 24 ore.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FAQ ========== -->
+<section class="faq">
+  <div class="faq__inner">
+    <div class="section-head">
+      <p class="eyebrow">Domande frequenti</p>
+      <h2>Risposte rapide.</h2>
+    </div>
+
+    <div class="faq__list">
+      <details class="faq-item">
+        <summary>
+          <span>Posso acquistare i vostri salumi direttamente in salumificio?</span>
+          <span class="faq-item__icon">+</span>
+        </summary>
+        <p>Sì, abbiamo una bottega in Via Roma a Bocchigliero, aperta dal lunedì al sabato. Puoi venire a scegliere i prodotti di persona, ascoltare le nostre storie e assaggiare.</p>
+      </details>
+      <details class="faq-item">
+        <summary>
+          <span>Spedite anche fuori dalla Calabria?</span>
+          <span class="faq-item__icon">+</span>
+        </summary>
+        <p>Sì, spediamo in tutta Italia con corriere refrigerato. Per ordini privati ci si accorda direttamente via telefono o email — non abbiamo (ancora) un sito di vendita online.</p>
+      </details>
+      <details class="faq-item">
+        <summary>
+          <span>I vostri prodotti sono senza glutine e senza lattosio?</span>
+          <span class="faq-item__icon">+</span>
+        </summary>
+        <p>Tutti i nostri salumi sono naturalmente senza glutine e senza lattosio. Non utilizziamo coloranti né conservanti aggiunti — solo carne italiana selezionata, sale, spezie e tempo.</p>
+      </details>
+      <details class="faq-item">
+        <summary>
+          <span>Lavorate con ristoranti, gastronomie e Ho.Re.Ca.?</span>
+          <span class="faq-item__icon">+</span>
+        </summary>
+        <p>Certamente. Per forniture continuative a ristoranti, salumerie e gastronomie scrivici a <a href="mailto:info@getrasila.it">info@getrasila.it</a> — ti rispondiamo con un listino dedicato.</p>
+      </details>
+      <details class="faq-item">
+        <summary>
+          <span>Posso visitare il salumificio e le cantine?</span>
+          <span class="faq-item__icon">+</span>
+        </summary>
+        <p>Sì, su appuntamento. Le visite guidate sono gratuite e durano circa 60 minuti. Compila il modulo qui sopra con almeno 48 ore di anticipo, oppure chiamaci.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <a href="index.html" class="brand">
+        <svg viewBox="0 0 280 188" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g fill="none" stroke="currentColor">
+            <line x1="78" y1="11" x2="108" y2="11" stroke-width="0.6"/>
+            <line x1="172" y1="11" x2="202" y2="11" stroke-width="0.6"/>
+            <text x="140" y="15" text-anchor="middle" font-family="Jost" font-size="9.5" letter-spacing="3.2" fill="currentColor" stroke="none" style="font-weight:500;">DAL 2002</text>
+            <path d="M 78 56 C 64 70, 62 92, 78 104" stroke-width="0.8"/>
+            <g fill="currentColor" stroke="none" opacity="0.92">
+              <ellipse cx="70" cy="62" rx="6" ry="2.3" transform="rotate(-40 70 62)"/>
+              <ellipse cx="66" cy="72" rx="6.5" ry="2.4" transform="rotate(-25 66 72)"/>
+              <ellipse cx="64" cy="84" rx="6.5" ry="2.4" transform="rotate(-5 64 84)"/>
+              <ellipse cx="67" cy="96" rx="6.2" ry="2.3" transform="rotate(20 67 96)"/>
+              <ellipse cx="74" cy="106" rx="5.8" ry="2.2" transform="rotate(40 74 106)"/>
+            </g>
+            <path d="M 202 56 C 216 70, 218 92, 202 104" stroke-width="0.8"/>
+            <g fill="currentColor" stroke="none" opacity="0.92">
+              <ellipse cx="210" cy="62" rx="6" ry="2.3" transform="rotate(40 210 62)"/>
+              <ellipse cx="214" cy="72" rx="6.5" ry="2.4" transform="rotate(25 214 72)"/>
+              <ellipse cx="216" cy="84" rx="6.5" ry="2.4" transform="rotate(5 216 84)"/>
+              <ellipse cx="213" cy="96" rx="6.2" ry="2.3" transform="rotate(-20 213 96)"/>
+              <ellipse cx="206" cy="106" rx="5.8" ry="2.2" transform="rotate(-40 206 106)"/>
+            </g>
+            <path d="M 130 50 Q 140 44 150 50" stroke-width="0.8"/>
+            <path d="M 130 50 Q 134 56 140 53 Q 146 56 150 50" stroke-width="0.6"/>
+            <g fill="currentColor" stroke="none">
+              <path d="M 92 96 L 102 88 L 110 92 L 118 84 L 124 88 L 130 78 L 138 86 L 148 80 L 158 86 L 166 82 L 174 90 L 184 88 L 188 96 Z" opacity="0.88"/>
+              <rect x="135.5" y="68" width="2.6" height="14"/>
+              <polygon points="134.5,68 136.8,62 139.1,68"/>
+            </g>
+            <line x1="84" y1="100" x2="196" y2="100" stroke-width="0.5" opacity="0.7"/>
+            <text x="140" y="124" text-anchor="middle" font-family="Jost" font-size="11" letter-spacing="4.2" fill="currentColor" stroke="none" style="font-weight:500;">SALUMIFICIO</text>
+            <text x="140" y="160" text-anchor="middle" font-family="Cormorant Garamond" font-weight="600" font-size="34" letter-spacing="2.2" fill="currentColor" stroke="none">GETRA SILA</text>
+            <line x1="78" y1="178" x2="100" y2="178" stroke-width="0.5"/>
+            <line x1="180" y1="178" x2="202" y2="178" stroke-width="0.5"/>
+            <text x="140" y="182" text-anchor="middle" font-family="Jost" font-size="8" letter-spacing="3.4" fill="currentColor" stroke="none" style="font-weight:500;">BOCCHIGLIERO</text>
+          </g>
+        </svg>
+      </a>
+    </div>
+    <div class="footer-col">
+      <h4>Contatti</h4>
+      <p>Via Roma, 12</p>
+      <p>87060 Bocchigliero (CS)<br/>Calabria — Italia</p>
+      <p style="margin-top: 12px;">+39 0983 845 000</p>
+      <p>info@getrasila.it</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigazione</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="chi-siamo.html">Chi siamo</a></li>
+        <li><a href="prodotti.html">Prodotti</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Informazioni</h4>
+      <ul>
+        <li><a href="chi-siamo.html">La storia</a></li>
+        <li><a href="prodotti.html">I salumi</a></li>
+        <li><a href="contatti.html">Visita la bottega</a></li>
+        <li><a href="#form">Scrivici</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Newsletter</h4>
+      <p>Iscriviti per ricevere storie, novità e ricette dalla Sila.</p>
+      <form class="newsletter" onsubmit="event.preventDefault();">
+        <input type="email" placeholder="La tua email" />
+        <button type="submit" aria-label="Iscriviti">
+          <svg width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M0 7h20m0 0L15 2m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg>
+        </button>
+      </form>
+      <div class="socials">
+        <a href="#" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M8 14V8h2l.3-2.4H8V4c0-.7.2-1.2 1.2-1.2H10.4V.6C10.2.6 9.5.5 8.7.5c-1.7 0-2.9 1-2.9 3v2H3.6V8h2.2v6H8z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="1.5" y="1.5" width="11" height="11" rx="3"/><circle cx="7" cy="7" r="2.8"/><circle cx="10.4" cy="3.6" r="0.6" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="WhatsApp"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M7 0a7 7 0 00-6 10.5L0 14l3.6-1A7 7 0 107 0z"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Salumificio Getra Sila s.n.c. — P. IVA 02xxx5xxxxx · Tutti i diritti riservati.</p>
+    <div class="legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Cookie Policy</a>
+      <a href="#">Note legali</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+/* ===== Contatti page ===== */
+.ct-hero {
+  padding: clamp(60px, 7vw, 110px) var(--gutter) clamp(40px, 5vw, 60px);
+  background: var(--bg-cream);
+  position: relative; overflow: hidden;
+  border-bottom: 1px solid var(--sepia-line);
+}
+.ct-hero__inner { max-width: var(--maxw); margin: 0 auto; position: relative; z-index: 2; }
+.ct-hero__title {
+  font-size: clamp(48px, 6vw, 88px);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  margin: 14px 0 40px;
+  padding-bottom: 4px;
+}
+.ct-hero__title em { color: var(--wine); font-style: italic; font-weight: 500; }
+
+/* ===== Cards ===== */
+.ct-info {
+  padding: clamp(40px, 5vw, 80px) var(--gutter);
+  background: var(--bg-cream);
+}
+.ct-info__inner {
+  max-width: var(--maxw); margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.ct-card {
+  background: var(--bg-cream-soft);
+  border: 1px solid var(--sepia-line);
+  padding: 32px 28px;
+  display: flex; flex-direction: column;
+  gap: 8px;
+  position: relative;
+  min-height: 280px;
+}
+.ct-card__icon { color: var(--sepia); margin-bottom: 16px; }
+.ct-card__icon svg { width: 40px; height: 40px; }
+.ct-card .eyebrow { margin: 0; }
+.ct-card h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.18;
+  margin: 6px 0 8px;
+}
+.ct-card h3 a { color: inherit; }
+.ct-card h3 a:hover { color: var(--wine); }
+.ct-card__cap {
+  font-size: 13px;
+  color: var(--ink-mute);
+  margin: 0 0 18px;
+}
+.ct-card .link-arrow { margin-top: auto; align-self: flex-start; }
+.ct-link { font-weight: 500; }
+
+/* ===== Map ===== */
+.ct-map {
+  background: linear-gradient(180deg, #1c1108 0%, #100904 100%);
+  color: #ead7af;
+  padding: clamp(60px, 7vw, 110px) var(--gutter);
+}
+.ct-map__inner {
+  max-width: var(--maxw); margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 5vw, 96px);
+  align-items: center;
+}
+.ct-map__art {
+  position: relative;
+  border: 1px solid rgba(201, 163, 102, 0.3);
+  padding: 12px;
+}
+.ct-map__svg { width: 100%; height: auto; display: block; }
+.ct-map__cta {
+  position: absolute;
+  bottom: 24px; right: 24px;
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 12px 18px;
+  background: var(--wine);
+  color: #f6ecd2;
+  font-family: var(--ff-label);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+.ct-map__cta:hover { background: var(--wine-deep); }
+.ct-map__copy h2 { color: #f6e8c5; margin: 16px 0 22px; font-weight: 500; }
+.ct-map__copy h2 em { color: #f4d27c; font-style: italic; }
+.ct-map__copy p { color: rgba(234, 215, 175, 0.85); line-height: 1.65; font-size: 15px; }
+
+.reach {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 18px;
+  margin: 32px 0;
+  padding: 24px 0;
+  border-top: 1px solid rgba(201, 163, 102, 0.25);
+  border-bottom: 1px solid rgba(201, 163, 102, 0.25);
+}
+.reach__item p { margin: 0; }
+.reach__label {
+  font-family: var(--ff-label);
+  font-size: 10px;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: #c9a366;
+  margin: 0 0 4px !important;
+}
+.reach__val {
+  font-family: var(--ff-display);
+  font-size: 28px;
+  color: #f4d27c;
+  line-height: 1;
+  margin: 4px 0 4px !important;
+}
+.reach__cap {
+  font-size: 12px;
+  color: rgba(234, 215, 175, 0.6);
+  margin: 0 !important;
+}
+
+.hours-box { margin-top: 18px; }
+.hours-box .eyebrow { margin-bottom: 14px; }
+.hours {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 6px 24px;
+}
+.hours dt {
+  font-family: var(--ff-display);
+  font-style: italic;
+  color: #ead7af;
+  font-size: 15px;
+}
+.hours dd {
+  margin: 0;
+  font-family: var(--ff-label);
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  color: #c9a366;
+  text-align: right;
+}
+.hours dd em { font-family: var(--ff-display); font-style: italic; letter-spacing: 0; color: #f4d27c; }
+
+/* ===== Form ===== */
+.ct-form {
+  background: var(--bg-cream);
+  padding: clamp(60px, 7vw, 110px) var(--gutter);
+  position: relative;
+}
+.ct-form__inner {
+  max-width: 880px; margin: 0 auto;
+  background: var(--bg-cream-soft);
+  border: 1px solid var(--sepia-line);
+  padding: clamp(32px, 4vw, 64px);
+  position: relative;
+}
+.ct-form__inner::before,
+.ct-form__inner::after {
+  content: "";
+  position: absolute;
+  width: 24px; height: 24px;
+  border: 1px solid var(--sepia);
+}
+.ct-form__inner::before { top: 12px; left: 12px; border-right: 0; border-bottom: 0; }
+.ct-form__inner::after { bottom: 12px; right: 12px; border-left: 0; border-top: 0; }
+
+.ct-form__head { text-align: center; margin-bottom: 40px; }
+.ct-form__head h2 { margin: 12px 0 14px; font-weight: 500; }
+.ct-form__head h2 em { color: var(--wine); font-style: italic; }
+.ct-form__lead { color: var(--ink-mute); margin: 0; font-size: 15px; }
+
+.form { display: flex; flex-direction: column; gap: 20px; }
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.field { display: flex; flex-direction: column; gap: 8px; }
+.field span {
+  font-family: var(--ff-label);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.field span em { color: var(--wine); font-style: normal; }
+.field input,
+.field textarea,
+.field select {
+  font-family: var(--ff-display);
+  font-size: 17px;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--sepia-line);
+  padding: 10px 0;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.2s;
+  resize: vertical;
+}
+.field input::placeholder,
+.field textarea::placeholder { color: var(--ink-faint); font-style: italic; }
+.field input:focus,
+.field textarea:focus,
+.field select:focus { border-bottom-color: var(--wine); }
+.field--full { grid-column: 1 / -1; }
+
+.field-set {
+  border: 0;
+  padding: 0;
+  margin: 8px 0 0;
+}
+.field-set legend {
+  font-family: var(--ff-label);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-bottom: 14px;
+  padding: 0;
+}
+.chips {
+  display: flex; flex-wrap: wrap; gap: 8px;
+}
+.chip { cursor: pointer; }
+.chip input { position: absolute; opacity: 0; pointer-events: none; }
+.chip span {
+  display: inline-block;
+  padding: 8px 16px;
+  font-family: var(--ff-display);
+  font-style: italic;
+  font-size: 15px;
+  color: var(--ink-soft);
+  border: 1px solid var(--sepia-line);
+  background: var(--bg-cream);
+  transition: all 0.2s;
+}
+.chip input:checked + span {
+  background: var(--wine);
+  color: #f6ecd2;
+  border-color: var(--wine);
+}
+.chip:hover span { border-color: var(--wine); }
+
+.consent {
+  display: flex; gap: 12px; align-items: flex-start;
+  font-size: 13px;
+  color: var(--ink-mute);
+  line-height: 1.5;
+}
+.consent input { margin-top: 4px; accent-color: var(--wine); }
+.consent a { color: var(--wine); text-decoration: underline; }
+
+.form-foot {
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 18px; flex-wrap: wrap;
+  padding-top: 12px;
+  border-top: 1px solid var(--sepia-line);
+}
+.form-foot__note {
+  font-family: var(--ff-display);
+  font-style: italic;
+  color: var(--ink-mute);
+  margin: 0;
+  font-size: 14px;
+}
+
+.form-success {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--wine);
+}
+.form-success svg { width: 64px; height: 64px; margin-bottom: 20px; }
+.form-success h3 { font-size: 36px; margin: 0 0 8px; color: var(--ink); font-weight: 500; }
+.form-success p { color: var(--ink-soft); margin: 0; font-size: 16px; line-height: 1.6; }
+
+/* ===== FAQ ===== */
+.faq {
+  background: var(--bg-cream-warm);
+  padding: clamp(60px, 7vw, 110px) var(--gutter);
+  border-top: 1px solid var(--sepia-line);
+}
+.faq__inner { max-width: 880px; margin: 0 auto; }
+.faq__list {
+  border-top: 1px solid var(--sepia-line);
+}
+.faq-item {
+  border-bottom: 1px solid var(--sepia-line);
+}
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 24px 0;
+  display: flex; align-items: center; gap: 20px;
+  font-family: var(--ff-display);
+  font-size: 22px;
+  color: var(--ink);
+  line-height: 1.3;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary span:first-child { flex: 1; }
+.faq-item__icon {
+  flex-shrink: 0;
+  width: 34px; height: 34px;
+  border: 1px solid var(--sepia);
+  border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  color: var(--wine);
+  font-family: var(--ff-display);
+  font-size: 22px;
+  transition: transform 0.2s;
+}
+.faq-item[open] .faq-item__icon { transform: rotate(45deg); }
+.faq-item[open] summary { color: var(--wine); }
+.faq-item p {
+  margin: 0 0 24px;
+  padding-right: 54px;
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.65;
+}
+.faq-item p a { color: var(--wine); text-decoration: underline; }
+
+/* ===== Responsive ===== */
+@media (max-width: 880px) {
+  .ct-info__inner { grid-template-columns: 1fr; }
+  .ct-map__inner { grid-template-columns: 1fr; }
+  .reach { grid-template-columns: 1fr; }
+  .form-grid { grid-template-columns: 1fr; }
+  .hours { grid-template-columns: 1fr; gap: 2px; }
+  .hours dd { text-align: left; margin-bottom: 8px; }
+}
+</style>
+
+</body>
+</html>

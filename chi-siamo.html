@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chi Siamo — Salumificio Getra Sila</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&family=Allura&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="image-slot.js"></script>
+  <script src="menu.js" defer></script>
+</head>
+<body data-screen-label="02 Chi Siamo">
+
+<!-- ========== TOPBAR (dark) ========== -->
+<header class="topbar topbar--dark">
+  <div class="topbar__inner">
+    <a href="index.html" class="brand">
+      <svg viewBox="0 0 280 188" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g fill="none" stroke="currentColor">
+          <line x1="78" y1="11" x2="108" y2="11" stroke-width="0.6"/>
+          <line x1="172" y1="11" x2="202" y2="11" stroke-width="0.6"/>
+          <text x="140" y="15" text-anchor="middle" font-family="Jost" font-size="9.5" letter-spacing="3.2" fill="currentColor" stroke="none" style="font-weight:500;">DAL 2002</text>
+          <path d="M 78 56 C 64 70, 62 92, 78 104" stroke-width="0.8"/>
+          <g fill="currentColor" stroke="none" opacity="0.92">
+            <ellipse cx="70" cy="62" rx="6" ry="2.3" transform="rotate(-40 70 62)"/>
+            <ellipse cx="66" cy="72" rx="6.5" ry="2.4" transform="rotate(-25 66 72)"/>
+            <ellipse cx="64" cy="84" rx="6.5" ry="2.4" transform="rotate(-5 64 84)"/>
+            <ellipse cx="67" cy="96" rx="6.2" ry="2.3" transform="rotate(20 67 96)"/>
+            <ellipse cx="74" cy="106" rx="5.8" ry="2.2" transform="rotate(40 74 106)"/>
+          </g>
+          <path d="M 202 56 C 216 70, 218 92, 202 104" stroke-width="0.8"/>
+          <g fill="currentColor" stroke="none" opacity="0.92">
+            <ellipse cx="210" cy="62" rx="6" ry="2.3" transform="rotate(40 210 62)"/>
+            <ellipse cx="214" cy="72" rx="6.5" ry="2.4" transform="rotate(25 214 72)"/>
+            <ellipse cx="216" cy="84" rx="6.5" ry="2.4" transform="rotate(5 216 84)"/>
+            <ellipse cx="213" cy="96" rx="6.2" ry="2.3" transform="rotate(-20 213 96)"/>
+            <ellipse cx="206" cy="106" rx="5.8" ry="2.2" transform="rotate(-40 206 106)"/>
+          </g>
+          <path d="M 130 50 Q 140 44 150 50" stroke-width="0.8"/>
+          <path d="M 130 50 Q 134 56 140 53 Q 146 56 150 50" stroke-width="0.6"/>
+          <g fill="currentColor" stroke="none">
+            <path d="M 92 96 L 102 88 L 110 92 L 118 84 L 124 88 L 130 78 L 138 86 L 148 80 L 158 86 L 166 82 L 174 90 L 184 88 L 188 96 Z" opacity="0.88"/>
+            <rect x="135.5" y="68" width="2.6" height="14"/>
+            <polygon points="134.5,68 136.8,62 139.1,68"/>
+          </g>
+          <line x1="84" y1="100" x2="196" y2="100" stroke-width="0.5" opacity="0.7"/>
+          <text x="140" y="124" text-anchor="middle" font-family="Jost" font-size="11" letter-spacing="4.2" fill="currentColor" stroke="none" style="font-weight:500;">SALUMIFICIO</text>
+          <text x="140" y="160" text-anchor="middle" font-family="Cormorant Garamond" font-weight="600" font-size="34" letter-spacing="2.2" fill="currentColor" stroke="none">GETRA SILA</text>
+          <line x1="78" y1="178" x2="100" y2="178" stroke-width="0.5"/>
+          <line x1="180" y1="178" x2="202" y2="178" stroke-width="0.5"/>
+          <text x="140" y="182" text-anchor="middle" font-family="Jost" font-size="8" letter-spacing="3.4" fill="currentColor" stroke="none" style="font-weight:500;">BOCCHIGLIERO</text>
+        </g>
+      </svg>
+    </a>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="chi-siamo.html" class="nav-link nav-link--active">Chi Siamo</a>
+      <a href="prodotti.html" class="nav-link">Prodotti</a>
+      <a href="contatti.html" class="nav-link">Contatti</a>
+    </nav>
+    <div class="topbar__right">
+      <span class="lang">IT
+        <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1"/></svg>
+      </span>
+      <a href="contatti.html" class="topbar__cta">Scrivici</a>
+    </div>
+
+    <button class="burger" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span class="burger__lines"><span></span><span></span><span></span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu di navigazione" aria-hidden="true">
+  <button class="mobile-menu__close" type="button" aria-label="Chiudi menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+  </button>
+  <div class="mobile-menu__inner">
+    <p class="mobile-menu__eyebrow">Salumificio · Getra Sila</p>
+    <nav class="mobile-menu__nav" aria-label="Menu principale">
+      <a href="index.html">Home</a>
+      <a href="chi-siamo.html">Chi Siamo</a>
+      <a href="prodotti.html">Prodotti</a>
+      <a href="contatti.html">Contatti</a>
+    </nav>
+    <hr class="mobile-menu__divider" />
+    <a href="contatti.html" class="mobile-menu__cta">Scrivici</a>
+    <p class="mobile-menu__addr">Bocchigliero (CS)<br/>Calabria — Italia</p>
+    <div class="mobile-menu__socials">
+      <a href="#" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M8 14V8h2l.3-2.4H8V4c0-.7.2-1.2 1.2-1.2H10.4V.6C10.2.6 9.5.5 8.7.5c-1.7 0-2.9 1-2.9 3v2H3.6V8h2.2v6H8z"/></svg></a>
+      <a href="#" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="1.5" y="1.5" width="11" height="11" rx="3"/><circle cx="7" cy="7" r="2.8"/><circle cx="10.4" cy="3.6" r="0.6" fill="currentColor"/></svg></a>
+      <a href="#" aria-label="WhatsApp"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M7 0a7 7 0 00-6 10.5L0 14l3.6-1A7 7 0 107 0zm0 12.7a5.7 5.7 0 01-3-.8l-.2-.1-2.1.5.6-2-.2-.2A5.7 5.7 0 117 12.7zm3.3-4.3l-.8-.4c-.2-.1-.4-.2-.5 0-.2.2-.6.7-.7.8 0 .1-.1.1-.3 0-.6-.3-1.1-.6-1.5-1.3-.1-.2 0-.3.1-.4 0-.1.2-.3.3-.4 0-.1 0-.2.1-.3 0-.1 0-.2 0-.3l-.5-1.2c-.2-.3-.3-.3-.4-.3h-.4c-.1 0-.3 0-.5.2-.2.2-.7.7-.7 1.6 0 1 .7 1.9.8 2 .1.2 1.4 2.2 3.4 3 1.6.6 1.9.5 2.3.5.3 0 1-.4 1.2-.8.1-.4.1-.8.1-.8 0-.1-.2-.1-.4-.2z"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<main>
+
+<!-- ========== HERO ========== -->
+<section class="cs-hero">
+  <div class="cs-hero__inner">
+    <div class="cs-hero__copy">
+      <p class="eyebrow">La nostra storia</p>
+      <h1>
+        Un sapere che<br/>
+        attraversa il <em>tempo.</em>
+      </h1>
+
+      <div class="cs-hero__year">
+        <p class="cs-hero__year-num">2002</p>
+        <span class="cs-hero__year-bar"></span>
+        <p class="cs-hero__year-place">Bocchigliero — Sila Greca, Calabria</p>
+      </div>
+
+      <p class="lead">
+        Tutto ebbe inizio dal sogno di Lino Parrilla, profondamente legato
+        a Bocchigliero e alla tradizione norcina della Sila Greca.
+        Da allora la nostra famiglia custodisce l'arte dei salumi
+        con gesti tramandati, rispetto per la materia prima e
+        un legame profondo con il territorio.
+      </p>
+
+      <p class="lead">
+        Ogni scelta nasce dall'esperienza, ogni salume è il frutto
+        di tempo, pazienza e dedizione.
+      </p>
+
+      <blockquote class="cs-quote">
+        <p class="cs-quote__text">"Il tempo non si ferma.<br/>Noi impariamo ad aspettarlo."</p>
+        <p class="cs-quote__sig script">Lino Parrilla</p>
+        <p class="cs-quote__role">— Fondatore —</p>
+      </blockquote>
+    </div>
+
+    <div class="cs-hero__art">
+      <image-slot id="cs-hero" shape="rect" placeholder="Cantina · prosciutti che stagionano"></image-slot>
+      <!-- Sila label overlay -->
+      <div class="cs-hero__overlay">
+        <p class="eyebrow eyebrow--gold">Cantine di stagionatura</p>
+        <p class="cs-hero__overlay-tag">Sila Greca · 1.200 m s.l.m.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- side botanical -->
+  <svg class="botanical" style="left: 0; top: 300px; width: 140px; height: 480px; opacity: 0.18;" viewBox="0 0 160 600" fill="none">
+    <g stroke="var(--sepia)" stroke-width="0.6" opacity="0.7">
+      <path d="M 18 0 Q 50 80, 38 170 Q 26 260, 56 350 Q 86 440, 60 540 L 60 600"/>
+      <g fill="var(--sepia)" stroke="none" opacity="0.45">
+        <ellipse cx="38" cy="60" rx="16" ry="6" transform="rotate(40 38 60)"/>
+        <ellipse cx="46" cy="110" rx="16" ry="6" transform="rotate(-20 46 110)"/>
+        <ellipse cx="34" cy="160" rx="16" ry="6" transform="rotate(40 34 160)"/>
+        <ellipse cx="48" cy="220" rx="16" ry="6" transform="rotate(-25 48 220)"/>
+        <ellipse cx="40" cy="280" rx="16" ry="6" transform="rotate(35 40 280)"/>
+        <ellipse cx="58" cy="340" rx="16" ry="6" transform="rotate(-10 58 340)"/>
+        <ellipse cx="62" cy="400" rx="16" ry="6" transform="rotate(30 62 400)"/>
+        <ellipse cx="50" cy="460" rx="16" ry="6" transform="rotate(-20 50 460)"/>
+        <ellipse cx="62" cy="520" rx="16" ry="6" transform="rotate(20 62 520)"/>
+      </g>
+    </g>
+  </svg>
+</section>
+
+<!-- ========== TIMELINE ========== -->
+<section class="timeline">
+  <div class="timeline__inner">
+    <div class="section-head">
+      <div class="diamond-divider" style="max-width: 280px; margin: 0 auto;">
+        <svg width="12" height="12" viewBox="0 0 14 14"><path d="M7 1l6 6-6 6-6-6z" stroke="currentColor" stroke-width="0.8" fill="none"/></svg>
+        <span class="eyebrow">Le tappe</span>
+        <svg width="12" height="12" viewBox="0 0 14 14"><path d="M7 1l6 6-6 6-6-6z" stroke="currentColor" stroke-width="0.8" fill="none"/></svg>
+      </div>
+      <h2>Una storia che<br/>nasce in famiglia.</h2>
+    </div>
+
+    <div class="timeline__rail">
+      <div class="tl-step">
+        <div class="tl-step__year">L'inizio</div>
+        <div class="tl-step__dot"></div>
+        <div class="tl-step__body">
+          <h3>Il rito del maiale</h3>
+          <p>L'infanzia di Lino a Bocchigliero. Il giorno in cui si "macellava il maiale" era una festa collettiva — amici, vicini, parenti riuniti in un'atmosfera fatta di sorrisi, collaborazione e condivisione. Nulla veniva sprecato, ogni parte aveva una destinazione.</p>
+          <p class="tl-step__cap">Una cultura del rispetto per il cibo e per il lavoro.</p>
+        </div>
+      </div>
+
+      <div class="tl-step">
+        <div class="tl-step__year">Anni '90</div>
+        <div class="tl-step__dot"></div>
+        <div class="tl-step__body">
+          <h3>Ingegneria, e poi il ritorno</h3>
+          <p>Laureato in Ingegneria Industriale all'Università della Calabria, Lino vive esperienze lavorative al nord Italia. È proprio lì che prende forma l'idea che avrebbe cambiato il suo futuro.</p>
+          <p class="tl-step__cap">Decide di tornare a Bocchigliero.</p>
+        </div>
+      </div>
+
+      <div class="tl-step">
+        <div class="tl-step__year">Giugno 2000</div>
+        <div class="tl-step__dot"></div>
+        <div class="tl-step__body">
+          <h3>Lo stabilimento</h3>
+          <p>Iniziano i lavori di realizzazione dello stabilimento. Tra sacrifici, impegno quotidiano e determinazione, prendono forma le sale di lavorazione e le cantine di stagionatura.</p>
+        </div>
+      </div>
+
+      <div class="tl-step tl-step--milestone">
+        <div class="tl-step__year">Luglio 2002</div>
+        <div class="tl-step__dot"></div>
+        <div class="tl-step__body">
+          <h3>La prima produzione</h3>
+          <p>Un sogno diventato realtà, profondamente radicato nel territorio di origine. Così nasce il nome <em>GETRA</em> che racchiude la nostra identità: <strong>Ge</strong>nuinità e <strong>Tra</strong>dizione.</p>
+          <p class="tl-step__cap">Due valori che guidano ogni fase del nostro lavoro.</p>
+        </div>
+      </div>
+
+      <div class="tl-step">
+        <div class="tl-step__year">Oggi</div>
+        <div class="tl-step__dot"></div>
+        <div class="tl-step__body">
+          <h3>La nuova generazione</h3>
+          <p>Dopo oltre 25 anni di storia, il Salumificio continua il suo percorso. <strong>Giuseppe</strong>, studente in Ingegneria Alimentare, e <strong>Federica</strong>, Ingegnere Gestionale, portano avanti con passione l'eredità del padre — unendo conoscenza, innovazione e rispetto per la tradizione.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== RESTARE ========== -->
+<section class="restare">
+  <div class="restare__inner">
+    <div class="restare__art">
+      <image-slot id="cs-village" shape="rect" placeholder="Bocchigliero · vista del borgo"></image-slot>
+      <div class="restare__caption">
+        <p class="eyebrow eyebrow--gold">Bocchigliero</p>
+        <p>Sila Greca · Calabria</p>
+      </div>
+    </div>
+    <div class="restare__copy">
+      <p class="eyebrow">Restare</p>
+      <h2>
+        Restare per dare<br/>
+        valore alla <em>nostra terra.</em>
+      </h2>
+      <p class="lead">
+        In un tempo in cui molte persone sono costrette a lasciare i piccoli
+        borghi, noi abbiamo scelto di restare. Restare per dare valore alla
+        nostra terra, per custodire le nostre radici.
+      </p>
+      <p class="lead">
+        Il lavoro che svolgiamo è ciò che ci permette di vivere qui,
+        a Bocchigliero, continuando a raccontare — attraverso i nostri
+        prodotti — una storia fatta di appartenenza.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TERRITORIO (dark) ========== -->
+<section class="territorio">
+  <div class="territorio__inner">
+    <div class="territorio__copy">
+      <p class="eyebrow eyebrow--gold">Il microclima</p>
+      <h2>Dove l'aria di mare<br/>incontra la <em>montagna.</em></h2>
+      <p class="territorio__lead">
+        Il legame con la Sila è uno degli elementi distintivi della
+        nostra azienda. In particolare il <em>microclima</em> — influenzato
+        dall'incontro tra l'aria marina e quella montana — crea le
+        condizioni ideali per una stagionatura naturale che esalta
+        sapori e qualità.
+      </p>
+
+      <div class="territorio__points">
+        <div class="terr-point">
+          <span class="terr-point__icon">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.1">
+              <path d="M4 22 L 10 14 L 14 18 L 20 10 L 24 16 L 28 22 Z"/>
+              <line x1="0" y1="22" x2="32" y2="22"/>
+            </svg>
+          </span>
+          <div>
+            <p class="terr-point__title">1.200 m s.l.m.</p>
+            <p class="terr-point__cap">Cantine in altura, aria pura e silenzio.</p>
+          </div>
+        </div>
+        <div class="terr-point">
+          <span class="terr-point__icon">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.1">
+              <path d="M4 16 Q 8 12, 12 16 T 20 16 T 28 16"/>
+              <path d="M4 22 Q 8 18, 12 22 T 20 22 T 28 22"/>
+            </svg>
+          </span>
+          <div>
+            <p class="terr-point__title">Aria di mare</p>
+            <p class="terr-point__cap">Lo Ionio a meno di 30 km, brezze saline costanti.</p>
+          </div>
+        </div>
+        <div class="terr-point">
+          <span class="terr-point__icon">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.1">
+              <path d="M16 4 L 16 28 M 8 12 L 16 4 L 24 12"/>
+              <path d="M 10 22 L 22 22"/>
+            </svg>
+          </span>
+          <div>
+            <p class="terr-point__title">Aria di montagna</p>
+            <p class="terr-point__cap">L'altopiano silano filtra umidità e temperature.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="territorio__art">
+      <image-slot id="cs-territory" shape="rect" placeholder="Paesaggio Sila · faggete e altopiano"></image-slot>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FAMIGLIA ========== -->
+<section class="famiglia">
+  <div class="famiglia__inner">
+    <div class="section-head">
+      <p class="eyebrow">La famiglia Parrilla</p>
+      <h2>Le persone dietro<br/>ogni gesto.</h2>
+    </div>
+
+    <div class="famiglia__grid">
+      <article class="person">
+        <image-slot id="p-lino" shape="rect" placeholder="Lino Parrilla"></image-slot>
+        <div class="person__body">
+          <h3>Lino</h3>
+          <p class="person__role">Fondatore</p>
+          <p>Ingegnere industriale per formazione, norcino per vocazione. Ha riportato a Bocchigliero un sogno nato in famiglia.</p>
+        </div>
+      </article>
+      <article class="person">
+        <image-slot id="p-giuseppe" shape="rect" placeholder="Giuseppe Parrilla"></image-slot>
+        <div class="person__body">
+          <h3>Giuseppe</h3>
+          <p class="person__role">Nuova generazione</p>
+          <p>Studente in Ingegneria Alimentare. Porta in laboratorio metodo, ricerca e voglia di sperimentare nel rispetto della tradizione.</p>
+        </div>
+      </article>
+      <article class="person">
+        <image-slot id="p-federica" shape="rect" placeholder="Federica Parrilla"></image-slot>
+        <div class="person__body">
+          <h3>Federica</h3>
+          <p class="person__role">Nuova generazione</p>
+          <p>Ingegnere Gestionale. Coordina processi e relazioni con la cura di chi sa che la qualità si costruisce ogni giorno.</p>
+        </div>
+      </article>
+    </div>
+
+    <p class="famiglia__motto">
+      "Per la famiglia Parrilla, la qualità<br/>non è una scelta — è un valore <em>imprescindibile</em>."
+    </p>
+  </div>
+</section>
+
+<!-- ========== CTA ========== -->
+<section class="cta-band">
+  <svg class="cta-band__art cta-band__art--left" viewBox="0 0 320 220" fill="none">
+    <g stroke="#c9a366" stroke-width="0.7" opacity="0.55">
+      <path d="M40 180 L 40 100 L 60 80 L 80 100 L 80 180 Z"/>
+      <path d="M 50 110 H 70 M 50 130 H 70 M 50 150 H 70"/>
+      <path d="M 90 180 L 100 130 L 130 130 L 140 180 Z"/>
+    </g>
+  </svg>
+  <svg class="cta-band__art cta-band__art--right" viewBox="0 0 320 220" fill="none">
+    <g stroke="#c9a366" stroke-width="0.7" opacity="0.55">
+      <path d="M30 180 L 60 140 L 90 150 L 120 130 L 150 145 L 180 125 L 210 140 L 240 130 L 270 145 L 300 135 L 300 180 Z"/>
+      <rect x="100" y="135" width="6" height="14"/>
+      <polygon points="100,135 103,128 106,135"/>
+    </g>
+  </svg>
+  <div class="cta-band__inner">
+    <p class="eyebrow eyebrow--gold">Vieni a conoscerci</p>
+    <h2>Scopri i salumi che<br/><em>raccontano la Sila.</em></h2>
+    <p class="cta-band__lead">
+      Ogni prodotto nasce qui, a Bocchigliero. Sfoglia la nostra
+      selezione o vieni a trovarci in salumificio — ti faremo
+      conoscere il nostro lavoro.
+    </p>
+    <div class="cta-band__ctas">
+      <a href="prodotti.html" class="btn btn--cream">Scopri i salumi</a>
+      <a href="contatti.html" class="btn">Vieni a trovarci</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <a href="index.html" class="brand">
+        <svg viewBox="0 0 280 188" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g fill="none" stroke="currentColor">
+            <line x1="78" y1="11" x2="108" y2="11" stroke-width="0.6"/>
+            <line x1="172" y1="11" x2="202" y2="11" stroke-width="0.6"/>
+            <text x="140" y="15" text-anchor="middle" font-family="Jost" font-size="9.5" letter-spacing="3.2" fill="currentColor" stroke="none" style="font-weight:500;">DAL 2002</text>
+            <path d="M 78 56 C 64 70, 62 92, 78 104" stroke-width="0.8"/>
+            <g fill="currentColor" stroke="none" opacity="0.92">
+              <ellipse cx="70" cy="62" rx="6" ry="2.3" transform="rotate(-40 70 62)"/>
+              <ellipse cx="66" cy="72" rx="6.5" ry="2.4" transform="rotate(-25 66 72)"/>
+              <ellipse cx="64" cy="84" rx="6.5" ry="2.4" transform="rotate(-5 64 84)"/>
+              <ellipse cx="67" cy="96" rx="6.2" ry="2.3" transform="rotate(20 67 96)"/>
+              <ellipse cx="74" cy="106" rx="5.8" ry="2.2" transform="rotate(40 74 106)"/>
+            </g>
+            <path d="M 202 56 C 216 70, 218 92, 202 104" stroke-width="0.8"/>
+            <g fill="currentColor" stroke="none" opacity="0.92">
+              <ellipse cx="210" cy="62" rx="6" ry="2.3" transform="rotate(40 210 62)"/>
+              <ellipse cx="214" cy="72" rx="6.5" ry="2.4" transform="rotate(25 214 72)"/>
+              <ellipse cx="216" cy="84" rx="6.5" ry="2.4" transform="rotate(5 216 84)"/>
+              <ellipse cx="213" cy="96" rx="6.2" ry="2.3" transform="rotate(-20 213 96)"/>
+              <ellipse cx="206" cy="106" rx="5.8" ry="2.2" transform="rotate(-40 206 106)"/>
+            </g>
+            <path d="M 130 50 Q 140 44 150 50" stroke-width="0.8"/>
+            <path d="M 130 50 Q 134 56 140 53 Q 146 56 150 50" stroke-width="0.6"/>
+            <g fill="currentColor" stroke="none">
+              <path d="M 92 96 L 102 88 L 110 92 L 118 84 L 124 88 L 130 78 L 138 86 L 148 80 L 158 86 L 166 82 L 174 90 L 184 88 L 188 96 Z" opacity="0.88"/>
+              <rect x="135.5" y="68" width="2.6" height="14"/>
+              <polygon points="134.5,68 136.8,62 139.1,68"/>
+            </g>
+            <line x1="84" y1="100" x2="196" y2="100" stroke-width="0.5" opacity="0.7"/>
+            <text x="140" y="124" text-anchor="middle" font-family="Jost" font-size="11" letter-spacing="4.2" fill="currentColor" stroke="none" style="font-weight:500;">SALUMIFICIO</text>
+            <text x="140" y="160" text-anchor="middle" font-family="Cormorant Garamond" font-weight="600" font-size="34" letter-spacing="2.2" fill="currentColor" stroke="none">GETRA SILA</text>
+            <line x1="78" y1="178" x2="100" y2="178" stroke-width="0.5"/>
+            <line x1="180" y1="178" x2="202" y2="178" stroke-width="0.5"/>
+            <text x="140" y="182" text-anchor="middle" font-family="Jost" font-size="8" letter-spacing="3.4" fill="currentColor" stroke="none" style="font-weight:500;">BOCCHIGLIERO</text>
+          </g>
+        </svg>
+      </a>
+    </div>
+    <div class="footer-col">
+      <h4>Contatti</h4>
+      <p>Via Roma, 12</p>
+      <p>87060 Bocchigliero (CS)<br/>Calabria — Italia</p>
+      <p style="margin-top: 12px;">+39 0983 845 000</p>
+      <p>info@getrasila.it</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigazione</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="chi-siamo.html">Chi siamo</a></li>
+        <li><a href="prodotti.html">Prodotti</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Informazioni</h4>
+      <ul>
+        <li><a href="chi-siamo.html">La storia</a></li>
+        <li><a href="prodotti.html">I salumi</a></li>
+        <li><a href="contatti.html">Visita la bottega</a></li>
+        <li><a href="contatti.html">Domande frequenti</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Newsletter</h4>
+      <p>Iscriviti per ricevere storie, novità e ricette dalla Sila.</p>
+      <form class="newsletter" onsubmit="event.preventDefault();">
+        <input type="email" placeholder="La tua email" />
+        <button type="submit" aria-label="Iscriviti">
+          <svg width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M0 7h20m0 0L15 2m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg>
+        </button>
+      </form>
+      <div class="socials">
+        <a href="#" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M8 14V8h2l.3-2.4H8V4c0-.7.2-1.2 1.2-1.2H10.4V.6C10.2.6 9.5.5 8.7.5c-1.7 0-2.9 1-2.9 3v2H3.6V8h2.2v6H8z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="1.5" y="1.5" width="11" height="11" rx="3"/><circle cx="7" cy="7" r="2.8"/><circle cx="10.4" cy="3.6" r="0.6" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="WhatsApp"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M7 0a7 7 0 00-6 10.5L0 14l3.6-1A7 7 0 107 0zm0 12.7a5.7 5.7 0 01-3-.8l-.2-.1-2.1.5.6-2-.2-.2A5.7 5.7 0 117 12.7zm3.3-4.3l-.8-.4c-.2-.1-.4-.2-.5 0-.2.2-.6.7-.7.8 0 .1-.1.1-.3 0-.6-.3-1.1-.6-1.5-1.3-.1-.2 0-.3.1-.4 0-.1.2-.3.3-.4 0-.1 0-.2.1-.3 0-.1 0-.2 0-.3l-.5-1.2c-.2-.3-.3-.3-.4-.3h-.4c-.1 0-.3 0-.5.2-.2.2-.7.7-.7 1.6 0 1 .7 1.9.8 2 .1.2 1.4 2.2 3.4 3 1.6.6 1.9.5 2.3.5.3 0 1-.4 1.2-.8.1-.4.1-.8.1-.8 0-.1-.2-.1-.4-.2z"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-stamp">
+    <svg viewBox="0 0 120 120">
+      <g fill="none" stroke="#c9a366" stroke-width="0.6" opacity="0.65">
+        <circle cx="60" cy="60" r="54"/>
+        <circle cx="60" cy="60" r="50"/>
+        <defs>
+          <path id="fstamp-t" d="M 14 60 A 46 46 0 0 1 106 60" fill="none"/>
+          <path id="fstamp-b" d="M 14 60 A 46 46 0 0 0 106 60" fill="none"/>
+        </defs>
+        <text font-family="Jost" font-size="6.6" letter-spacing="2.8" fill="#c9a366" stroke="none">
+          <textPath href="#fstamp-t" startOffset="50%" text-anchor="middle">GETRA SILA · BOCCHIGLIERO</textPath>
+        </text>
+        <text font-family="Jost" font-size="6" letter-spacing="2" fill="#c9a366" stroke="none">
+          <textPath href="#fstamp-b" startOffset="50%" text-anchor="middle">GENUINITÀ · TRADIZIONE</textPath>
+        </text>
+        <g fill="#c9a366" stroke="none">
+          <path d="M 40 64 L 50 52 L 56 56 L 60 50 L 64 56 L 70 52 L 80 64 L 80 70 L 40 70 Z" opacity="0.85"/>
+          <rect x="58.5" y="42" width="1.6" height="10"/>
+          <polygon points="57.5,42 59.3,38 61.1,42"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Salumificio Getra Sila s.n.c. — P. IVA 02xxx5xxxxx · Tutti i diritti riservati.</p>
+    <div class="legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Cookie Policy</a>
+      <a href="#">Note legali</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+/* ===== Chi Siamo specific ===== */
+.cs-hero {
+  background: linear-gradient(180deg, var(--dark) 0%, var(--dark-soft) 100%);
+  color: #ead7af;
+  min-height: calc(100vh - var(--topbar-h));
+  position: relative;
+  overflow: hidden;
+}
+.cs-hero__inner {
+  max-width: var(--maxw); margin: 0 auto;
+  padding: 60px var(--gutter) 80px;
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 56px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.cs-hero__copy { color: #ead7af; max-width: 560px; }
+.cs-hero__copy .eyebrow { color: #c9a366; }
+.cs-hero__copy h1 {
+  color: #f6e8c5;
+  font-size: clamp(40px, 5vw, 78px);
+  font-weight: 500;
+  line-height: 1.04;
+  letter-spacing: -0.01em;
+  margin: 18px 0 36px;
+}
+.cs-hero__copy h1 em { color: #f4d27c; font-style: italic; font-weight: 500; }
+.cs-hero__copy .lead {
+  color: rgba(234, 215, 175, 0.88);
+  margin-bottom: 18px;
+}
+.cs-hero__year {
+  display: flex; align-items: baseline; gap: 14px;
+  margin: 0 0 32px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(201, 163, 102, 0.4);
+}
+.cs-hero__year-num {
+  font-family: var(--ff-display);
+  font-size: 44px;
+  font-weight: 500;
+  color: #f4d27c;
+  margin: 0;
+  line-height: 1;
+}
+.cs-hero__year-bar { flex: 0 0 32px; height: 1px; background: #c9a366; }
+.cs-hero__year-place {
+  font-family: var(--ff-label);
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: #c9a366;
+  margin: 0;
+}
+
+.cs-quote {
+  margin: 36px 0 0;
+  padding: 24px 0 0;
+  border: 0;
+  border-top: 1px solid rgba(201, 163, 102, 0.3);
+}
+.cs-quote__text {
+  font-family: var(--ff-display);
+  font-style: italic;
+  font-size: 22px;
+  line-height: 1.45;
+  color: #ead7af;
+  margin: 0 0 16px;
+}
+.cs-quote__sig {
+  font-size: 38px;
+  color: #f4d27c;
+  margin: 0;
+  line-height: 1;
+}
+.cs-quote__role {
+  font-family: var(--ff-label);
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #c9a366;
+  margin: 6px 0 0;
+}
+
+.cs-hero__art {
+  position: relative;
+  height: 78vh;
+  min-height: 600px;
+}
+.cs-hero__art image-slot { width: 100%; height: 100%; }
+.cs-hero__overlay {
+  position: absolute;
+  bottom: 24px; left: 24px;
+  background: rgba(20, 12, 6, 0.78);
+  padding: 14px 20px;
+  border-left: 2px solid var(--gold-soft);
+}
+.cs-hero__overlay-tag {
+  font-family: var(--ff-display);
+  font-style: italic;
+  font-size: 18px;
+  color: #ead7af;
+  margin: 4px 0 0;
+}
+
+/* ===== Timeline ===== */
+.timeline {
+  padding: clamp(80px, 9vw, 140px) var(--gutter);
+  background: var(--bg-cream);
+  position: relative;
+}
+.timeline__inner { max-width: 920px; margin: 0 auto; }
+.timeline__rail {
+  position: relative;
+  margin-top: 60px;
+  padding-left: 0;
+}
+.timeline__rail::before {
+  content: "";
+  position: absolute;
+  left: 152px; top: 12px; bottom: 12px;
+  width: 1px;
+  background: var(--sepia-line);
+}
+.tl-step {
+  display: grid;
+  grid-template-columns: 140px 24px 1fr;
+  gap: 0;
+  align-items: flex-start;
+  padding-bottom: 56px;
+  position: relative;
+}
+.tl-step:last-child { padding-bottom: 0; }
+.tl-step__year {
+  font-family: var(--ff-display);
+  font-style: italic;
+  font-size: 22px;
+  color: var(--wine);
+  text-align: right;
+  padding-right: 24px;
+  padding-top: 4px;
+}
+.tl-step__dot {
+  width: 14px; height: 14px;
+  background: var(--bg-cream);
+  border: 1px solid var(--sepia);
+  transform: rotate(45deg);
+  margin: 10px auto 0;
+  position: relative;
+  z-index: 1;
+}
+.tl-step--milestone .tl-step__dot {
+  background: var(--wine);
+  border-color: var(--wine);
+}
+.tl-step__body { padding-left: 28px; }
+.tl-step__body h3 {
+  font-size: 26px;
+  margin: 0 0 12px;
+  font-weight: 500;
+  line-height: 1.12;
+}
+.tl-step__body p {
+  margin: 0 0 8px;
+  color: var(--ink-soft);
+  line-height: 1.65;
+  font-size: 15px;
+}
+.tl-step__body p em { color: var(--wine); font-style: italic; }
+.tl-step__body p strong { font-weight: 500; color: var(--ink); }
+.tl-step__cap {
+  font-family: var(--ff-display);
+  font-style: italic;
+  color: var(--wine) !important;
+  font-size: 17px !important;
+  margin-top: 12px !important;
+}
+
+/* ===== Restare ===== */
+.restare {
+  padding: clamp(80px, 9vw, 130px) var(--gutter);
+  background: var(--bg-cream-warm);
+  position: relative;
+  border-top: 1px solid var(--sepia-line);
+  border-bottom: 1px solid var(--sepia-line);
+}
+.restare__inner {
+  max-width: var(--maxw); margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 5vw, 96px);
+  align-items: center;
+}
+.restare__art {
+  position: relative;
+  height: 520px;
+}
+.restare__art image-slot { width: 100%; height: 100%; }
+.restare__caption {
+  position: absolute;
+  bottom: 24px; left: 24px;
+  background: rgba(20, 12, 6, 0.78);
+  padding: 14px 20px;
+  color: #ead7af;
+}
+.restare__caption .eyebrow { color: #c9a366; }
+.restare__caption p { margin: 4px 0 0; font-family: var(--ff-display); font-style: italic; font-size: 16px; }
+.restare__copy h2 { margin: 16px 0 24px; }
+.restare__copy h2 em { color: var(--wine); font-style: italic; }
+.restare__copy .lead { margin-bottom: 16px; }
+
+/* ===== Territorio ===== */
+.territorio {
+  background: linear-gradient(180deg, #2a1a10 0%, #1c1108 100%);
+  color: #ead7af;
+  padding: clamp(80px, 9vw, 140px) var(--gutter);
+  position: relative;
+  overflow: hidden;
+}
+.territorio__inner {
+  max-width: var(--maxw); margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 5vw, 96px);
+  align-items: center;
+}
+.territorio__copy h2 { color: #f6e8c5; margin: 18px 0 22px; font-weight: 500; }
+.territorio__copy h2 em { color: #f4d27c; font-style: italic; }
+.territorio__lead {
+  color: rgba(234, 215, 175, 0.85);
+  font-size: 17px; line-height: 1.65;
+  margin-bottom: 36px;
+}
+.territorio__lead em { color: #f4d27c; font-style: italic; }
+.territorio__points {
+  display: flex; flex-direction: column;
+  gap: 22px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(201, 163, 102, 0.3);
+}
+.terr-point { display: flex; gap: 18px; align-items: flex-start; }
+.terr-point__icon {
+  flex: 0 0 40px; color: #c9a366;
+}
+.terr-point__icon svg { width: 40px; height: 40px; }
+.terr-point__title {
+  font-family: var(--ff-display);
+  font-size: 22px;
+  color: #f4d27c;
+  margin: 0 0 4px;
+}
+.terr-point__cap {
+  font-size: 13px;
+  color: #d6c39e;
+  margin: 0;
+}
+.territorio__art { height: 520px; position: relative; }
+.territorio__art image-slot { width: 100%; height: 100%; }
+
+/* ===== Famiglia ===== */
+.famiglia {
+  padding: clamp(80px, 9vw, 140px) var(--gutter);
+  background: var(--bg-cream);
+}
+.famiglia__inner { max-width: var(--maxw); margin: 0 auto; }
+.famiglia__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+  margin-bottom: 80px;
+}
+.person { background: var(--bg-cream-soft); border: 1px solid var(--sepia-line); }
+.person image-slot { width: 100%; height: 360px; --slot-bg: #2a1d13; }
+.person__body { padding: 28px; }
+.person__body h3 { font-size: 30px; margin: 0 0 4px; font-weight: 500; }
+.person__role {
+  font-family: var(--ff-label);
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--wine);
+  margin: 0 0 14px;
+}
+.person__body p:last-child { margin: 0; color: var(--ink-mute); font-size: 14px; line-height: 1.6; }
+.famiglia__motto {
+  font-family: var(--ff-display);
+  text-align: center;
+  font-size: clamp(22px, 2.4vw, 32px);
+  color: var(--ink);
+  line-height: 1.4;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 0 0;
+  border-top: 1px solid var(--sepia-line);
+}
+.famiglia__motto em { color: var(--wine); font-style: italic; }
+
+/* ===== CTA band (shared) ===== */
+.cta-band {
+  background: linear-gradient(180deg, #6b1f23 0%, #4f1418 100%);
+  color: #f3dfb8;
+  padding: clamp(60px, 7vw, 110px) var(--gutter);
+  position: relative;
+  overflow: hidden;
+}
+.cta-band__art { position: absolute; top: 0; height: 100%; opacity: 0.55; }
+.cta-band__art--left { left: 0; width: 28%; }
+.cta-band__art--right { right: 0; width: 28%; }
+.cta-band__inner { max-width: 760px; margin: 0 auto; text-align: center; position: relative; z-index: 2; }
+.cta-band h2 { color: #f6e8c5; margin: 16px 0 22px; font-weight: 500; }
+.cta-band h2 em { color: #f4d27c; font-style: italic; }
+.cta-band__lead { color: rgba(243, 223, 184, 0.85); font-size: 16px; max-width: 540px; margin: 0 auto 32px; line-height: 1.6; }
+.cta-band__ctas { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+/* ===== Responsive ===== */
+@media (max-width: 880px) {
+  .cs-hero__inner { grid-template-columns: 1fr; gap: 36px; }
+  .cs-hero__art { height: 60vh; min-height: 400px; }
+  .timeline__rail::before { left: 12px; }
+  .tl-step { grid-template-columns: 12px 1fr; column-gap: 24px; }
+  .tl-step__year { grid-column: 2; text-align: left; padding-right: 0; padding-bottom: 8px; }
+  .tl-step__dot { grid-column: 1; grid-row: 1 / span 2; margin: 8px 0 0; }
+  .tl-step__body { grid-column: 2; padding-left: 0; }
+  .restare__inner, .territorio__inner { grid-template-columns: 1fr; }
+  .restare__art, .territorio__art { height: 400px; }
+  .famiglia__grid { grid-template-columns: 1fr; }
+  .person image-slot { height: 300px; }
+}
+</style>
+
+</body>
+</html>

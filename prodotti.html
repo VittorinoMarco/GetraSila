@@ -1,0 +1,872 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prodotti — Salumificio Getra Sila</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&family=Allura&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="image-slot.js"></script>
+  <script src="menu.js" defer></script>
+</head>
+<body data-screen-label="03 Prodotti">
+
+<header class="topbar topbar--cream">
+  <div class="topbar__inner">
+    <a href="index.html" class="brand">
+      <svg viewBox="0 0 280 188" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g fill="none" stroke="currentColor" style="color: var(--wine);">
+          <line x1="78" y1="11" x2="108" y2="11" stroke-width="0.6"/>
+          <line x1="172" y1="11" x2="202" y2="11" stroke-width="0.6"/>
+          <text x="140" y="15" text-anchor="middle" font-family="Jost" font-size="9.5" letter-spacing="3.2" fill="currentColor" stroke="none" style="font-weight:500;">DAL 2002</text>
+          <path d="M 78 56 C 64 70, 62 92, 78 104" stroke-width="0.8"/>
+          <g fill="currentColor" stroke="none" opacity="0.92">
+            <ellipse cx="70" cy="62" rx="6" ry="2.3" transform="rotate(-40 70 62)"/>
+            <ellipse cx="66" cy="72" rx="6.5" ry="2.4" transform="rotate(-25 66 72)"/>
+            <ellipse cx="64" cy="84" rx="6.5" ry="2.4" transform="rotate(-5 64 84)"/>
+            <ellipse cx="67" cy="96" rx="6.2" ry="2.3" transform="rotate(20 67 96)"/>
+            <ellipse cx="74" cy="106" rx="5.8" ry="2.2" transform="rotate(40 74 106)"/>
+          </g>
+          <path d="M 202 56 C 216 70, 218 92, 202 104" stroke-width="0.8"/>
+          <g fill="currentColor" stroke="none" opacity="0.92">
+            <ellipse cx="210" cy="62" rx="6" ry="2.3" transform="rotate(40 210 62)"/>
+            <ellipse cx="214" cy="72" rx="6.5" ry="2.4" transform="rotate(25 214 72)"/>
+            <ellipse cx="216" cy="84" rx="6.5" ry="2.4" transform="rotate(5 216 84)"/>
+            <ellipse cx="213" cy="96" rx="6.2" ry="2.3" transform="rotate(-20 213 96)"/>
+            <ellipse cx="206" cy="106" rx="5.8" ry="2.2" transform="rotate(-40 206 106)"/>
+          </g>
+          <path d="M 130 50 Q 140 44 150 50" stroke-width="0.8"/>
+          <path d="M 130 50 Q 134 56 140 53 Q 146 56 150 50" stroke-width="0.6"/>
+          <g fill="currentColor" stroke="none">
+            <path d="M 92 96 L 102 88 L 110 92 L 118 84 L 124 88 L 130 78 L 138 86 L 148 80 L 158 86 L 166 82 L 174 90 L 184 88 L 188 96 Z" opacity="0.88"/>
+            <rect x="135.5" y="68" width="2.6" height="14"/>
+            <polygon points="134.5,68 136.8,62 139.1,68"/>
+          </g>
+          <line x1="84" y1="100" x2="196" y2="100" stroke-width="0.5" opacity="0.7"/>
+          <text x="140" y="124" text-anchor="middle" font-family="Jost" font-size="11" letter-spacing="4.2" fill="currentColor" stroke="none" style="font-weight:500;">SALUMIFICIO</text>
+          <text x="140" y="160" text-anchor="middle" font-family="Cormorant Garamond" font-weight="600" font-size="34" letter-spacing="2.2" fill="currentColor" stroke="none">GETRA SILA</text>
+          <line x1="78" y1="178" x2="100" y2="178" stroke-width="0.5"/>
+          <line x1="180" y1="178" x2="202" y2="178" stroke-width="0.5"/>
+          <text x="140" y="182" text-anchor="middle" font-family="Jost" font-size="8" letter-spacing="3.4" fill="currentColor" stroke="none" style="font-weight:500;">BOCCHIGLIERO</text>
+        </g>
+      </svg>
+    </a>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="chi-siamo.html" class="nav-link">Chi Siamo</a>
+      <a href="prodotti.html" class="nav-link nav-link--active">Prodotti</a>
+      <a href="contatti.html" class="nav-link">Contatti</a>
+    </nav>
+    <div class="topbar__right">
+      <span class="lang">IT
+        <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1"/></svg>
+      </span>
+      <a href="contatti.html" class="topbar__cta">Scrivici</a>
+    </div>
+
+    <button class="burger" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span class="burger__lines"><span></span><span></span><span></span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu di navigazione" aria-hidden="true">
+  <button class="mobile-menu__close" type="button" aria-label="Chiudi menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+  </button>
+  <div class="mobile-menu__inner">
+    <p class="mobile-menu__eyebrow">Salumificio · Getra Sila</p>
+    <nav class="mobile-menu__nav" aria-label="Menu principale">
+      <a href="index.html">Home</a>
+      <a href="chi-siamo.html">Chi Siamo</a>
+      <a href="prodotti.html">Prodotti</a>
+      <a href="contatti.html">Contatti</a>
+    </nav>
+    <hr class="mobile-menu__divider" />
+    <a href="contatti.html" class="mobile-menu__cta">Scrivici</a>
+    <p class="mobile-menu__addr">Bocchigliero (CS)<br/>Calabria — Italia</p>
+    <div class="mobile-menu__socials">
+      <a href="#" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M8 14V8h2l.3-2.4H8V4c0-.7.2-1.2 1.2-1.2H10.4V.6C10.2.6 9.5.5 8.7.5c-1.7 0-2.9 1-2.9 3v2H3.6V8h2.2v6H8z"/></svg></a>
+      <a href="#" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="1.5" y="1.5" width="11" height="11" rx="3"/><circle cx="7" cy="7" r="2.8"/><circle cx="10.4" cy="3.6" r="0.6" fill="currentColor"/></svg></a>
+      <a href="#" aria-label="WhatsApp"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M7 0a7 7 0 00-6 10.5L0 14l3.6-1A7 7 0 107 0zm0 12.7a5.7 5.7 0 01-3-.8l-.2-.1-2.1.5.6-2-.2-.2A5.7 5.7 0 117 12.7zm3.3-4.3l-.8-.4c-.2-.1-.4-.2-.5 0-.2.2-.6.7-.7.8 0 .1-.1.1-.3 0-.6-.3-1.1-.6-1.5-1.3-.1-.2 0-.3.1-.4 0-.1.2-.3.3-.4 0-.1 0-.2.1-.3 0-.1 0-.2 0-.3l-.5-1.2c-.2-.3-.3-.3-.4-.3h-.4c-.1 0-.3 0-.5.2-.2.2-.7.7-.7 1.6 0 1 .7 1.9.8 2 .1.2 1.4 2.2 3.4 3 1.6.6 1.9.5 2.3.5.3 0 1-.4 1.2-.8.1-.4.1-.8.1-.8 0-.1-.2-.1-.4-.2z"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<main>
+
+<!-- ========== HEADER ========== -->
+<section class="pr-head">
+  <!-- corner stamp -->
+  <div class="corner-stamp" style="top: 40px; left: 40px; width: 130px; height: 130px;">
+    <svg viewBox="0 0 120 120">
+      <g fill="none" stroke="var(--sepia)" stroke-width="0.6" opacity="0.5">
+        <circle cx="60" cy="60" r="54"/>
+        <circle cx="60" cy="60" r="50"/>
+        <defs>
+          <path id="phs-t" d="M 14 60 A 46 46 0 0 1 106 60" fill="none"/>
+          <path id="phs-b" d="M 14 60 A 46 46 0 0 0 106 60" fill="none"/>
+        </defs>
+        <text font-family="Jost" font-size="6.6" letter-spacing="2.8" fill="var(--sepia)" stroke="none">
+          <textPath href="#phs-t" startOffset="50%" text-anchor="middle">SALUMIFICIO · GETRA SILA</textPath>
+        </text>
+        <text font-family="Cormorant Garamond" font-style="italic" font-size="8" fill="var(--sepia)" stroke="none">
+          <textPath href="#phs-b" startOffset="50%" text-anchor="middle">Genuinità · Tradizione</textPath>
+        </text>
+        <g fill="var(--sepia)" stroke="none">
+          <path d="M 40 64 L 50 52 L 56 56 L 60 50 L 64 56 L 70 52 L 80 64 L 80 70 L 40 70 Z" opacity="0.85"/>
+          <rect x="58.5" y="42" width="1.6" height="10"/>
+          <polygon points="57.5,42 59.3,38 61.1,42"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <!-- right botanical -->
+  <svg class="botanical" style="right: 0; top: 60px; width: 220px; height: 360px;" viewBox="0 0 220 360" fill="none">
+    <g stroke="var(--sepia)" stroke-width="0.6" opacity="0.6">
+      <path d="M 200 0 Q 150 60, 170 130 Q 190 200, 140 280 Q 90 340, 110 360"/>
+      <g fill="var(--sepia)" stroke="none" opacity="0.45">
+        <ellipse cx="180" cy="40" rx="14" ry="5" transform="rotate(-40 180 40)"/>
+        <ellipse cx="166" cy="80" rx="14" ry="5" transform="rotate(20 166 80)"/>
+        <ellipse cx="178" cy="130" rx="14" ry="5" transform="rotate(-40 178 130)"/>
+        <ellipse cx="160" cy="180" rx="14" ry="5" transform="rotate(20 160 180)"/>
+        <ellipse cx="148" cy="230" rx="14" ry="5" transform="rotate(-30 148 230)"/>
+        <ellipse cx="124" cy="280" rx="14" ry="5" transform="rotate(30 124 280)"/>
+        <ellipse cx="108" cy="320" rx="14" ry="5" transform="rotate(-20 108 320)"/>
+      </g>
+    </g>
+  </svg>
+
+  <div class="pr-head__inner">
+    <div class="section-head">
+      <p class="eyebrow">La nostra selezione</p>
+      <h1 class="pr-head__title">I salumi</h1>
+      <p class="lead">
+        Ogni salume nasce da gesti antichi, materie prime eccellenti
+        e un tempo che non ha mai smesso di fare la differenza.
+        Tutti i nostri prodotti sono lavorati a mano nella sede
+        di Bocchigliero — niente glutine, niente lattosio, niente coloranti.
+      </p>
+      <div class="diamond-divider" style="width: 100%; max-width: 240px; margin-top: 12px;">
+        <svg width="14" height="14" viewBox="0 0 14 14"><path d="M7 1l6 6-6 6-6-6z" stroke="currentColor" stroke-width="0.8" fill="none"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CATEGORY GRID ========== -->
+<section class="pr-grid">
+  <div class="pr-grid__inner">
+
+    <!-- ===== I PROTAGONISTI (large feature row) ===== -->
+    <p class="pr-section-head"><span>Le specialità di Bocchigliero</span></p>
+
+    <div class="pr-feature-row">
+      <article class="pr-feature">
+        <div class="pr-feature__art">
+          <image-slot id="pr-nduja" shape="rect" placeholder="'Nduja Getra Sila — morbida e spalmabile"></image-slot>
+          <span class="seal seal--lg">
+            <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" fill="#a4222e"/><circle cx="20" cy="20" r="14" fill="#f1c14a"/><text x="20" y="18" text-anchor="middle" font-family="Jost" font-size="6" font-weight="600" fill="#a4222e">SILA</text><text x="20" y="26" text-anchor="middle" font-family="Jost" font-size="4" fill="#a4222e">CALABRIA</text></svg>
+          </span>
+        </div>
+        <div class="pr-feature__copy">
+          <p class="pr-kicker">Il simbolo</p>
+          <h2>'Nduja<br/>Getra Sila</h2>
+          <p class="pr-desc">
+            Salume tipico della tradizione calabrese, dalla consistenza
+            morbida e spalmabile e dal gusto intenso. Nasce dall'unione
+            sapiente di pancettone, carni magre e grasso di suino,
+            arricchiti da sale e peperoncino piccante calabrese.
+          </p>
+          <ul class="pr-spec">
+            <li><span>Ingredienti</span><em>Pancettone · carni magre · peperoncino calabrese</em></li>
+            <li><span>Insacco</span><em>Budello naturale</em></li>
+            <li><span>Stagionatura</span><em>Tradizionale, con note affumicate</em></li>
+            <li><span>Codice</span><em>NDU1</em></li>
+          </ul>
+          <p class="pr-use">
+            <em>Ideale</em> spalmata su pane caldo e bruschette, o per
+            arricchire primi e secondi piatti.
+          </p>
+        </div>
+      </article>
+
+      <article class="pr-feature pr-feature--flip">
+        <div class="pr-feature__art">
+          <image-slot id="pr-capocollo" shape="rect" placeholder="Capocollo di Bocchigliero · pepe nero / pepe rosso"></image-slot>
+          <span class="seal seal--lg">
+            <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" fill="#1e6e3c"/><circle cx="20" cy="20" r="14" fill="#fff8dd"/><text x="20" y="18" text-anchor="middle" font-family="Jost" font-size="5.5" font-weight="600" fill="#1e6e3c">TIPICO</text><text x="20" y="26" text-anchor="middle" font-family="Jost" font-size="4" fill="#1e6e3c">BOCCHIGLIERO</text></svg>
+          </span>
+        </div>
+        <div class="pr-feature__copy">
+          <p class="pr-kicker">Il decano</p>
+          <h2>Capocollo<br/>di Bocchigliero</h2>
+          <p class="pr-desc">
+            Una delle più alte espressioni della salumeria calabrese.
+            Frutto di una sapiente selezione delle migliori carni e di
+            una lavorazione artigianale d'eccellenza. Massaggio lento,
+            insacco in budello naturale, legatura rigorosamente a mano.
+          </p>
+          <ul class="pr-spec">
+            <li><span>Rifinitura</span><em>Pepe nero · Pepe rosso dolce</em></li>
+            <li><span>Stagionatura</span><em>Superiore ai 90 giorni</em></li>
+            <li><span>Microclima</span><em>Cantine naturali della Sila</em></li>
+            <li><span>Codici</span><em>CAP1 · CAP2 · CAP3 · CAP4</em></li>
+          </ul>
+          <p class="pr-use">
+            <em>Eleganza gustativa</em>, ricca, armoniosa e persistente —
+            autentica espressione del territorio di Bocchigliero.
+          </p>
+        </div>
+      </article>
+    </div>
+
+    <!-- ===== LE SOPPRESSATE ===== -->
+    <p class="pr-section-head"><span>Le soppressate</span></p>
+
+    <div class="pr-trio">
+      <article class="pr-card card--ornate">
+        <p class="pr-kicker">Casereccia</p>
+        <h3>Soppressata<br/>al pepe nero</h3>
+        <image-slot id="pr-sop-nera" shape="rect" placeholder="Soppressata casereccia, pepe nero"></image-slot>
+        <p class="pr-card__desc">
+          Ottenuta dal prosciutto di suino arricchito con grasso selezionato,
+          legata a mano in budello naturale. Il pepe nero, dosato con
+          maestria, valorizza il profilo aromatico delle carni.
+        </p>
+        <div class="pr-card__foot">
+          <p><span>Stagionatura</span>45–50 giorni</p>
+          <p><span>Codice</span>SOP1</p>
+        </div>
+      </article>
+
+      <article class="pr-card card--ornate">
+        <p class="pr-kicker">Pressata</p>
+        <h3>Soppressata<br/>dolce o piccante</h3>
+        <image-slot id="pr-sop-press" shape="rect" placeholder="Soppressata casereccia pressata"></image-slot>
+        <p class="pr-card__desc">
+          La pressatura — passaggio che dà il nome a questa specialità —
+          compatta la carne, favorisce una maturazione uniforme e una
+          consistenza equilibrata e raffinata.
+        </p>
+        <div class="pr-card__foot">
+          <p><span>Stagionatura</span>~ 45 giorni</p>
+          <p><span>Codici</span>SOP5 · SOP6</p>
+        </div>
+      </article>
+
+      <article class="pr-card card--ornate">
+        <p class="pr-kicker">Bombata</p>
+        <h3>Soppressata<br/>bombata</h3>
+        <image-slot id="pr-sop-bom" shape="rect" placeholder="Soppressata bombata, tondeggiante"></image-slot>
+        <p class="pr-card__desc">
+          Variante non pressata, mantiene la caratteristica forma
+          tondeggiante del budello naturale e una consistenza più
+          morbida e avvolgente — dolce o piccante.
+        </p>
+        <div class="pr-card__foot">
+          <p><span>Stagionatura</span>~ 45 giorni</p>
+          <p><span>Codici</span>SOP2 · SOP3</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- ===== LE SALSICCE ===== -->
+    <p class="pr-section-head"><span>Le salsicce</span></p>
+
+    <div class="pr-duo">
+      <article class="pr-card pr-card--wide card--ornate">
+        <div class="pr-card__split">
+          <div class="pr-card__art">
+            <image-slot id="pr-salsiccia-fc" shape="rect" placeholder="Salsiccia a ferro di cavallo"></image-slot>
+          </div>
+          <div class="pr-card__split-copy">
+            <p class="pr-kicker">La festa contadina</p>
+            <h3>Salsiccia<br/>"ferro di cavallo"</h3>
+            <p class="pr-card__desc">
+              Un'autentica eccellenza della tradizione calabrese.
+              Carni selezionate, insaccate in budello naturale e legate
+              a mano nella caratteristica forma a ferro di cavallo.
+            </p>
+            <div class="pr-card__foot">
+              <p><span>Varianti</span>Dolce · Piccante</p>
+              <p><span>Codici</span>SDF · SPF</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="pr-card pr-card--wide card--ornate">
+        <div class="pr-card__split">
+          <div class="pr-card__art">
+            <image-slot id="pr-salsiccia-cat" shape="rect" placeholder="Salsiccia a catenella"></image-slot>
+          </div>
+          <div class="pr-card__split-copy">
+            <p class="pr-kicker">Forma tipica</p>
+            <h3>Salsiccia<br/>"a catenella"</h3>
+            <p class="pr-card__desc">
+              Stessa ricetta di famiglia, forma legata "a catenella" —
+              perfetta da servire intera o porzionata. Profumi e sapori
+              intensi del territorio.
+            </p>
+            <div class="pr-card__foot">
+              <p><span>Varianti</span>Dolce · Piccante</p>
+              <p><span>Codici</span>SDFC · SPFC</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- ===== I TAGLI NOBILI ===== -->
+    <p class="pr-section-head"><span>I tagli nobili</span></p>
+
+    <div class="pr-quad">
+      <article class="pr-card pr-card--tall card--ornate">
+        <p class="pr-kicker">Il leggero</p>
+        <h3>Filetto<br/>di Bocchigliero</h3>
+        <image-slot id="pr-filetto" shape="rect" placeholder="Filetto, parte nobile del suino"></image-slot>
+        <p class="pr-card__desc">
+          La parte più nobile e pregiata del suino. Struttura compatta,
+          delicatezza della consistenza, ridotto contenuto di grassi.
+        </p>
+        <div class="pr-card__foot">
+          <p><span>Rifinitura</span>Pepe nero · Pepe rosso</p>
+          <p><span>Codici</span>FLN1 · FLN2</p>
+        </div>
+      </article>
+
+      <article class="pr-card pr-card--tall card--ornate">
+        <p class="pr-kicker">La classica</p>
+        <h3>Pancetta tesa<br/>di Bocchigliero</h3>
+        <image-slot id="pr-pancetta" shape="rect" placeholder="Pancetta tesa, legata a mano"></image-slot>
+        <p class="pr-card__desc">
+          Salatura precisa, massaggio lento, legatura a mano.
+          Stagionatura nell'aria pura della Sila — profondità aromatica
+          e qualità organolettica di assoluto pregio.
+        </p>
+        <div class="pr-card__foot">
+          <p><span>Rifinitura</span>Pepe nero · Pepe rosso</p>
+          <p><span>Codici</span>PTE1 · PTE2 · PTE3 · PTE4</p>
+        </div>
+      </article>
+
+      <article class="pr-card pr-card--tall card--ornate">
+        <p class="pr-kicker">Antico gusto</p>
+        <h3>Salame<br/>Getra</h3>
+        <image-slot id="pr-salame" shape="rect" placeholder="Salame Getra, ricetta del fondatore"></image-slot>
+        <p class="pr-card__desc">
+          La ricetta ideata da Lino Parrilla per valorizzare i sapori
+          più autentici della tradizione bocchiglierese. Senza coloranti,
+          con delicate note di aglio e pepe nero.
+        </p>
+        <div class="pr-card__foot">
+          <p><span>Servire</span>A fette, con pane casereccio</p>
+          <p><span>Codice</span>SGV1</p>
+        </div>
+      </article>
+
+      <article class="pr-card pr-card--tall card--ornate">
+        <p class="pr-kicker">Tradizione</p>
+        <h3>Guanciale</h3>
+        <image-slot id="pr-guanciale" shape="rect" placeholder="Guanciale, dalla guancia del suino"></image-slot>
+        <p class="pr-card__desc">
+          Dalla guancia del suino — taglio pregiato apprezzato per
+          l'equilibrio tra morbidezza del grasso e delicate venature
+          magre. Gusto intenso e persistente, consistenza vellutata.
+        </p>
+        <div class="pr-card__foot">
+          <p><span>Lavorazione</span>Aromi selezionati</p>
+          <p><span>Codice</span>GNC1</p>
+        </div>
+      </article>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== VALUES STRIP ========== -->
+<section class="strip">
+  <div class="strip__inner">
+    <div class="strip__item">
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1">
+        <circle cx="24" cy="24" r="16"/>
+        <circle cx="24" cy="24" r="11"/>
+        <text x="24" y="22" text-anchor="middle" font-family="Cormorant Garamond" font-size="9" font-weight="600" fill="currentColor" stroke="none">+25</text>
+        <text x="24" y="30" text-anchor="middle" font-family="Jost" font-size="4.5" letter-spacing="1" fill="currentColor" stroke="none">ANNI</text>
+      </svg>
+      <p>Oltre 25 anni<br/>di tradizione</p>
+    </div>
+    <div class="strip__item">
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1">
+        <path d="M16 14 Q 24 4, 32 14 Q 36 22, 30 30 Q 24 38, 18 30 Q 12 22, 16 14 Z"/>
+        <path d="M24 12 V 30" />
+      </svg>
+      <p>Senza glutine<br/>e senza lattosio</p>
+    </div>
+    <div class="strip__item">
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1">
+        <path d="M24 8 C 14 16, 12 28, 24 40 C 36 28, 34 16, 24 8 Z"/>
+        <path d="M24 14 V 36"/>
+      </svg>
+      <p>Senza coloranti<br/>né conservanti</p>
+    </div>
+    <div class="strip__item">
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1">
+        <path d="M8 36 L 24 14 L 40 36 Z"/>
+        <path d="M14 36 V 30 H 20 V 36"/>
+        <path d="M28 30 H 34 V 36"/>
+      </svg>
+      <p>Stagionatura naturale<br/>nelle cantine di Sila</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA ========== -->
+<section class="cta-band">
+  <svg class="cta-band__art cta-band__art--left" viewBox="0 0 320 220" fill="none">
+    <g stroke="#c9a366" stroke-width="0.7" opacity="0.55">
+      <path d="M40 180 L 40 100 L 60 80 L 80 100 L 80 180 Z"/>
+      <path d="M 50 110 H 70 M 50 130 H 70"/>
+      <path d="M 90 180 L 100 130 L 130 130 L 140 180 Z"/>
+    </g>
+  </svg>
+  <svg class="cta-band__art cta-band__art--right" viewBox="0 0 320 220" fill="none">
+    <g stroke="#c9a366" stroke-width="0.7" opacity="0.55">
+      <path d="M30 180 L 60 140 L 90 150 L 120 130 L 150 145 L 180 125 L 210 140 L 240 130 L 270 145 L 300 135 L 300 180 Z"/>
+      <rect x="100" y="135" width="6" height="14"/>
+      <polygon points="100,135 103,128 106,135"/>
+    </g>
+  </svg>
+  <div class="cta-band__inner">
+    <p class="eyebrow eyebrow--gold">Hai un'esigenza particolare?</p>
+    <h2>Scrivici, ti rispondiamo<br/><em>entro 24 ore.</em></h2>
+    <p class="cta-band__lead">
+      Per informazioni su prodotti, ordini di quantità o per organizzare
+      una visita al salumificio, siamo a tua disposizione.
+    </p>
+    <div class="cta-band__ctas">
+      <a href="contatti.html" class="btn btn--cream">Contattaci</a>
+      <a href="chi-siamo.html" class="btn">La nostra storia</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ========== FOOTER (reused) ========== -->
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <a href="index.html" class="brand">
+        <svg viewBox="0 0 280 188" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g fill="none" stroke="currentColor">
+            <line x1="78" y1="11" x2="108" y2="11" stroke-width="0.6"/>
+            <line x1="172" y1="11" x2="202" y2="11" stroke-width="0.6"/>
+            <text x="140" y="15" text-anchor="middle" font-family="Jost" font-size="9.5" letter-spacing="3.2" fill="currentColor" stroke="none" style="font-weight:500;">DAL 2002</text>
+            <path d="M 78 56 C 64 70, 62 92, 78 104" stroke-width="0.8"/>
+            <g fill="currentColor" stroke="none" opacity="0.92">
+              <ellipse cx="70" cy="62" rx="6" ry="2.3" transform="rotate(-40 70 62)"/>
+              <ellipse cx="66" cy="72" rx="6.5" ry="2.4" transform="rotate(-25 66 72)"/>
+              <ellipse cx="64" cy="84" rx="6.5" ry="2.4" transform="rotate(-5 64 84)"/>
+              <ellipse cx="67" cy="96" rx="6.2" ry="2.3" transform="rotate(20 67 96)"/>
+              <ellipse cx="74" cy="106" rx="5.8" ry="2.2" transform="rotate(40 74 106)"/>
+            </g>
+            <path d="M 202 56 C 216 70, 218 92, 202 104" stroke-width="0.8"/>
+            <g fill="currentColor" stroke="none" opacity="0.92">
+              <ellipse cx="210" cy="62" rx="6" ry="2.3" transform="rotate(40 210 62)"/>
+              <ellipse cx="214" cy="72" rx="6.5" ry="2.4" transform="rotate(25 214 72)"/>
+              <ellipse cx="216" cy="84" rx="6.5" ry="2.4" transform="rotate(5 216 84)"/>
+              <ellipse cx="213" cy="96" rx="6.2" ry="2.3" transform="rotate(-20 213 96)"/>
+              <ellipse cx="206" cy="106" rx="5.8" ry="2.2" transform="rotate(-40 206 106)"/>
+            </g>
+            <path d="M 130 50 Q 140 44 150 50" stroke-width="0.8"/>
+            <path d="M 130 50 Q 134 56 140 53 Q 146 56 150 50" stroke-width="0.6"/>
+            <g fill="currentColor" stroke="none">
+              <path d="M 92 96 L 102 88 L 110 92 L 118 84 L 124 88 L 130 78 L 138 86 L 148 80 L 158 86 L 166 82 L 174 90 L 184 88 L 188 96 Z" opacity="0.88"/>
+              <rect x="135.5" y="68" width="2.6" height="14"/>
+              <polygon points="134.5,68 136.8,62 139.1,68"/>
+            </g>
+            <line x1="84" y1="100" x2="196" y2="100" stroke-width="0.5" opacity="0.7"/>
+            <text x="140" y="124" text-anchor="middle" font-family="Jost" font-size="11" letter-spacing="4.2" fill="currentColor" stroke="none" style="font-weight:500;">SALUMIFICIO</text>
+            <text x="140" y="160" text-anchor="middle" font-family="Cormorant Garamond" font-weight="600" font-size="34" letter-spacing="2.2" fill="currentColor" stroke="none">GETRA SILA</text>
+            <line x1="78" y1="178" x2="100" y2="178" stroke-width="0.5"/>
+            <line x1="180" y1="178" x2="202" y2="178" stroke-width="0.5"/>
+            <text x="140" y="182" text-anchor="middle" font-family="Jost" font-size="8" letter-spacing="3.4" fill="currentColor" stroke="none" style="font-weight:500;">BOCCHIGLIERO</text>
+          </g>
+        </svg>
+      </a>
+    </div>
+    <div class="footer-col">
+      <h4>Contatti</h4>
+      <p>Via Roma, 12</p>
+      <p>87060 Bocchigliero (CS)<br/>Calabria — Italia</p>
+      <p style="margin-top: 12px;">+39 0983 845 000</p>
+      <p>info@getrasila.it</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigazione</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="chi-siamo.html">Chi siamo</a></li>
+        <li><a href="prodotti.html">Prodotti</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Informazioni</h4>
+      <ul>
+        <li><a href="chi-siamo.html">La storia</a></li>
+        <li><a href="prodotti.html">I salumi</a></li>
+        <li><a href="contatti.html">Visita la bottega</a></li>
+        <li><a href="contatti.html">Domande frequenti</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Newsletter</h4>
+      <p>Iscriviti per ricevere storie, novità e ricette dalla Sila.</p>
+      <form class="newsletter" onsubmit="event.preventDefault();">
+        <input type="email" placeholder="La tua email" />
+        <button type="submit" aria-label="Iscriviti">
+          <svg width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M0 7h20m0 0L15 2m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg>
+        </button>
+      </form>
+      <div class="socials">
+        <a href="#" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M8 14V8h2l.3-2.4H8V4c0-.7.2-1.2 1.2-1.2H10.4V.6C10.2.6 9.5.5 8.7.5c-1.7 0-2.9 1-2.9 3v2H3.6V8h2.2v6H8z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="1.5" y="1.5" width="11" height="11" rx="3"/><circle cx="7" cy="7" r="2.8"/><circle cx="10.4" cy="3.6" r="0.6" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="WhatsApp"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M7 0a7 7 0 00-6 10.5L0 14l3.6-1A7 7 0 107 0zm0 12.7a5.7 5.7 0 01-3-.8l-.2-.1-2.1.5.6-2-.2-.2A5.7 5.7 0 117 12.7z"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-stamp">
+    <svg viewBox="0 0 120 120">
+      <g fill="none" stroke="#c9a366" stroke-width="0.6" opacity="0.65">
+        <circle cx="60" cy="60" r="54"/>
+        <circle cx="60" cy="60" r="50"/>
+        <defs>
+          <path id="fstamp-t" d="M 14 60 A 46 46 0 0 1 106 60" fill="none"/>
+          <path id="fstamp-b" d="M 14 60 A 46 46 0 0 0 106 60" fill="none"/>
+        </defs>
+        <text font-family="Jost" font-size="6.6" letter-spacing="2.8" fill="#c9a366" stroke="none">
+          <textPath href="#fstamp-t" startOffset="50%" text-anchor="middle">GETRA SILA · BOCCHIGLIERO</textPath>
+        </text>
+        <text font-family="Jost" font-size="6" letter-spacing="2" fill="#c9a366" stroke="none">
+          <textPath href="#fstamp-b" startOffset="50%" text-anchor="middle">GENUINITÀ · TRADIZIONE</textPath>
+        </text>
+        <g fill="#c9a366" stroke="none">
+          <path d="M 40 64 L 50 52 L 56 56 L 60 50 L 64 56 L 70 52 L 80 64 L 80 70 L 40 70 Z" opacity="0.85"/>
+          <rect x="58.5" y="42" width="1.6" height="10"/>
+          <polygon points="57.5,42 59.3,38 61.1,42"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Salumificio Getra Sila s.n.c. — P. IVA 02xxx5xxxxx · Tutti i diritti riservati.</p>
+    <div class="legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Cookie Policy</a>
+      <a href="#">Note legali</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+/* ===== Prodotti page ===== */
+.pr-head {
+  padding: clamp(80px, 9vw, 130px) var(--gutter) 60px;
+  background: var(--bg-cream);
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--sepia-line);
+}
+.pr-head__inner { max-width: var(--maxw); margin: 0 auto; position: relative; z-index: 2; }
+.pr-head__title {
+  font-size: clamp(56px, 7vw, 104px);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.04;
+  margin: 8px 0 28px;
+  padding-bottom: 4px;
+}
+.pr-head .lead { max-width: 580px; }
+
+.pr-grid {
+  background: var(--bg-cream);
+  padding: 0 var(--gutter) clamp(80px, 8vw, 120px);
+}
+.pr-grid__inner { max-width: var(--maxw); margin: 0 auto; }
+
+.pr-section-head {
+  font-family: var(--ff-label);
+  font-size: 12px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--wine);
+  margin: 80px 0 36px;
+  display: flex; align-items: center; gap: 18px;
+}
+.pr-section-head::before,
+.pr-section-head::after {
+  content: ""; flex: 1; height: 1px; background: var(--sepia-line);
+}
+.pr-section-head span {
+  padding: 0 8px;
+  font-family: var(--ff-display);
+  font-style: italic;
+  font-size: 28px;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  color: var(--ink);
+}
+
+/* ----- Feature rows (2 large) ----- */
+.pr-feature-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+.pr-feature {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 40px;
+  align-items: stretch;
+  background: var(--bg-cream-soft);
+  border: 1px solid var(--sepia-line);
+  padding: 32px;
+  position: relative;
+}
+.pr-feature--flip { grid-template-columns: 1fr 1.05fr; }
+.pr-feature--flip .pr-feature__art { order: 2; }
+.pr-feature--flip .pr-feature__copy { order: 1; }
+.pr-feature__art {
+  position: relative;
+  min-height: 440px;
+}
+.pr-feature__art image-slot { width: 100%; height: 100%; min-height: 440px; }
+.seal.seal--lg {
+  position: absolute;
+  top: 18px; right: 18px;
+  width: 64px; height: 64px;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.25));
+}
+.pr-feature__copy {
+  padding: 12px 8px;
+  display: flex; flex-direction: column;
+  justify-content: center;
+}
+.pr-feature__copy h2 {
+  font-family: var(--ff-display);
+  font-size: clamp(34px, 3.4vw, 48px);
+  font-weight: 500;
+  line-height: 1.04;
+  margin: 8px 0 18px;
+}
+
+.pr-kicker {
+  font-family: var(--ff-label);
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--wine);
+  margin: 0;
+}
+.pr-desc {
+  font-size: 15px;
+  color: var(--ink-soft);
+  line-height: 1.65;
+  margin: 0 0 20px;
+}
+.pr-spec {
+  list-style: none;
+  margin: 0 0 18px;
+  padding: 16px 0;
+  border-top: 1px solid var(--sepia-line);
+  border-bottom: 1px solid var(--sepia-line);
+}
+.pr-spec li {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  padding: 7px 0;
+  font-size: 13px;
+}
+.pr-spec li span {
+  font-family: var(--ff-label);
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.pr-spec li em {
+  font-family: var(--ff-display);
+  font-style: italic;
+  color: var(--ink);
+  font-size: 15px;
+}
+.pr-use {
+  font-family: var(--ff-display);
+  font-size: 17px;
+  font-style: italic;
+  color: var(--ink-soft);
+  margin: 0;
+  line-height: 1.5;
+}
+.pr-use em { color: var(--wine); font-style: italic; }
+
+/* ----- Trio (soppressate) ----- */
+.pr-trio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.pr-card {
+  background: var(--bg-cream-soft);
+  border: 1px solid var(--sepia-line);
+  padding: 24px;
+  display: flex; flex-direction: column;
+  gap: 14px;
+  position: relative;
+}
+.pr-card .pr-kicker { margin-bottom: 4px; }
+.pr-card h3 {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.08;
+  margin: 0 0 8px;
+}
+.pr-card image-slot {
+  width: 100%;
+  height: 220px;
+  --slot-bg: var(--bg-cream-warm);
+  --slot-fg: var(--ink-mute);
+}
+.pr-card__desc {
+  font-size: 13px;
+  color: var(--ink-mute);
+  margin: 0;
+  line-height: 1.6;
+}
+.pr-card__foot {
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid var(--sepia-line);
+  display: flex; flex-direction: column; gap: 6px;
+}
+.pr-card__foot p {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 12px;
+  font-family: var(--ff-display);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--ink);
+  margin: 0;
+}
+.pr-card__foot p span {
+  font-family: var(--ff-label);
+  font-style: normal;
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+
+/* ----- Duo (salsicce) ----- */
+.pr-duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.pr-card--wide { padding: 0; }
+.pr-card__split {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  height: 100%;
+  align-items: stretch;
+}
+.pr-card__art image-slot {
+  width: 100%; height: 100%;
+  min-height: 320px;
+  --slot-bg: var(--bg-cream-warm);
+}
+.pr-card__split-copy {
+  padding: 28px;
+  display: flex; flex-direction: column;
+  gap: 12px;
+}
+.pr-card__split-copy h3 { font-size: 26px; line-height: 1.08; font-weight: 500; margin: 4px 0 6px; }
+
+/* ----- Quad (tagli nobili) ----- */
+.pr-quad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+.pr-card--tall image-slot { height: 200px; }
+.pr-card--tall .pr-card__desc { font-size: 12.5px; }
+.pr-card--tall h3 { font-size: 22px; }
+
+/* ===== Strip (reused) ===== */
+.strip {
+  background: var(--bg-cream);
+  padding: 36px var(--gutter);
+  border-top: 1px solid var(--sepia-line);
+  border-bottom: 1px solid var(--sepia-line);
+}
+.strip__inner {
+  max-width: var(--maxw); margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 36px;
+}
+.strip__item {
+  display: flex; align-items: center; gap: 18px;
+  color: var(--ink-soft);
+}
+.strip__item svg { width: 48px; height: 48px; color: var(--sepia); flex: 0 0 48px; }
+.strip__item p {
+  margin: 0;
+  font-family: var(--ff-label);
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+/* ===== CTA band (reused) ===== */
+.cta-band {
+  background: linear-gradient(180deg, #6b1f23 0%, #4f1418 100%);
+  color: #f3dfb8;
+  padding: clamp(60px, 7vw, 110px) var(--gutter);
+  position: relative;
+  overflow: hidden;
+}
+.cta-band__art { position: absolute; top: 0; height: 100%; opacity: 0.55; }
+.cta-band__art--left { left: 0; width: 28%; }
+.cta-band__art--right { right: 0; width: 28%; }
+.cta-band__inner { max-width: 760px; margin: 0 auto; text-align: center; position: relative; z-index: 2; }
+.cta-band h2 { color: #f6e8c5; margin: 16px 0 22px; font-weight: 500; }
+.cta-band h2 em { color: #f4d27c; font-style: italic; }
+.cta-band__lead { color: rgba(243, 223, 184, 0.85); font-size: 16px; max-width: 540px; margin: 0 auto 32px; line-height: 1.6; }
+.cta-band__ctas { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+/* ===== Responsive ===== */
+@media (max-width: 880px) {
+  .pr-feature, .pr-feature--flip {
+    grid-template-columns: 1fr; gap: 24px;
+  }
+  .pr-feature--flip .pr-feature__art,
+  .pr-feature--flip .pr-feature__copy { order: unset; }
+  .pr-feature__art, .pr-feature__art image-slot { min-height: 320px; }
+  .pr-trio, .pr-duo { grid-template-columns: 1fr; }
+  .pr-quad { grid-template-columns: 1fr 1fr; }
+  .pr-card__split { grid-template-columns: 1fr; }
+  .strip__inner { grid-template-columns: 1fr 1fr; }
+}
+</style>
+
+</body>
+</html>

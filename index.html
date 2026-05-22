@@ -1,0 +1,1255 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Salumificio Getra Sila — Bocchigliero, Calabria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&family=Allura&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="image-slot.js"></script>
+  <script src="menu.js" defer></script>
+</head>
+<body data-screen-label="01 Home">
+
+<template id="__bundler_thumbnail" data-bg-color="#f1e7d2">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#f1e7d2"/>
+    <g fill="none" stroke="#6b1f23" stroke-width="2">
+      <!-- Wreath -->
+      <path d="M 460 320 C 400 380, 400 480, 460 540"/>
+      <path d="M 740 320 C 800 380, 800 480, 740 540"/>
+      <g fill="#6b1f23" stroke="none">
+        <ellipse cx="430" cy="350" rx="30" ry="11" transform="rotate(-40 430 350)"/>
+        <ellipse cx="415" cy="400" rx="32" ry="12" transform="rotate(-20 415 400)"/>
+        <ellipse cx="412" cy="450" rx="32" ry="12" transform="rotate(0 412 450)"/>
+        <ellipse cx="422" cy="500" rx="31" ry="11" transform="rotate(20 422 500)"/>
+        <ellipse cx="770" cy="350" rx="30" ry="11" transform="rotate(40 770 350)"/>
+        <ellipse cx="785" cy="400" rx="32" ry="12" transform="rotate(20 785 400)"/>
+        <ellipse cx="788" cy="450" rx="32" ry="12" transform="rotate(0 788 450)"/>
+        <ellipse cx="778" cy="500" rx="31" ry="11" transform="rotate(-20 778 500)"/>
+      </g>
+      <!-- bow -->
+      <path d="M 560 280 Q 600 250, 640 280"/>
+      <!-- Village silhouette -->
+      <g fill="#6b1f23" stroke="none">
+        <path d="M 480 470 L 520 430 L 560 450 L 600 410 L 640 440 L 680 420 L 720 460 Z"/>
+        <rect x="595" y="380" width="10" height="40"/>
+        <polygon points="590,380 600,360 610,380"/>
+      </g>
+    </g>
+    <!-- DAL 2002 -->
+    <text x="600" y="260" text-anchor="middle" font-family="Jost, sans-serif" font-size="20" letter-spacing="6" fill="#6b1f23" font-weight="500">DAL 2002</text>
+    <!-- SALUMIFICIO -->
+    <text x="600" y="610" text-anchor="middle" font-family="Jost, sans-serif" font-size="26" letter-spacing="9" fill="#6b1f23" font-weight="500">SALUMIFICIO</text>
+    <!-- GETRA SILA -->
+    <text x="600" y="690" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="84" font-weight="600" letter-spacing="6" fill="#6b1f23">GETRA SILA</text>
+    <!-- BOCCHIGLIERO -->
+    <text x="600" y="740" text-anchor="middle" font-family="Jost, sans-serif" font-size="16" letter-spacing="7" fill="#6b1f23" font-weight="500">BOCCHIGLIERO</text>
+  </svg>
+</template>
+
+<!-- ========== TOPBAR ========== -->
+<header class="topbar topbar--cream">
+  <div class="topbar__inner">
+    <a href="index.html" class="brand" aria-label="Salumificio Getra Sila — Home">
+      <!-- logo SVG -->
+      <svg viewBox="0 0 280 188" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g fill="none" stroke="currentColor" style="color: var(--wine);">
+          <!-- DAL 2002 -->
+          <line x1="78" y1="11" x2="108" y2="11" stroke-width="0.6"/>
+          <line x1="172" y1="11" x2="202" y2="11" stroke-width="0.6"/>
+          <text x="140" y="15" text-anchor="middle" font-family="Jost" font-size="9.5" letter-spacing="3.2" fill="currentColor" stroke="none" style="font-weight:500;">DAL 2002</text>
+
+          <!-- Wreath: left branch -->
+          <path d="M 78 56 C 64 70, 62 92, 78 104" stroke-width="0.8"/>
+          <g fill="currentColor" stroke="none" opacity="0.92">
+            <ellipse cx="70" cy="62" rx="6" ry="2.3" transform="rotate(-40 70 62)"/>
+            <ellipse cx="66" cy="72" rx="6.5" ry="2.4" transform="rotate(-25 66 72)"/>
+            <ellipse cx="64" cy="84" rx="6.5" ry="2.4" transform="rotate(-5 64 84)"/>
+            <ellipse cx="67" cy="96" rx="6.2" ry="2.3" transform="rotate(20 67 96)"/>
+            <ellipse cx="74" cy="106" rx="5.8" ry="2.2" transform="rotate(40 74 106)"/>
+          </g>
+          <!-- Wreath: right branch -->
+          <path d="M 202 56 C 216 70, 218 92, 202 104" stroke-width="0.8"/>
+          <g fill="currentColor" stroke="none" opacity="0.92">
+            <ellipse cx="210" cy="62" rx="6" ry="2.3" transform="rotate(40 210 62)"/>
+            <ellipse cx="214" cy="72" rx="6.5" ry="2.4" transform="rotate(25 214 72)"/>
+            <ellipse cx="216" cy="84" rx="6.5" ry="2.4" transform="rotate(5 216 84)"/>
+            <ellipse cx="213" cy="96" rx="6.2" ry="2.3" transform="rotate(-20 213 96)"/>
+            <ellipse cx="206" cy="106" rx="5.8" ry="2.2" transform="rotate(-40 206 106)"/>
+          </g>
+          <!-- Top bow -->
+          <path d="M 130 50 Q 140 44 150 50" stroke-width="0.8"/>
+          <path d="M 130 50 Q 134 56 140 53 Q 146 56 150 50" stroke-width="0.6"/>
+
+          <!-- Hilltop village silhouette -->
+          <g fill="currentColor" stroke="none">
+            <path d="M 92 96 L 102 88 L 110 92 L 118 84 L 124 88 L 130 78 L 138 86 L 148 80 L 158 86 L 166 82 L 174 90 L 184 88 L 188 96 Z" opacity="0.88"/>
+            <!-- church / tower -->
+            <rect x="135.5" y="68" width="2.6" height="14"/>
+            <polygon points="134.5,68 136.8,62 139.1,68"/>
+            <rect x="136.2" y="63.5" width="0.4" height="2"/>
+            <!-- small windows in silhouette -->
+            <rect x="106" y="92" width="1" height="1.6" fill="var(--bg-cream)"/>
+            <rect x="120" y="89" width="1" height="1.6" fill="var(--bg-cream)"/>
+            <rect x="156" y="90" width="1" height="1.6" fill="var(--bg-cream)"/>
+          </g>
+          <!-- ground line -->
+          <line x1="84" y1="100" x2="196" y2="100" stroke-width="0.5" opacity="0.7"/>
+
+          <!-- Salumificio label -->
+          <text x="140" y="124" text-anchor="middle" font-family="Jost" font-size="11" letter-spacing="4.2" fill="currentColor" stroke="none" style="font-weight:500;">SALUMIFICIO</text>
+
+          <!-- GETRA SILA wordmark -->
+          <text x="140" y="160" text-anchor="middle" font-family="Cormorant Garamond" font-weight="600" font-size="34" letter-spacing="2.2" fill="currentColor" stroke="none">GETRA SILA</text>
+
+          <!-- Bocchigliero -->
+          <line x1="78" y1="178" x2="100" y2="178" stroke-width="0.5"/>
+          <line x1="180" y1="178" x2="202" y2="178" stroke-width="0.5"/>
+          <text x="140" y="182" text-anchor="middle" font-family="Jost" font-size="8" letter-spacing="3.4" fill="currentColor" stroke="none" style="font-weight:500;">BOCCHIGLIERO</text>
+        </g>
+      </svg>
+    </a>
+
+    <nav class="nav">
+      <a href="index.html" class="nav-link nav-link--active">Home</a>
+      <a href="chi-siamo.html" class="nav-link">Chi Siamo</a>
+      <a href="prodotti.html" class="nav-link">Prodotti</a>
+      <a href="contatti.html" class="nav-link">Contatti</a>
+    </nav>
+
+    <div class="topbar__right">
+      <span class="lang">IT
+        <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1"/></svg>
+      </span>
+      <a href="contatti.html" class="topbar__cta">Scrivici</a>
+    </div>
+
+    <button class="burger" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span class="burger__lines"><span></span><span></span><span></span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu di navigazione" aria-hidden="true">
+  <button class="mobile-menu__close" type="button" aria-label="Chiudi menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+  </button>
+  <div class="mobile-menu__inner">
+    <p class="mobile-menu__eyebrow">Salumificio · Getra Sila</p>
+    <nav class="mobile-menu__nav" aria-label="Menu principale">
+      <a href="index.html">Home</a>
+      <a href="chi-siamo.html">Chi Siamo</a>
+      <a href="prodotti.html">Prodotti</a>
+      <a href="contatti.html">Contatti</a>
+    </nav>
+    <hr class="mobile-menu__divider" />
+    <a href="contatti.html" class="mobile-menu__cta">Scrivici</a>
+    <p class="mobile-menu__addr">Bocchigliero (CS)<br/>Calabria — Italia</p>
+    <div class="mobile-menu__socials">
+      <a href="#" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M8 14V8h2l.3-2.4H8V4c0-.7.2-1.2 1.2-1.2H10.4V.6C10.2.6 9.5.5 8.7.5c-1.7 0-2.9 1-2.9 3v2H3.6V8h2.2v6H8z"/></svg></a>
+      <a href="#" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="1.5" y="1.5" width="11" height="11" rx="3"/><circle cx="7" cy="7" r="2.8"/><circle cx="10.4" cy="3.6" r="0.6" fill="currentColor"/></svg></a>
+      <a href="#" aria-label="WhatsApp"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M7 0a7 7 0 00-6 10.5L0 14l3.6-1A7 7 0 107 0zm0 12.7a5.7 5.7 0 01-3-.8l-.2-.1-2.1.5.6-2-.2-.2A5.7 5.7 0 117 12.7zm3.3-4.3l-.8-.4c-.2-.1-.4-.2-.5 0-.2.2-.6.7-.7.8 0 .1-.1.1-.3 0-.6-.3-1.1-.6-1.5-1.3-.1-.2 0-.3.1-.4 0-.1.2-.3.3-.4 0-.1 0-.2.1-.3 0-.1 0-.2 0-.3l-.5-1.2c-.2-.3-.3-.3-.4-.3h-.4c-.1 0-.3 0-.5.2-.2.2-.7.7-.7 1.6 0 1 .7 1.9.8 2 .1.2 1.4 2.2 3.4 3 1.6.6 1.9.5 2.3.5.3 0 1-.4 1.2-.8.1-.4.1-.8.1-.8 0-.1-.2-.1-.4-.2z"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<main>
+
+<!-- ========== HERO ========== -->
+<section class="hero" data-screen-label="Hero">
+  <div class="hero__inner">
+    <div class="hero__copy">
+      <p class="eyebrow">Lenta·mente, secondo tradizione</p>
+      <h1 class="hero__title">
+        L'eccellenza<br/>
+        nasce dal <em>tempo.</em>
+      </h1>
+      <div class="hero__signature">
+        <svg viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M 6 32 C 16 12, 28 14, 36 28 C 40 38, 30 44, 26 36 C 24 30, 36 22, 50 26 C 64 30, 58 44, 68 36 C 78 28, 88 24, 102 30 C 116 36, 110 18, 126 22 C 138 26, 132 40, 144 36 C 156 32, 158 22, 172 26 C 186 30, 196 22, 206 30" stroke="var(--ink-soft)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+          <path d="M 158 40 C 172 36, 188 40, 200 34" stroke="var(--ink-soft)" stroke-width="0.9" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <p class="lead hero__lead">
+        Dal 2002 custodiamo l'arte salumiera di Bocchigliero, nel cuore
+        della Sila Greca. Materie prime selezionate, gesti antichi e il
+        microclima unico delle nostre montagne, calabresi fino in fondo.
+      </p>
+      <div class="hero__ctas">
+        <a href="prodotti.html" class="btn">Scopri i salumi</a>
+        <a href="chi-siamo.html" class="link-arrow">
+          La nostra storia
+          <svg viewBox="0 0 24 12" fill="none"><path d="M0 6h22m0 0L17 1m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__art">
+      <image-slot id="hero-meat" shape="rect" placeholder="Composizione salumi · capocollo, soppressata, 'nduja"></image-slot>
+      <!-- Photo caption with hairline -->
+      <div class="hero__tag">
+        <span class="hero__tag-line"></span>
+        <div>
+          <p class="eyebrow eyebrow--mute" style="margin:0;">Capocollo</p>
+          <p class="eyebrow eyebrow--mute" style="margin:0;">di Bocchigliero</p>
+          <p class="eyebrow eyebrow--mute" style="margin:2px 0 0; color: var(--ink-faint);">90 giorni</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Corner stamp -->
+  <div class="corner-stamp corner-stamp--bl">
+    <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" stroke="var(--wine)" stroke-width="0.7" opacity="0.55">
+        <circle cx="60" cy="60" r="56"/>
+        <circle cx="60" cy="60" r="52"/>
+        <!-- Curved upper text -->
+        <defs>
+          <path id="stamp-top" d="M 14 60 A 46 46 0 0 1 106 60" fill="none"/>
+          <path id="stamp-bot" d="M 14 60 A 46 46 0 0 0 106 60" fill="none"/>
+        </defs>
+        <text font-family="Jost" font-size="7.2" letter-spacing="3" fill="var(--wine)" stroke="none">
+          <textPath href="#stamp-top" startOffset="50%" text-anchor="middle">SALUMIFICIO · GETRA SILA</textPath>
+        </text>
+        <text font-family="Jost" font-size="6.4" letter-spacing="2.4" fill="var(--wine)" stroke="none">
+          <textPath href="#stamp-bot" startOffset="50%" text-anchor="middle">BOCCHIGLIERO · CALABRIA</textPath>
+        </text>
+        <!-- tiny dots either side -->
+        <circle cx="14" cy="60" r="1.2" fill="var(--wine)" stroke="none"/>
+        <circle cx="106" cy="60" r="1.2" fill="var(--wine)" stroke="none"/>
+        <!-- center icon -->
+        <g fill="var(--wine)" stroke="none">
+          <path d="M 40 64 L 50 52 L 56 56 L 60 50 L 64 56 L 70 52 L 80 64 L 80 70 L 40 70 Z" opacity="0.85"/>
+          <rect x="58.5" y="42" width="1.6" height="10"/>
+          <polygon points="57.5,42 59.3,38 61.1,42"/>
+        </g>
+        <text x="60" y="84" text-anchor="middle" font-family="Cormorant Garamond" font-style="italic" font-size="8" fill="var(--wine)" stroke="none">est. MMII</text>
+      </g>
+    </svg>
+  </div>
+
+  <!-- Landscape line -->
+  <svg class="landscape-line" viewBox="0 0 1440 88" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="height: 88px;">
+    <g fill="none" stroke="var(--sepia)" stroke-width="0.7">
+      <path d="M0 70 Q 80 60 140 64 T 280 56 T 420 60 T 560 50 T 720 55 T 880 48 T 1040 56 T 1200 50 T 1440 60"/>
+      <!-- village clusters -->
+      <g transform="translate(220, 50)">
+        <rect x="-2" y="6" width="3" height="6"/>
+        <rect x="2" y="4" width="3" height="8"/>
+        <rect x="6" y="6" width="3" height="6"/>
+        <polygon points="-2,6 -0.5,3 1,6"/>
+        <polygon points="2,4 3.5,1 5,4"/>
+      </g>
+      <g transform="translate(680, 46)">
+        <rect x="-3" y="4" width="3" height="8"/>
+        <rect x="1" y="2" width="3" height="10"/>
+        <rect x="5" y="5" width="3" height="7"/>
+        <rect x="9" y="3" width="2" height="9"/>
+        <polygon points="1,2 2.5,-1 4,2"/>
+      </g>
+      <g transform="translate(1100, 50)">
+        <rect x="-3" y="3" width="3" height="9"/>
+        <rect x="1" y="5" width="3" height="7"/>
+        <polygon points="-3,3 -1.5,0 0,3"/>
+      </g>
+      <!-- foreground line -->
+      <path d="M0 84 Q 200 80 400 82 T 800 80 T 1200 84 T 1440 82" stroke-width="0.5" opacity="0.8"/>
+    </g>
+  </svg>
+
+  <!-- bottom center chevron -->
+  <div class="hero__scroll">
+    <svg width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M1 1l10 10L21 1" stroke="var(--wine)" stroke-width="1"/></svg>
+  </div>
+</section>
+
+<!-- ========== METHOD / DARK BAND ========== -->
+<section class="method" data-screen-label="Il nostro metodo">
+  <div class="method__inner">
+    <div class="method__head">
+      <div class="diamond-divider" style="max-width: 360px; margin: 0 auto;">
+        <svg width="14" height="14" viewBox="0 0 14 14"><path d="M7 1l6 6-6 6-6-6z" stroke="currentColor" stroke-width="0.8" fill="none"/></svg>
+        <span class="eyebrow eyebrow--gold">Il nostro metodo</span>
+        <svg width="14" height="14" viewBox="0 0 14 14"><path d="M7 1l6 6-6 6-6-6z" stroke="currentColor" stroke-width="0.8" fill="none"/></svg>
+      </div>
+    </div>
+
+    <div class="method__grid">
+      <div class="pillar">
+        <div class="pillar__icon">
+          <!-- pig icon -->
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M8 26 C 8 18, 16 14, 24 14 C 32 14, 40 18, 40 26 C 40 34, 32 38, 24 38 C 16 38, 8 34, 8 26 Z"/>
+            <circle cx="32" cy="22" r="1" fill="currentColor"/>
+            <ellipse cx="38" cy="26" rx="3" ry="2.4"/>
+            <line x1="37" y1="25" x2="39" y2="25"/>
+            <line x1="37" y1="27" x2="39" y2="27"/>
+            <path d="M 14 16 L 12 11 L 17 14"/>
+            <path d="M 22 14 L 20 9 L 25 13"/>
+            <line x1="14" y1="38" x2="14" y2="42"/>
+            <line x1="34" y1="38" x2="34" y2="42"/>
+          </svg>
+        </div>
+        <div>
+          <p class="pillar__num">1.</p>
+          <h3 class="pillar__title">Selezione</h3>
+          <p class="pillar__text">
+            Solo carni italiane di suini accuratamente selezionati,
+            filiera controllata, niente compromessi.
+          </p>
+          <p class="pillar__tag">✓ Filiera controllata</p>
+        </div>
+      </div>
+
+      <div class="pillar">
+        <div class="pillar__icon">
+          <!-- salt cone -->
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M24 8 L 36 38 L 12 38 Z"/>
+            <line x1="18" y1="26" x2="30" y2="26"/>
+            <circle cx="20" cy="32" r="0.8" fill="currentColor"/>
+            <circle cx="24" cy="34" r="0.8" fill="currentColor"/>
+            <circle cx="28" cy="32" r="0.8" fill="currentColor"/>
+          </svg>
+        </div>
+        <div>
+          <p class="pillar__num">2.</p>
+          <h3 class="pillar__title">Salatura</h3>
+          <p class="pillar__text">
+            Salatura a mano con sale marino. Un gesto antico,
+            ricette di famiglia tramandate dal 2002.
+          </p>
+          <p class="pillar__tag">✓ Ricette di famiglia</p>
+        </div>
+      </div>
+
+      <div class="pillar">
+        <div class="pillar__icon">
+          <!-- clock -->
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
+            <circle cx="24" cy="24" r="16"/>
+            <path d="M24 14 V 24 L 31 28"/>
+            <line x1="24" y1="6" x2="24" y2="9"/>
+            <line x1="42" y1="24" x2="39" y2="24"/>
+            <line x1="24" y1="42" x2="24" y2="39"/>
+            <line x1="6" y1="24" x2="9" y2="24"/>
+          </svg>
+        </div>
+        <div>
+          <p class="pillar__num">3.</p>
+          <h3 class="pillar__title">Stagionatura</h3>
+          <p class="pillar__text">
+            Il microclima della Sila — aria di mare e di montagna —
+            trasforma ogni pezzo in eccellenza naturale.
+          </p>
+          <p class="pillar__tag">✓ Tempo, aria, silenzio</p>
+        </div>
+      </div>
+
+      <!-- Territory card -->
+      <div class="territory">
+        <p class="eyebrow eyebrow--gold">Orgoglio di Bocchigliero</p>
+        <p class="territory__text">
+          Nel cuore della <em>Sila Greca</em>, dove l'incontro tra
+          aria marina e montana dà vita a una stagionatura naturale
+          unica.
+        </p>
+        <div class="territory__map">
+          <svg viewBox="0 0 240 200" xmlns="http://www.w3.org/2000/svg">
+            <!-- Calabria silhouette (stylized) -->
+            <g fill="none" stroke="var(--gold-soft)" stroke-width="1">
+              <path d="M 60 12 C 80 8, 110 14, 132 28 C 148 38, 156 56, 158 76 C 160 90, 152 102, 154 116 C 156 130, 168 138, 174 152 C 180 168, 178 184, 168 194 L 158 194 C 154 184, 148 178, 138 174 C 124 168, 116 158, 110 146 C 104 132, 100 122, 92 116 C 80 108, 68 102, 58 90 C 48 78, 44 64, 46 48 C 48 32, 52 20, 60 12 Z" opacity="0.7"/>
+              <!-- inner contours -->
+              <path d="M 84 48 C 96 52, 104 60, 108 72 C 110 82, 104 90, 96 92" opacity="0.5" stroke-dasharray="2 3"/>
+            </g>
+            <!-- locations -->
+            <g>
+              <circle cx="118" cy="76" r="3.5" fill="var(--wine)"/>
+              <circle cx="118" cy="76" r="6" fill="none" stroke="var(--wine)" stroke-width="0.6"/>
+              <text x="124" y="74" font-family="Jost" font-size="9" letter-spacing="2" fill="var(--gold-soft)" font-weight="500">BOCCHIGLIERO</text>
+              <text x="124" y="84" font-family="Jost" font-size="7.5" letter-spacing="2" fill="rgba(201,163,102,0.7)">SILA GRECA</text>
+            </g>
+            <g>
+              <circle cx="92" cy="118" r="1.8" fill="var(--gold-soft)"/>
+              <text x="74" y="132" font-family="Jost" font-size="7" letter-spacing="2" fill="rgba(201,163,102,0.7)">COSENZA</text>
+            </g>
+            <g>
+              <circle cx="156" cy="174" r="1.6" fill="var(--gold-soft)"/>
+              <text x="148" y="188" font-family="Jost" font-size="7" letter-spacing="2" fill="rgba(201,163,102,0.7)">CATANZARO</text>
+            </g>
+            <!-- stamp -->
+            <g transform="translate(196,150)">
+              <circle r="22" fill="none" stroke="var(--gold-soft)" stroke-width="0.6"/>
+              <circle r="19" fill="none" stroke="var(--gold-soft)" stroke-width="0.5"/>
+              <text font-family="Jost" font-size="4.8" letter-spacing="1.6" fill="var(--gold-soft)" text-anchor="middle">
+                <textPath href="#cstamp" startOffset="50%">BOCCHIGLIERO · CALABRIA</textPath>
+              </text>
+              <defs><path id="cstamp" d="M -16 0 A 16 16 0 0 1 16 0" fill="none"/></defs>
+              <text y="2" text-anchor="middle" font-family="Cormorant Garamond" font-style="italic" font-size="7" fill="var(--gold-soft)">Sila</text>
+              <text y="11" text-anchor="middle" font-family="Jost" font-size="4.4" letter-spacing="1.4" fill="var(--gold-soft)">ITALIA</text>
+            </g>
+          </svg>
+        </div>
+        <p class="territory__addr">Bocchigliero (CS) — Calabria, Italia</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== VALUES STRIP (light, sepia engravings) ========== -->
+<section class="strip">
+  <div class="strip__inner">
+    <div class="strip__item">
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1">
+        <circle cx="24" cy="24" r="16"/>
+        <circle cx="24" cy="24" r="11"/>
+        <text x="24" y="22" text-anchor="middle" font-family="Cormorant Garamond" font-size="9" font-weight="600" fill="currentColor" stroke="none">+25</text>
+        <text x="24" y="30" text-anchor="middle" font-family="Jost" font-size="4.5" letter-spacing="1" fill="currentColor" stroke="none">ANNI</text>
+      </svg>
+      <p>Oltre 25 anni<br/>di tradizione</p>
+    </div>
+    <div class="strip__item">
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1">
+        <path d="M16 14 Q 24 4, 32 14 Q 36 22, 30 30 Q 24 38, 18 30 Q 12 22, 16 14 Z"/>
+        <path d="M24 12 V 30" />
+        <path d="M 20 18 Q 24 22, 28 18" />
+      </svg>
+      <p>Senza glutine<br/>e senza lattosio</p>
+    </div>
+    <div class="strip__item">
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1">
+        <path d="M24 8 C 14 16, 12 28, 24 40 C 36 28, 34 16, 24 8 Z"/>
+        <path d="M24 14 V 36"/>
+        <path d="M24 20 L 19 23"/>
+        <path d="M24 26 L 30 22"/>
+        <path d="M24 32 L 19 29"/>
+      </svg>
+      <p>Senza coloranti<br/>né conservanti</p>
+    </div>
+    <div class="strip__item">
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1">
+        <path d="M8 36 L 24 14 L 40 36 Z"/>
+        <path d="M14 36 V 30 H 20 V 36"/>
+        <path d="M28 30 H 34 V 36"/>
+        <line x1="24" y1="14" x2="24" y2="10"/>
+      </svg>
+      <p>Stagionatura naturale<br/>nelle cantine di Sila</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== STORIA PREVIEW ========== -->
+<section class="storia-preview" data-screen-label="Storia preview">
+  <div class="storia-preview__inner">
+    <div class="storia-preview__art">
+      <image-slot id="storia-preview" shape="rect" placeholder="Lino Parrilla in laboratorio · gesto artigiano"></image-slot>
+      <div class="storia-preview__caption">
+        <p class="eyebrow eyebrow--mute">Lino Parrilla</p>
+        <p class="eyebrow eyebrow--mute" style="color:var(--ink-faint)">Fondatore</p>
+      </div>
+    </div>
+    <div class="storia-preview__copy">
+      <p class="eyebrow">La nostra storia</p>
+      <h2>
+        Un sapere che<br/>
+        attraversa il <em>tempo.</em>
+      </h2>
+      <p class="lead">
+        Tutto ebbe inizio dal sogno di Lino Parrilla, profondamente
+        legato a Bocchigliero e alla tradizione norcina della Sila Greca.
+        Nel 2002 nasce <em>Getra</em> — <em>Ge</em>nuinità e <em>Tra</em>dizione —
+        due valori che guidano ogni nostro gesto.
+      </p>
+      <blockquote class="quote">
+        <p>"Il tempo non si ferma.<br/>Noi impariamo ad aspettarlo."</p>
+        <p class="quote__sig script">Lino Parrilla</p>
+        <p class="quote__role">— Fondatore —</p>
+      </blockquote>
+
+      <div class="storia-stats">
+        <div class="stat">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.1">
+            <circle cx="10" cy="12" r="3.5"/><circle cx="22" cy="12" r="3.5"/><circle cx="16" cy="20" r="3.5"/>
+            <path d="M5 26 c 1 -3, 4 -4, 5 -4 M22 22 c 1 0, 4 1, 5 4 M11 28 c 1 -2, 9 -2, 10 0"/>
+          </svg>
+          <p class="stat__num">2</p>
+          <p class="stat__label">Generazioni</p>
+          <p class="stat__cap">La famiglia Parrilla,<br/>oggi e domani.</p>
+        </div>
+        <div class="stat">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.1">
+            <path d="M4 24 L 10 14 L 14 18 L 20 10 L 24 16 L 28 24 Z"/>
+            <rect x="14.5" y="6" width="1.2" height="6"/>
+            <polygon points="13.8,6 15.1,3 16.4,6"/>
+          </svg>
+          <p class="stat__num script">Sila</p>
+          <p class="stat__label">Il nostro territorio</p>
+          <p class="stat__cap">Dove l'aria di mare<br/>incontra la montagna.</p>
+        </div>
+        <div class="stat">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.1">
+            <circle cx="16" cy="16" r="11"/>
+            <path d="M16 9 V 16 L 21 19"/>
+          </svg>
+          <p class="stat__num">90<span style="font-size:0.5em; vertical-align: super;">+</span></p>
+          <p class="stat__label">Giorni di stagionatura</p>
+          <p class="stat__cap">Il tempo necessario<br/>per profondità e aroma.</p>
+        </div>
+      </div>
+
+      <a href="chi-siamo.html" class="link-arrow" style="margin-top: 32px;">
+        Scopri la nostra storia
+        <svg viewBox="0 0 24 12" fill="none"><path d="M0 6h22m0 0L17 1m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- side botanical -->
+  <svg class="botanical" style="top: 80px; left: 0; width: 180px;" viewBox="0 0 180 320" fill="none">
+    <g stroke="var(--sepia)" stroke-width="0.6">
+      <path d="M 30 10 Q 60 80, 50 160 Q 40 240, 70 310"/>
+      <g fill="var(--sepia)" stroke="none" opacity="0.6">
+        <ellipse cx="46" cy="60" rx="14" ry="5" transform="rotate(35 46 60)"/>
+        <ellipse cx="58" cy="100" rx="14" ry="5" transform="rotate(-15 58 100)"/>
+        <ellipse cx="42" cy="140" rx="14" ry="5" transform="rotate(40 42 140)"/>
+        <ellipse cx="56" cy="180" rx="14" ry="5" transform="rotate(-20 56 180)"/>
+        <ellipse cx="44" cy="220" rx="14" ry="5" transform="rotate(35 44 220)"/>
+        <ellipse cx="60" cy="260" rx="14" ry="5" transform="rotate(-10 60 260)"/>
+      </g>
+    </g>
+  </svg>
+</section>
+
+<!-- ========== I SALUMI PREVIEW ========== -->
+<section class="salumi-preview" data-screen-label="Salumi preview">
+  <div class="salumi-preview__inner">
+    <div class="section-head">
+      <p class="eyebrow">La nostra selezione</p>
+      <h2>I salumi</h2>
+      <p class="lead">
+        Ogni salume nasce da gesti antichi, materie prime eccellenti
+        e un tempo che non ha mai smesso di fare la differenza.
+      </p>
+      <div class="diamond-divider" style="width: 100%; max-width: 240px; margin-top: 12px;">
+        <svg width="14" height="14" viewBox="0 0 14 14"><path d="M7 1l6 6-6 6-6-6z" stroke="currentColor" stroke-width="0.8" fill="none"/></svg>
+      </div>
+    </div>
+
+    <div class="salumi-grid">
+      <article class="prod-card card--ornate">
+        <div class="prod-card__head">
+          <p class="prod-card__kicker">Il decano</p>
+          <span class="seal seal--dop" aria-label="Tipico calabrese">
+            <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" fill="#a4222e"/><circle cx="20" cy="20" r="14" fill="#f1c14a"/><text x="20" y="18" text-anchor="middle" font-family="Jost" font-size="6" font-weight="600" fill="#a4222e">SILA</text><text x="20" y="26" text-anchor="middle" font-family="Jost" font-size="4" fill="#a4222e">CALABRIA</text></svg>
+          </span>
+        </div>
+        <h3 class="prod-card__title">Capocollo<br/>di Bocchigliero</h3>
+        <image-slot id="prod-capocollo" shape="rect" placeholder="Capocollo intero e affettato"></image-slot>
+        <div class="prod-card__foot">
+          <p class="prod-card__meta">Stagionatura 90+ giorni</p>
+          <p class="prod-card__var">Pepe nero · Pepe rosso</p>
+        </div>
+      </article>
+
+      <article class="prod-card card--ornate">
+        <div class="prod-card__head">
+          <p class="prod-card__kicker">Il simbolo</p>
+          <span class="seal seal--dop">
+            <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" fill="#a4222e"/><circle cx="20" cy="20" r="14" fill="#f1c14a"/><text x="20" y="18" text-anchor="middle" font-family="Jost" font-size="6" font-weight="600" fill="#a4222e">SILA</text><text x="20" y="26" text-anchor="middle" font-family="Jost" font-size="4" fill="#a4222e">CALABRIA</text></svg>
+          </span>
+        </div>
+        <h3 class="prod-card__title">'Nduja<br/>Getra Sila</h3>
+        <image-slot id="prod-nduja" shape="rect" placeholder="'Nduja morbida e spalmabile"></image-slot>
+        <div class="prod-card__foot">
+          <p class="prod-card__meta">Stagionatura tradizionale</p>
+          <p class="prod-card__var">Peperoncino calabrese</p>
+        </div>
+      </article>
+
+      <article class="prod-card card--ornate">
+        <div class="prod-card__head">
+          <p class="prod-card__kicker">Il sapore di festa</p>
+          <span class="seal seal--region">
+            <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" fill="#1e6e3c"/><circle cx="20" cy="20" r="14" fill="#fff8dd"/><text x="20" y="18" text-anchor="middle" font-family="Jost" font-size="5.5" font-weight="600" fill="#1e6e3c">TIPICO</text><text x="20" y="26" text-anchor="middle" font-family="Jost" font-size="4" fill="#1e6e3c">BOCCHIGLIERO</text></svg>
+          </span>
+        </div>
+        <h3 class="prod-card__title">Soppressata<br/>casereccia</h3>
+        <image-slot id="prod-soppressata" shape="rect" placeholder="Soppressata pressata, ricetta di famiglia"></image-slot>
+        <div class="prod-card__foot">
+          <p class="prod-card__meta">Stagionatura 45–50 giorni</p>
+          <p class="prod-card__var">Dolce · Piccante · Bombata</p>
+        </div>
+      </article>
+
+      <article class="prod-card card--ornate">
+        <div class="prod-card__head">
+          <p class="prod-card__kicker">La festa contadina</p>
+          <span class="seal seal--region">
+            <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" fill="#1e6e3c"/><circle cx="20" cy="20" r="14" fill="#fff8dd"/><text x="20" y="18" text-anchor="middle" font-family="Jost" font-size="5.5" font-weight="600" fill="#1e6e3c">TIPICO</text><text x="20" y="26" text-anchor="middle" font-family="Jost" font-size="4" fill="#1e6e3c">BOCCHIGLIERO</text></svg>
+          </span>
+        </div>
+        <h3 class="prod-card__title">Salsiccia<br/>"a ferro di cavallo"</h3>
+        <image-slot id="prod-salsiccia" shape="rect" placeholder="Salsiccia legata a mano"></image-slot>
+        <div class="prod-card__foot">
+          <p class="prod-card__meta">Budello naturale</p>
+          <p class="prod-card__var">Dolce · Piccante</p>
+        </div>
+      </article>
+    </div>
+
+    <div style="text-align: center; margin-top: 56px;">
+      <a href="prodotti.html" class="btn btn--ghost">Tutti i salumi</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== EDITORIAL ROW (3 cards) ========== -->
+<section class="editorial" data-screen-label="Editorial">
+  <div class="editorial__inner">
+    <article class="ed-card">
+      <div class="ed-card__copy">
+        <p class="eyebrow">Abbinamenti</p>
+        <h3>I nostri salumi,<br/>i tuoi momenti.</h3>
+        <p>Scopri i migliori abbinamenti per esaltare ogni fetta — dal pane di grano duro ai vini rossi calabresi.</p>
+        <a href="prodotti.html" class="link-arrow">Leggi di più
+          <svg viewBox="0 0 24 12" fill="none"><path d="M0 6h22m0 0L17 1m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg>
+        </a>
+      </div>
+      <image-slot id="ed-pairing" shape="rect" placeholder="Tagliere con vino"></image-slot>
+    </article>
+    <article class="ed-card">
+      <div class="ed-card__copy">
+        <p class="eyebrow">Rituali di gusto</p>
+        <h3>L'arte di servire<br/>con semplicità.</h3>
+        <p>Piccoli gesti e consigli per portare in tavola l'eccellenza, secondo la tradizione di Bocchigliero.</p>
+        <a href="chi-siamo.html" class="link-arrow">Leggi di più
+          <svg viewBox="0 0 24 12" fill="none"><path d="M0 6h22m0 0L17 1m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg>
+        </a>
+      </div>
+      <image-slot id="ed-serving" shape="rect" placeholder="Mani che affettano salume"></image-slot>
+    </article>
+    <article class="ed-card">
+      <div class="ed-card__copy">
+        <p class="eyebrow">Storie di bottega</p>
+        <h3>Persone, gesti<br/>e tradizione.</h3>
+        <p>Incontra chi ogni giorno custodisce l'arte salumiera nel cuore della Sila Greca.</p>
+        <a href="chi-siamo.html" class="link-arrow">Leggi di più
+          <svg viewBox="0 0 24 12" fill="none"><path d="M0 6h22m0 0L17 1m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg>
+        </a>
+      </div>
+      <image-slot id="ed-people" shape="rect" placeholder="Norcino al lavoro"></image-slot>
+    </article>
+  </div>
+</section>
+
+<!-- ========== CTA BAND ========== -->
+<section class="cta-band" data-screen-label="CTA">
+  <!-- left engraving -->
+  <svg class="cta-band__art cta-band__art--left" viewBox="0 0 320 220" fill="none">
+    <g stroke="#c9a366" stroke-width="0.7" opacity="0.55">
+      <path d="M40 180 L 40 100 L 60 80 L 80 100 L 80 180 Z"/>
+      <path d="M 50 110 H 70 M 50 130 H 70 M 50 150 H 70"/>
+      <path d="M 90 180 L 100 130 L 130 130 L 140 180 Z"/>
+      <rect x="110" y="140" width="10" height="14"/>
+      <path d="M150 180 L 160 150 L 190 150 L 200 180 Z"/>
+      <path d="M210 180 L 210 110 L 250 110 L 250 180 Z"/>
+      <path d="M 215 120 H 245 M 215 140 H 245 M 215 160 H 245"/>
+      <!-- old truck -->
+      <g transform="translate(100, 190)">
+        <rect x="0" y="-14" width="32" height="14"/>
+        <path d="M 32 -14 L 38 -8 L 56 -8 L 56 0 L 0 0 Z"/>
+        <circle cx="10" cy="0" r="4"/>
+        <circle cx="46" cy="0" r="4"/>
+      </g>
+    </g>
+  </svg>
+
+  <svg class="cta-band__art cta-band__art--right" viewBox="0 0 320 220" fill="none">
+    <g stroke="#c9a366" stroke-width="0.7" opacity="0.55">
+      <!-- distant village -->
+      <path d="M30 180 L 60 140 L 90 150 L 120 130 L 150 145 L 180 125 L 210 140 L 240 130 L 270 145 L 300 135 L 300 180 Z"/>
+      <rect x="100" y="135" width="6" height="14"/>
+      <polygon points="100,135 103,128 106,135"/>
+      <rect x="180" y="130" width="6" height="14"/>
+      <polygon points="180,130 183,123 186,130"/>
+      <rect x="240" y="135" width="6" height="14"/>
+      <polygon points="240,135 243,128 246,135"/>
+      <!-- hills -->
+      <path d="M 0 200 Q 80 170 160 190 T 320 180"/>
+      <path d="M 0 210 Q 80 180 160 200 T 320 195" opacity="0.6"/>
+    </g>
+  </svg>
+
+  <div class="cta-band__inner">
+    <p class="eyebrow eyebrow--gold">Vieni a trovarci</p>
+    <h2>
+      Respira la tradizione.<br/>
+      <em>Porta a casa la Sila.</em>
+    </h2>
+    <p class="cta-band__lead">
+      Ti aspettiamo a Bocchigliero, nel cuore della Sila Greca,
+      oppure scrivici per ordinare i nostri salumi e farli arrivare
+      direttamente a casa tua.
+    </p>
+    <div class="cta-band__ctas">
+      <a href="contatti.html" class="btn btn--cream">Visita la bottega</a>
+      <a href="prodotti.html" class="btn">Scopri i salumi</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <a href="index.html" class="brand">
+        <svg viewBox="0 0 280 188" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g fill="none" stroke="currentColor" style="color:#ead7af;">
+            <line x1="78" y1="11" x2="108" y2="11" stroke-width="0.6"/>
+            <line x1="172" y1="11" x2="202" y2="11" stroke-width="0.6"/>
+            <text x="140" y="15" text-anchor="middle" font-family="Jost" font-size="9.5" letter-spacing="3.2" fill="currentColor" stroke="none" style="font-weight:500;">DAL 2002</text>
+            <path d="M 78 56 C 64 70, 62 92, 78 104" stroke-width="0.8"/>
+            <g fill="currentColor" stroke="none" opacity="0.92">
+              <ellipse cx="70" cy="62" rx="6" ry="2.3" transform="rotate(-40 70 62)"/>
+              <ellipse cx="66" cy="72" rx="6.5" ry="2.4" transform="rotate(-25 66 72)"/>
+              <ellipse cx="64" cy="84" rx="6.5" ry="2.4" transform="rotate(-5 64 84)"/>
+              <ellipse cx="67" cy="96" rx="6.2" ry="2.3" transform="rotate(20 67 96)"/>
+              <ellipse cx="74" cy="106" rx="5.8" ry="2.2" transform="rotate(40 74 106)"/>
+            </g>
+            <path d="M 202 56 C 216 70, 218 92, 202 104" stroke-width="0.8"/>
+            <g fill="currentColor" stroke="none" opacity="0.92">
+              <ellipse cx="210" cy="62" rx="6" ry="2.3" transform="rotate(40 210 62)"/>
+              <ellipse cx="214" cy="72" rx="6.5" ry="2.4" transform="rotate(25 214 72)"/>
+              <ellipse cx="216" cy="84" rx="6.5" ry="2.4" transform="rotate(5 216 84)"/>
+              <ellipse cx="213" cy="96" rx="6.2" ry="2.3" transform="rotate(-20 213 96)"/>
+              <ellipse cx="206" cy="106" rx="5.8" ry="2.2" transform="rotate(-40 206 106)"/>
+            </g>
+            <path d="M 130 50 Q 140 44 150 50" stroke-width="0.8"/>
+            <path d="M 130 50 Q 134 56 140 53 Q 146 56 150 50" stroke-width="0.6"/>
+            <g fill="currentColor" stroke="none">
+              <path d="M 92 96 L 102 88 L 110 92 L 118 84 L 124 88 L 130 78 L 138 86 L 148 80 L 158 86 L 166 82 L 174 90 L 184 88 L 188 96 Z" opacity="0.88"/>
+              <rect x="135.5" y="68" width="2.6" height="14"/>
+              <polygon points="134.5,68 136.8,62 139.1,68"/>
+            </g>
+            <line x1="84" y1="100" x2="196" y2="100" stroke-width="0.5" opacity="0.7"/>
+            <text x="140" y="124" text-anchor="middle" font-family="Jost" font-size="11" letter-spacing="4.2" fill="currentColor" stroke="none" style="font-weight:500;">SALUMIFICIO</text>
+            <text x="140" y="160" text-anchor="middle" font-family="Cormorant Garamond" font-weight="600" font-size="34" letter-spacing="2.2" fill="currentColor" stroke="none">GETRA SILA</text>
+            <line x1="78" y1="178" x2="100" y2="178" stroke-width="0.5"/>
+            <line x1="180" y1="178" x2="202" y2="178" stroke-width="0.5"/>
+            <text x="140" y="182" text-anchor="middle" font-family="Jost" font-size="8" letter-spacing="3.4" fill="currentColor" stroke="none" style="font-weight:500;">BOCCHIGLIERO</text>
+          </g>
+        </svg>
+      </a>
+    </div>
+    <div class="footer-col">
+      <h4>Contatti</h4>
+      <p>Via Roma, 12</p>
+      <p>87060 Bocchigliero (CS)<br/>Calabria — Italia</p>
+      <p style="margin-top: 12px;">+39 0983 845 000</p>
+      <p>info@getrasila.it</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigazione</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="chi-siamo.html">Chi siamo</a></li>
+        <li><a href="prodotti.html">Prodotti</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Informazioni</h4>
+      <ul>
+        <li><a href="chi-siamo.html">La storia</a></li>
+        <li><a href="prodotti.html">I salumi</a></li>
+        <li><a href="contatti.html">Visita la bottega</a></li>
+        <li><a href="contatti.html">Domande frequenti</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Newsletter</h4>
+      <p>Iscriviti per ricevere storie, novità e ricette dalla Sila.</p>
+      <form class="newsletter" onsubmit="event.preventDefault();">
+        <input type="email" placeholder="La tua email" />
+        <button type="submit" aria-label="Iscriviti">
+          <svg width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M0 7h20m0 0L15 2m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg>
+        </button>
+      </form>
+      <div class="socials">
+        <a href="#" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M8 14V8h2l.3-2.4H8V4c0-.7.2-1.2 1.2-1.2H10.4V.6C10.2.6 9.5.5 8.7.5c-1.7 0-2.9 1-2.9 3v2H3.6V8h2.2v6H8z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="1.5" y="1.5" width="11" height="11" rx="3"/><circle cx="7" cy="7" r="2.8"/><circle cx="10.4" cy="3.6" r="0.6" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="WhatsApp"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M7 0a7 7 0 00-6 10.5L0 14l3.6-1A7 7 0 107 0zm0 12.7a5.7 5.7 0 01-3-.8l-.2-.1-2.1.5.6-2-.2-.2A5.7 5.7 0 117 12.7zm3.3-4.3l-.8-.4c-.2-.1-.4-.2-.5 0-.2.2-.6.7-.7.8 0 .1-.1.1-.3 0-.6-.3-1.1-.6-1.5-1.3-.1-.2 0-.3.1-.4 0-.1.2-.3.3-.4 0-.1 0-.2.1-.3 0-.1 0-.2 0-.3l-.5-1.2c-.2-.3-.3-.3-.4-.3h-.4c-.1 0-.3 0-.5.2-.2.2-.7.7-.7 1.6 0 1 .7 1.9.8 2 .1.2 1.4 2.2 3.4 3 1.6.6 1.9.5 2.3.5.3 0 1-.4 1.2-.8.1-.4.1-.8.1-.8 0-.1-.2-.1-.4-.2z"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer stamp center -->
+  <div class="footer-stamp">
+    <svg viewBox="0 0 120 120">
+      <g fill="none" stroke="#c9a366" stroke-width="0.6" opacity="0.65">
+        <circle cx="60" cy="60" r="54"/>
+        <circle cx="60" cy="60" r="50"/>
+        <defs>
+          <path id="fstamp-t" d="M 14 60 A 46 46 0 0 1 106 60" fill="none"/>
+          <path id="fstamp-b" d="M 14 60 A 46 46 0 0 0 106 60" fill="none"/>
+        </defs>
+        <text font-family="Jost" font-size="6.6" letter-spacing="2.8" fill="#c9a366" stroke="none">
+          <textPath href="#fstamp-t" startOffset="50%" text-anchor="middle">GETRA SILA · BOCCHIGLIERO</textPath>
+        </text>
+        <text font-family="Jost" font-size="6" letter-spacing="2" fill="#c9a366" stroke="none">
+          <textPath href="#fstamp-b" startOffset="50%" text-anchor="middle">GENUINITÀ · TRADIZIONE</textPath>
+        </text>
+        <g fill="#c9a366" stroke="none">
+          <path d="M 40 64 L 50 52 L 56 56 L 60 50 L 64 56 L 70 52 L 80 64 L 80 70 L 40 70 Z" opacity="0.85"/>
+          <rect x="58.5" y="42" width="1.6" height="10"/>
+          <polygon points="57.5,42 59.3,38 61.1,42"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Salumificio Getra Sila s.n.c. — P. IVA 02xxx5xxxxx · Tutti i diritti riservati.</p>
+    <div class="legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Cookie Policy</a>
+      <a href="#">Note legali</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== PAGE-SCOPED CSS ========== -->
+<style>
+  /* ===== Hero ===== */
+  .hero {
+    position: relative;
+    min-height: calc(100vh - var(--topbar-h));
+    background: linear-gradient(135deg, var(--bg-cream) 0%, var(--bg-cream-warm) 55%, #1a1108 55%, #110a05 100%);
+    overflow: hidden;
+    padding-bottom: 110px;
+  }
+  .hero__inner {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: clamp(40px, 6vw, 80px) var(--gutter) 0;
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: clamp(40px, 5vw, 80px);
+    align-items: center;
+    min-height: calc(100vh - var(--topbar-h) - 110px);
+  }
+  .hero__copy { max-width: 540px; }
+  .hero__title {
+    font-family: var(--ff-display);
+    font-size: var(--fs-display-xl);
+    font-weight: 500;
+    line-height: 0.96;
+    letter-spacing: -0.015em;
+    margin-top: 26px;
+    color: var(--ink);
+  }
+  .hero__title em { font-weight: 500; color: var(--wine); font-style: italic; }
+  .hero__signature { margin: 36px 0 28px; }
+  .hero__signature svg { width: 200px; height: 36px; display: block; }
+  .hero__lead { max-width: 460px; }
+  .hero__ctas { display: flex; gap: 28px; align-items: center; margin-top: 36px; flex-wrap: wrap; }
+
+  .hero__art {
+    position: relative;
+    height: 70vh;
+    min-height: 540px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .hero__art image-slot {
+    width: 100%; height: 100%;
+    --slot-bg: linear-gradient(160deg, #2a1a10, #110a05);
+  }
+  .hero__tag {
+    position: absolute;
+    right: 14px;
+    top: 46%;
+    transform: translateY(-50%);
+    display: flex; align-items: center; gap: 14px;
+    color: var(--gold-soft);
+    pointer-events: none;
+  }
+  .hero__tag-line {
+    width: 56px; height: 1px;
+    background: var(--gold-soft);
+    display: inline-block;
+    flex-shrink: 0;
+  }
+  .hero__tag .eyebrow {
+    color: #d6b87a;
+    white-space: nowrap;
+  }
+
+  .hero__scroll {
+    position: absolute;
+    bottom: 22px; left: 50%; transform: translateX(-50%);
+    z-index: 4;
+    color: var(--wine);
+  }
+
+  /* ===== Method (dark band) ===== */
+  .method {
+    background: linear-gradient(180deg, #2a1a10 0%, #1c1108 100%);
+    color: #e9d4a8;
+    padding: 80px var(--gutter);
+    position: relative;
+    overflow: hidden;
+  }
+  .method::before {
+    content: "";
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse at 30% 0%, rgba(196, 152, 80, 0.06), transparent 60%),
+      radial-gradient(ellipse at 80% 100%, rgba(120, 30, 30, 0.18), transparent 60%);
+    pointer-events: none;
+  }
+  .method__inner { max-width: var(--maxw); margin: 0 auto; position: relative; }
+  .method__head { margin-bottom: 48px; }
+  .method__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 1.4fr;
+    gap: 40px;
+  }
+  .pillar {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+  }
+  .pillar__icon {
+    flex: 0 0 56px;
+    color: #c9a366;
+  }
+  .pillar__icon svg { width: 56px; height: 56px; }
+  .pillar__num {
+    font-family: var(--ff-display);
+    font-style: italic;
+    font-size: 18px;
+    color: #c9a366;
+    margin: 0 0 4px;
+  }
+  .pillar__title {
+    font-family: var(--ff-label);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: #f4d27c;
+    margin-bottom: 14px;
+  }
+  .pillar__text {
+    font-size: 14px;
+    color: #d6c39e;
+    line-height: 1.6;
+    margin: 0 0 16px;
+  }
+  .pillar__tag {
+    font-family: var(--ff-label);
+    font-size: 11px;
+    color: #c9a366;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .territory {
+    border-left: 1px solid rgba(201, 163, 102, 0.3);
+    padding-left: 36px;
+  }
+  .territory__text {
+    font-family: var(--ff-display);
+    font-size: 22px;
+    line-height: 1.35;
+    color: #ead7af;
+    margin: 14px 0 20px;
+  }
+  .territory__text em { color: #f4d27c; }
+  .territory__map { margin: 16px 0; max-width: 280px; }
+  .territory__addr {
+    font-family: var(--ff-label);
+    font-size: 11px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: #c9a366;
+    margin: 0;
+  }
+
+  /* ===== Strip ===== */
+  .strip {
+    background: var(--bg-cream);
+    padding: 36px var(--gutter);
+    border-top: 1px solid var(--sepia-line);
+    border-bottom: 1px solid var(--sepia-line);
+  }
+  .strip__inner {
+    max-width: var(--maxw); margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 36px;
+  }
+  .strip__item {
+    display: flex; align-items: center; gap: 18px;
+    color: var(--ink-soft);
+  }
+  .strip__item svg { width: 48px; height: 48px; color: var(--sepia); flex: 0 0 48px; }
+  .strip__item p {
+    margin: 0;
+    font-family: var(--ff-label);
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    line-height: 1.5;
+  }
+
+  /* ===== Storia preview ===== */
+  .storia-preview {
+    padding: clamp(80px, 9vw, 140px) var(--gutter);
+    background: var(--bg-cream);
+    position: relative;
+    overflow: hidden;
+  }
+  .storia-preview__inner {
+    max-width: var(--maxw); margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.05fr;
+    gap: clamp(40px, 5vw, 96px);
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+  .storia-preview__art {
+    position: relative;
+    height: 640px;
+    background: #1c1108;
+  }
+  .storia-preview__art image-slot { width: 100%; height: 100%; }
+  .storia-preview__caption {
+    position: absolute;
+    bottom: 24px; left: 24px;
+    color: #ead7af;
+    background: rgba(20, 12, 6, 0.75);
+    padding: 14px 18px;
+    border-left: 2px solid var(--gold-soft);
+  }
+  .storia-preview__caption .eyebrow { color: #d6b87a; }
+  .storia-preview__copy h2 { margin: 16px 0 24px; }
+  .storia-preview__copy h2 em { color: var(--wine); }
+  .quote {
+    margin: 36px 0 16px;
+    padding: 0;
+    border: 0;
+    color: var(--ink-soft);
+  }
+  .quote p:first-child {
+    font-family: var(--ff-display);
+    font-style: italic;
+    font-size: 22px;
+    line-height: 1.5;
+    margin: 0 0 12px;
+  }
+  .quote__sig {
+    font-size: 36px;
+    line-height: 1;
+    margin: 18px 0 4px;
+    color: var(--ink);
+  }
+  .quote__role {
+    font-family: var(--ff-label);
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin: 0;
+  }
+
+  .storia-stats {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    border-top: 1px solid var(--sepia-line);
+    padding-top: 32px;
+  }
+  .stat { text-align: center; }
+  .stat svg { width: 32px; height: 32px; color: var(--sepia); margin-bottom: 8px; }
+  .stat__num {
+    font-family: var(--ff-display);
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0 0 6px;
+    color: var(--ink);
+  }
+  .stat__num.script { font-size: 56px; line-height: 0.9; color: var(--wine); }
+  .stat__label {
+    font-family: var(--ff-label);
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin: 0 0 8px;
+  }
+  .stat__cap {
+    font-size: 13px;
+    color: var(--ink-mute);
+    margin: 0;
+    line-height: 1.45;
+  }
+
+  /* ===== Salumi preview ===== */
+  .salumi-preview {
+    padding: clamp(80px, 9vw, 140px) var(--gutter);
+    background: var(--bg-cream);
+    position: relative;
+    border-top: 1px solid var(--sepia-line);
+  }
+  .salumi-preview__inner { max-width: var(--maxw); margin: 0 auto; position: relative; z-index: 2; }
+  .salumi-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .prod-card {
+    background: var(--bg-cream-soft);
+    border: 1px solid rgba(106, 80, 48, 0.3);
+    padding: 22px 22px 18px;
+    position: relative;
+    display: flex; flex-direction: column;
+    gap: 14px;
+  }
+  .prod-card.card--ornate::before,
+  .prod-card.card--ornate::after { width: 14px; height: 14px; }
+  .prod-card__head {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    border-bottom: 1px solid var(--sepia-line);
+    padding-bottom: 12px;
+  }
+  .prod-card__kicker {
+    font-family: var(--ff-label);
+    font-size: 10px;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--wine);
+    margin: 0;
+  }
+  .seal { display: inline-block; width: 38px; height: 38px; flex-shrink: 0; }
+  .seal svg { width: 100%; height: 100%; }
+  .prod-card__title {
+    font-family: var(--ff-display);
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.08;
+    margin: 0;
+  }
+  .prod-card image-slot {
+    flex: 1;
+    min-height: 220px;
+    background: var(--bg-cream-warm);
+    --slot-bg: var(--bg-cream-warm);
+    --slot-fg: var(--ink-mute);
+  }
+  .prod-card__foot {
+    border-top: 1px solid var(--sepia-line);
+    padding-top: 12px;
+    display: flex; flex-direction: column; gap: 4px;
+  }
+  .prod-card__meta {
+    font-family: var(--ff-label);
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin: 0;
+  }
+  .prod-card__var {
+    font-family: var(--ff-display);
+    font-style: italic;
+    font-size: 14px;
+    color: var(--wine);
+    margin: 0;
+  }
+
+  /* ===== Editorial ===== */
+  .editorial {
+    padding: 0 var(--gutter) clamp(80px, 8vw, 120px);
+    background: var(--bg-cream);
+  }
+  .editorial__inner {
+    max-width: var(--maxw); margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .ed-card {
+    background: var(--bg-cream-soft);
+    border: 1px solid var(--sepia-line);
+    padding: 28px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 20px;
+    align-items: center;
+    min-height: 220px;
+  }
+  .ed-card image-slot {
+    width: 100%; height: 100%;
+    min-height: 180px;
+    --slot-bg: var(--bg-cream-warm);
+  }
+  .ed-card__copy h3 {
+    font-size: 26px;
+    margin: 8px 0 12px;
+    line-height: 1.05;
+  }
+  .ed-card__copy p { font-size: 13px; color: var(--ink-mute); margin: 0 0 18px; line-height: 1.55; }
+
+  /* ===== CTA band ===== */
+  .cta-band {
+    background:
+      linear-gradient(180deg, #6b1f23 0%, #4f1418 100%);
+    color: #f3dfb8;
+    padding: clamp(60px, 7vw, 110px) var(--gutter);
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-band__art { position: absolute; top: 0; height: 100%; opacity: 0.55; }
+  .cta-band__art--left { left: 0; width: 28%; }
+  .cta-band__art--right { right: 0; width: 28%; }
+  .cta-band__inner {
+    max-width: 760px; margin: 0 auto;
+    text-align: center; position: relative; z-index: 2;
+  }
+  .cta-band h2 {
+    color: #f6e8c5;
+    margin: 16px 0 22px;
+    font-weight: 500;
+  }
+  .cta-band h2 em { color: #f4d27c; }
+  .cta-band__lead { color: rgba(243, 223, 184, 0.85); font-size: 16px; max-width: 540px; margin: 0 auto 32px; line-height: 1.6; }
+  .cta-band__lead strong { color: #f4d27c; font-weight: 500; }
+  .cta-band__ctas { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 880px) {
+    .hero__inner { grid-template-columns: 1fr; padding-top: 30px; min-height: auto; }
+    .hero__art { height: 60vh; min-height: 400px; }
+    .hero { background: linear-gradient(180deg, var(--bg-cream) 0%, var(--bg-cream-warm) 55%, var(--bg-cream-warm) 100%); }
+    .method__grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+    .territory { grid-column: 1 / -1; border-left: 0; padding-left: 0; border-top: 1px solid rgba(201,163,102,0.3); padding-top: 28px; }
+    .strip__inner { grid-template-columns: 1fr 1fr; }
+    .storia-preview__inner { grid-template-columns: 1fr; }
+    .storia-preview__art { height: 400px; }
+    .salumi-grid { grid-template-columns: 1fr 1fr; }
+    .editorial__inner { grid-template-columns: 1fr; }
+  }
+</style>
+
+</body>
+</html>
