@@ -169,8 +169,8 @@
       </h1>
       <div class="hero__signature">
         <svg viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M 6 32 C 16 12, 28 14, 36 28 C 40 38, 30 44, 26 36 C 24 30, 36 22, 50 26 C 64 30, 58 44, 68 36 C 78 28, 88 24, 102 30 C 116 36, 110 18, 126 22 C 138 26, 132 40, 144 36 C 156 32, 158 22, 172 26 C 186 30, 196 22, 206 30" stroke="var(--ink-soft)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-          <path d="M 158 40 C 172 36, 188 40, 200 34" stroke="var(--ink-soft)" stroke-width="0.9" fill="none" stroke-linecap="round"/>
+          <path d="M 6 32 C 16 12, 28 14, 36 28 C 40 38, 30 44, 26 36 C 24 30, 36 22, 50 26 C 64 30, 58 44, 68 36 C 78 28, 88 24, 102 30 C 116 36, 110 18, 126 22 C 138 26, 132 40, 144 36 C 156 32, 158 22, 172 26 C 186 30, 196 22, 206 30" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+          <path d="M 158 40 C 172 36, 188 40, 200 34" stroke="currentColor" stroke-width="0.9" fill="none" stroke-linecap="round"/>
         </svg>
       </div>
       <p class="lead hero__lead">
@@ -184,19 +184,6 @@
           La nostra storia
           <svg viewBox="0 0 24 12" fill="none"><path d="M0 6h22m0 0L17 1m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg>
         </a>
-      </div>
-    </div>
-
-    <div class="hero__art">
-      <image-slot id="hero-meat" shape="rect" placeholder="Composizione salumi · capocollo, soppressata, 'nduja"></image-slot>
-      <!-- Photo caption with hairline -->
-      <div class="hero__tag">
-        <span class="hero__tag-line"></span>
-        <div>
-          <p class="eyebrow eyebrow--mute" style="margin:0;">Capocollo</p>
-          <p class="eyebrow eyebrow--mute" style="margin:0;">di Bocchigliero</p>
-          <p class="eyebrow eyebrow--mute" style="margin:2px 0 0; color: var(--ink-faint);">90 giorni</p>
-        </div>
       </div>
     </div>
   </div>
@@ -232,38 +219,9 @@
     </svg>
   </div>
 
-  <!-- Landscape line -->
-  <svg class="landscape-line" viewBox="0 0 1440 88" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="height: 88px;">
-    <g fill="none" stroke="var(--sepia)" stroke-width="0.7">
-      <path d="M0 70 Q 80 60 140 64 T 280 56 T 420 60 T 560 50 T 720 55 T 880 48 T 1040 56 T 1200 50 T 1440 60"/>
-      <!-- village clusters -->
-      <g transform="translate(220, 50)">
-        <rect x="-2" y="6" width="3" height="6"/>
-        <rect x="2" y="4" width="3" height="8"/>
-        <rect x="6" y="6" width="3" height="6"/>
-        <polygon points="-2,6 -0.5,3 1,6"/>
-        <polygon points="2,4 3.5,1 5,4"/>
-      </g>
-      <g transform="translate(680, 46)">
-        <rect x="-3" y="4" width="3" height="8"/>
-        <rect x="1" y="2" width="3" height="10"/>
-        <rect x="5" y="5" width="3" height="7"/>
-        <rect x="9" y="3" width="2" height="9"/>
-        <polygon points="1,2 2.5,-1 4,2"/>
-      </g>
-      <g transform="translate(1100, 50)">
-        <rect x="-3" y="3" width="3" height="9"/>
-        <rect x="1" y="5" width="3" height="7"/>
-        <polygon points="-3,3 -1.5,0 0,3"/>
-      </g>
-      <!-- foreground line -->
-      <path d="M0 84 Q 200 80 400 82 T 800 80 T 1200 84 T 1440 82" stroke-width="0.5" opacity="0.8"/>
-    </g>
-  </svg>
-
   <!-- bottom center chevron -->
   <div class="hero__scroll">
-    <svg width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M1 1l10 10L21 1" stroke="var(--wine)" stroke-width="1"/></svg>
+    <svg width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M1 1l10 10L21 1" stroke="currentColor" stroke-width="1"/></svg>
   </div>
 </section>
 
@@ -446,7 +404,7 @@
 <section class="storia-preview" data-screen-label="Storia preview">
   <div class="storia-preview__inner">
     <div class="storia-preview__art">
-      <image-slot id="storia-preview" shape="rect" placeholder="Lino Parrilla in laboratorio · gesto artigiano"></image-slot>
+      <image-slot id="storia-preview" shape="rect" src="img/prodotti/norcinaro.png" placeholder="Lino Parrilla in laboratorio · gesto artigiano"></image-slot>
       <div class="storia-preview__caption">
         <p class="eyebrow eyebrow--mute">Lino Parrilla</p>
         <p class="eyebrow eyebrow--mute" style="color:var(--ink-faint)">Fondatore</p>
@@ -548,7 +506,7 @@
           </span>
         </div>
         <h3 class="prod-card__title">Capocollo<br/>di Bocchigliero</h3>
-        <image-slot id="prod-capocollo" shape="rect" placeholder="Capocollo intero e affettato"></image-slot>
+        <image-slot id="prod-capocollo" shape="rect" src="img/prodotti/capocollo.png" placeholder="Capocollo intero e affettato"></image-slot>
         <div class="prod-card__foot">
           <p class="prod-card__meta">Stagionatura 90+ giorni</p>
           <p class="prod-card__var">Pepe nero · Pepe rosso</p>
@@ -563,7 +521,7 @@
           </span>
         </div>
         <h3 class="prod-card__title">'Nduja<br/>Getra Sila</h3>
-        <image-slot id="prod-nduja" shape="rect" placeholder="'Nduja morbida e spalmabile"></image-slot>
+        <image-slot id="prod-nduja" shape="rect" src="img/prodotti/nduja.png" placeholder="'Nduja morbida e spalmabile"></image-slot>
         <div class="prod-card__foot">
           <p class="prod-card__meta">Stagionatura tradizionale</p>
           <p class="prod-card__var">Peperoncino calabrese</p>
@@ -578,7 +536,7 @@
           </span>
         </div>
         <h3 class="prod-card__title">Soppressata<br/>casereccia</h3>
-        <image-slot id="prod-soppressata" shape="rect" placeholder="Soppressata pressata, ricetta di famiglia"></image-slot>
+        <image-slot id="prod-soppressata" shape="rect" src="img/prodotti/sopressata-caserecca.png" placeholder="Soppressata pressata, ricetta di famiglia"></image-slot>
         <div class="prod-card__foot">
           <p class="prod-card__meta">Stagionatura 45–50 giorni</p>
           <p class="prod-card__var">Dolce · Piccante · Bombata</p>
@@ -593,7 +551,7 @@
           </span>
         </div>
         <h3 class="prod-card__title">Salsiccia<br/>"a ferro di cavallo"</h3>
-        <image-slot id="prod-salsiccia" shape="rect" placeholder="Salsiccia legata a mano"></image-slot>
+        <image-slot id="prod-salsiccia" shape="rect" src="img/prodotti/salsicce-cavallo.png" placeholder="Salsiccia legata a mano"></image-slot>
         <div class="prod-card__foot">
           <p class="prod-card__meta">Budello naturale</p>
           <p class="prod-card__var">Dolce · Piccante</p>
@@ -619,7 +577,7 @@
           <svg viewBox="0 0 24 12" fill="none"><path d="M0 6h22m0 0L17 1m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg>
         </a>
       </div>
-      <image-slot id="ed-pairing" shape="rect" placeholder="Tagliere con vino"></image-slot>
+      <image-slot id="ed-pairing" shape="rect" src="img/prodotti/tagliere.png" placeholder="Tagliere con vino"></image-slot>
     </article>
     <article class="ed-card">
       <div class="ed-card__copy">
@@ -630,7 +588,7 @@
           <svg viewBox="0 0 24 12" fill="none"><path d="M0 6h22m0 0L17 1m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg>
         </a>
       </div>
-      <image-slot id="ed-serving" shape="rect" placeholder="Mani che affettano salume"></image-slot>
+      <image-slot id="ed-serving" shape="rect" src="img/prodotti/affetato-mano.png" placeholder="Mani che affettano salume"></image-slot>
     </article>
     <article class="ed-card">
       <div class="ed-card__copy">
@@ -641,7 +599,7 @@
           <svg viewBox="0 0 24 12" fill="none"><path d="M0 6h22m0 0L17 1m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg>
         </a>
       </div>
-      <image-slot id="ed-people" shape="rect" placeholder="Norcino al lavoro"></image-slot>
+      <image-slot id="ed-people" shape="rect" src="img/prodotti/norcinaro.png" placeholder="Norcino al lavoro"></image-slot>
     </article>
   </div>
 </section>
@@ -830,21 +788,37 @@
   .hero {
     position: relative;
     min-height: calc(100vh - var(--topbar-h));
-    background: linear-gradient(135deg, var(--bg-cream) 0%, var(--bg-cream-warm) 55%, #1a1108 55%, #110a05 100%);
+    background: url('img/prodotti/hero.png') center right / cover no-repeat;
     overflow: hidden;
     padding-bottom: 110px;
   }
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.78) 0%,
+      rgba(0, 0, 0, 0.65) 38%,
+      rgba(0, 0, 0, 0.42) 55%,
+      rgba(0, 0, 0, 0.18) 70%,
+      transparent 88%
+    );
+    pointer-events: none;
+    z-index: 1;
+  }
   .hero__inner {
+    position: relative;
+    z-index: 2;
     max-width: var(--maxw);
     margin: 0 auto;
     padding: clamp(40px, 6vw, 80px) var(--gutter) 0;
-    display: grid;
-    grid-template-columns: 1.05fr 1fr;
-    gap: clamp(40px, 5vw, 80px);
+    display: flex;
     align-items: center;
     min-height: calc(100vh - var(--topbar-h) - 110px);
   }
-  .hero__copy { max-width: 540px; }
+  .hero__copy { max-width: min(540px, 52vw); }
+  .hero .eyebrow { color: rgba(241, 231, 210, 0.72); }
   .hero__title {
     font-family: var(--ff-display);
     font-size: var(--fs-display-xl);
@@ -852,49 +826,21 @@
     line-height: 0.96;
     letter-spacing: -0.015em;
     margin-top: 26px;
-    color: var(--ink);
+    color: #f5eedb;
   }
-  .hero__title em { font-weight: 500; color: var(--wine); font-style: italic; }
-  .hero__signature { margin: 36px 0 28px; }
+  .hero__title em { font-weight: 500; color: #f4d27c; font-style: italic; }
+  .hero__signature { margin: 36px 0 28px; color: rgba(245, 238, 219, 0.45); }
   .hero__signature svg { width: 200px; height: 36px; display: block; }
-  .hero__lead { max-width: 460px; }
+  .hero__lead { max-width: 460px; color: rgba(245, 238, 219, 0.88); }
+  .hero .link-arrow { color: #f5eedb; border-color: rgba(245, 238, 219, 0.55); }
+  .hero .link-arrow:hover { color: #fff; border-color: #fff; }
   .hero__ctas { display: flex; gap: 28px; align-items: center; margin-top: 36px; flex-wrap: wrap; }
-
-  .hero__art {
-    position: relative;
-    height: 70vh;
-    min-height: 540px;
-    display: flex; align-items: center; justify-content: center;
-  }
-  .hero__art image-slot {
-    width: 100%; height: 100%;
-    --slot-bg: linear-gradient(160deg, #2a1a10, #110a05);
-  }
-  .hero__tag {
-    position: absolute;
-    right: 14px;
-    top: 46%;
-    transform: translateY(-50%);
-    display: flex; align-items: center; gap: 14px;
-    color: var(--gold-soft);
-    pointer-events: none;
-  }
-  .hero__tag-line {
-    width: 56px; height: 1px;
-    background: var(--gold-soft);
-    display: inline-block;
-    flex-shrink: 0;
-  }
-  .hero__tag .eyebrow {
-    color: #d6b87a;
-    white-space: nowrap;
-  }
 
   .hero__scroll {
     position: absolute;
     bottom: 22px; left: 50%; transform: translateX(-50%);
     z-index: 4;
-    color: var(--wine);
+    color: #f4d27c;
   }
 
   /* ===== Method (dark band) ===== */
@@ -1237,9 +1183,20 @@
 
   /* ===== Responsive ===== */
   @media (max-width: 880px) {
-    .hero__inner { grid-template-columns: 1fr; padding-top: 30px; min-height: auto; }
-    .hero__art { height: 60vh; min-height: 400px; }
-    .hero { background: linear-gradient(180deg, var(--bg-cream) 0%, var(--bg-cream-warm) 55%, var(--bg-cream-warm) 100%); }
+    .hero {
+      background-position: 72% center;
+    }
+    .hero::before {
+      background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.82) 0%,
+        rgba(0, 0, 0, 0.68) 52%,
+        rgba(0, 0, 0, 0.38) 78%,
+        transparent 100%
+      );
+    }
+    .hero__inner { padding-top: 30px; min-height: auto; }
+    .hero__copy { max-width: 100%; }
     .method__grid { grid-template-columns: 1fr 1fr; gap: 32px; }
     .territory { grid-column: 1 / -1; border-left: 0; padding-left: 0; border-top: 1px solid rgba(201,163,102,0.3); padding-top: 28px; }
     .strip__inner { grid-template-columns: 1fr 1fr; }
