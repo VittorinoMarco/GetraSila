@@ -296,15 +296,28 @@ em, .italic { font-style: italic; }
   padding: 28px;
   position: relative;
 }
-.card--ornate::before,
-.card--ornate::after {
+.card--ornate::before {
   content: "";
   position: absolute;
-  width: 12px; height: 12px;
-  border: 1px solid var(--sepia);
+  inset: 7px;
+  pointer-events: none;
+  --bk-color: var(--sepia);
+  --bk-len: 16px;
+  background:
+    /* top-left */
+    linear-gradient(var(--bk-color), var(--bk-color)) top left / var(--bk-len) 1px no-repeat,
+    linear-gradient(var(--bk-color), var(--bk-color)) top left / 1px var(--bk-len) no-repeat,
+    /* top-right */
+    linear-gradient(var(--bk-color), var(--bk-color)) top right / var(--bk-len) 1px no-repeat,
+    linear-gradient(var(--bk-color), var(--bk-color)) top right / 1px var(--bk-len) no-repeat,
+    /* bottom-left */
+    linear-gradient(var(--bk-color), var(--bk-color)) bottom left / var(--bk-len) 1px no-repeat,
+    linear-gradient(var(--bk-color), var(--bk-color)) bottom left / 1px var(--bk-len) no-repeat,
+    /* bottom-right */
+    linear-gradient(var(--bk-color), var(--bk-color)) bottom right / var(--bk-len) 1px no-repeat,
+    linear-gradient(var(--bk-color), var(--bk-color)) bottom right / 1px var(--bk-len) no-repeat;
 }
-.card--ornate::before { top: 6px; left: 6px; border-right: 0; border-bottom: 0; }
-.card--ornate::after { bottom: 6px; right: 6px; border-left: 0; border-top: 0; }
+.card--ornate::after { display: none; }
 
 /* ========== Footer ========== */
 .site-footer {

@@ -724,12 +724,13 @@
 }
 .pr-card {
   background: var(--bg-cream-soft);
-  border: 1px solid var(--sepia-line);
-  padding: 24px;
+  border: 1px solid var(--sepia-soft);
+  padding: 26px 26px 20px;
   display: flex; flex-direction: column;
   gap: 14px;
   position: relative;
 }
+.pr-card.card--ornate::before { --bk-len: 18px; inset: 8px; }
 .pr-card .pr-kicker { margin-bottom: 4px; }
 .pr-card h3 {
   font-size: 26px;
@@ -739,9 +740,10 @@
 }
 .pr-card image-slot {
   width: 100%;
-  height: 220px;
-  --slot-bg: var(--bg-cream-warm);
-  --slot-fg: var(--ink-mute);
+  height: 240px;
+  background: transparent;
+  --slot-bg: var(--bg-cream-soft);
+  --slot-fg: var(--ink-faint);
 }
 .pr-card__desc {
   font-size: 13px;
@@ -790,7 +792,9 @@
 .pr-card__art image-slot {
   width: 100%; height: 100%;
   min-height: 320px;
-  --slot-bg: var(--bg-cream-warm);
+  background: transparent;
+  --slot-bg: var(--bg-cream-soft);
+  --slot-fg: var(--ink-faint);
 }
 .pr-card__split-copy {
   padding: 28px;
