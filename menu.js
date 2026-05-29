@@ -40,12 +40,17 @@
     if (mq.addEventListener) mq.addEventListener('change', handler);
     else if (mq.addListener) mq.addListener(handler);
 
-    // Mark active link based on current page
-    var path = location.pathname.split('/').pop() || 'index.html';
+    // Mark active link based on current page (works with and without .html)
+    function pageKey(val) {
+      if (!val || val === '/' || val === '#') return 'index';
+      var slug = val.replace(/^.*\//, '').replace(/\.html$/, '').split('#')[0];
+      return slug || 'index';
+    }
+    var current = pageKey(location.pathname.split('/').pop() || '');
     menu.querySelectorAll('a[href]').forEach(function (a) {
       var href = a.getAttribute('href');
       if (!href || href.charAt(0) === '#') return;
-      if (href === path) a.classList.add('is-active');
+      if (pageKey(href) === current) a.classList.add('is-active');
     });
   }
 

@@ -1,0 +1,27 @@
+# URL puliti senza .html — Apache (Hostinger, Aruba, ecc.)
+Options -MultiViews
+DirectoryIndex index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # File statici: serviti direttamente
+  RewriteRule \.(css|js|png|jpe?g|gif|webp|svg|ico|woff2?|json|txt|xml|pdf)$ - [L,NC]
+
+  # Redirect esterno: /pagina.html → /pagina (301)
+  RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+  RewriteRule ^index\.html$ / [R=301,L,NE]
+
+  RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+  RewriteRule ^ %1 [R=301,L,NE]
+
+  # Cartelle e file reali
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Rewrite interno: /pagina → /pagina.html
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^([^./]+)/?$ $1.html [L]
+</IfModule>
