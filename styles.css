@@ -665,6 +665,7 @@ body.menu-open .burger { display: none; }
 }
 
 @media (max-width: 420px) {
+  :root { --gutter: 16px; }
   .strip__inner { grid-template-columns: 1fr; }
   .brand img,
   .brand svg { height: 58px; }

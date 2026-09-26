@@ -271,62 +271,11 @@
         </div>
       </div>
     </article>
-          <table class="pr-table">
-            <thead>
-              <tr>
-                <th scope="col">Codice prodotto</th>
-                <th scope="col">Tipologia</th>
-                <th scope="col">Pezzatura</th>
-                <th scope="col">Forma</th>
-                <th scope="col">Tempo di stagionatura</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>SOP1</td>
-                <td>Soppressata casereccia di Bocchigliero</td>
-                <td>250 – 350 gr</td>
-                <td>Lunghezza 18–25 cm;<br/>Larghezza 10–15 cm</td>
-                <td>Oltre 2 mesi</td>
-              </tr>
-              <tr>
-                <td>SOP2</td>
-                <td>Soppressata rossa dolce di Bocchigliero</td>
-                <td>250 – 350 gr</td>
-                <td>Diametro 8–10 cm;<br/>Lunghezza 18–22 cm</td>
-                <td>2 mesi</td>
-              </tr>
-              <tr>
-                <td>SOP3</td>
-                <td>Soppressata rossa piccante di Bocchigliero</td>
-                <td>250 – 350 gr</td>
-                <td>Diametro 8–10 cm;<br/>Lunghezza 18–22 cm</td>
-                <td>2 mesi</td>
-              </tr>
-              <tr>
-                <td>SOP5</td>
-                <td>Soppressata casereccia dolce di Bocchigliero</td>
-                <td>250 – 350 gr</td>
-                <td>Lunghezza 18–25 cm;<br/>Larghezza 10–15 cm</td>
-                <td>Oltre 2 mesi</td>
-              </tr>
-              <tr>
-                <td>SOP6</td>
-                <td>Soppressata casereccia piccante di Bocchigliero</td>
-                <td>250 – 350 gr</td>
-                <td>Lunghezza 18–25 cm;<br/>Larghezza 10–15 cm</td>
-                <td>Oltre 2 mesi</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </article>
 
     <!-- ===== SALSICCE ===== -->
-    <p class="pr-section-head pr-section-head--display" id="salsicce"><span>Salsicce di Bocchigliero</span></p>
+    <p class="pr-section-head pr-section-head--display"><span>Salsicce di Bocchigliero</span></p>
 
-    <article class="pr-feature">
+    <article class="pr-feature" id="salsicce">
       <div class="pr-feature__art">
         <image-slot id="pr-salsiccia" shape="rect" fit="contain" src="img/prodotti/salsiccia-bocchigliero.png" placeholder="Salsiccia di Bocchigliero"></image-slot>
       </div>
@@ -685,7 +634,13 @@
   background: var(--bg-cream);
   padding: 0 var(--gutter) clamp(80px, 8vw, 120px);
 }
-.pr-grid__inner { max-width: var(--maxw); margin: 0 auto; }
+.pr-grid__inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
 
 .pr-section-head {
   font-family: var(--ff-label);
@@ -693,7 +648,7 @@
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--wine);
-  margin: 80px 0 36px;
+  margin: 24px 0 8px;
   display: flex; align-items: center; gap: 18px;
 }
 .pr-section-head::before,
@@ -823,6 +778,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  margin-bottom: 8px;
 }
 .pr-card {
   background: var(--bg-cream-soft);
@@ -1031,47 +987,56 @@
 
 /* ===== Responsive ===== */
 @media (max-width: 880px) {
-  .pr-head { padding: clamp(56px, 8vw, 80px) var(--gutter) 48px; }
+  .pr-head { padding: clamp(48px, 8vw, 72px) var(--gutter) 36px; }
   .pr-head .corner-stamp { display: none; }
-  .pr-head__title { font-size: clamp(44px, 11vw, 72px); margin-bottom: 20px; }
+  .pr-head__title { font-size: clamp(40px, 11vw, 64px); margin-bottom: 16px; }
+  .pr-jump { margin-top: 28px; }
+  .pr-grid { padding: 8px var(--gutter) 64px; }
+  .pr-grid__inner { gap: 20px; }
 
-  .pr-section-head { margin: 56px 0 28px; gap: 12px; }
-  .pr-section-head span { font-size: clamp(18px, 5vw, 28px); text-align: center; }
+  .pr-section-head { margin: 12px 0 4px; gap: 10px; }
+  .pr-section-head span { font-size: clamp(22px, 6vw, 32px); text-align: center; }
 
   .pr-feature, .pr-feature--flip {
-    grid-template-columns: 1fr; gap: 16px; padding: 16px;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 14px;
   }
-  .pr-feature--flip .pr-feature__art,
-  .pr-feature--flip .pr-feature__copy { order: unset; }
+  .pr-feature__art,
+  .pr-feature--flip .pr-feature__art { order: 1; }
+  .pr-feature__copy,
+  .pr-feature--flip .pr-feature__copy { order: 2; }
   .pr-feature__art {
     aspect-ratio: 4 / 3;
     min-height: 0;
-    max-height: 360px;
+    max-height: 280px;
   }
   .pr-feature__art image-slot {
     min-height: 0;
     height: 100%;
   }
-  .pr-feature__copy { padding: 4px 2px 8px; }
-  .pr-feature__copy h2 { font-size: clamp(26px, 7vw, 36px); }
+  .pr-feature__copy { padding: 0; }
+  .pr-feature__copy h2 { font-size: clamp(24px, 6.5vw, 32px); margin: 4px 0 10px; }
+  .pr-desc { margin: 0 0 14px; font-size: 14px; }
   .pr-spec li { grid-template-columns: 1fr; gap: 4px; padding: 10px 0; }
   .pr-card__foot p { grid-template-columns: 1fr; gap: 2px; }
 
-  .pr-trio, .pr-duo { grid-template-columns: 1fr; gap: 16px; }
+  .pr-trio, .pr-duo { grid-template-columns: 1fr; gap: 12px; margin-bottom: 4px; }
   .pr-jump__grid { grid-template-columns: 1fr 1fr; gap: 8px; }
   .pr-jump__btn { font-size: 11px; padding: 11px 10px; }
   .pr-quad { grid-template-columns: 1fr 1fr; gap: 16px; }
-  .pr-card { padding: 18px 16px 14px; }
-  .pr-card h3 { font-size: clamp(22px, 5.5vw, 26px); }
+  .pr-card { padding: 14px 14px 12px; }
+  .pr-card h3 { font-size: clamp(20px, 5.5vw, 24px); margin: 0; }
   .pr-card image-slot {
     height: auto;
     aspect-ratio: 1 / 1;
-    max-height: 280px;
+    max-height: 240px;
   }
   .pr-card__split { grid-template-columns: 1fr; }
   .pr-card__art image-slot { min-height: 0; aspect-ratio: 4 / 3; }
-  .pr-card__split-copy { padding: 20px; }
-  .pr-catalog { padding: 12px; }
+  .pr-card__split-copy { padding: 16px; }
+  .pr-catalog { padding: 0; border: 0; background: transparent; }
+  .pr-catalog.card--ornate::before { display: none; }
 
   .pr-table-wrap {
     overflow: visible;
@@ -1137,9 +1102,10 @@
 @media (max-width: 600px) {
   .pr-quad { grid-template-columns: 1fr; }
   .pr-jump__grid { grid-template-columns: 1fr; }
-  .pr-feature__art { max-height: 280px; }
-  .pr-card image-slot { max-height: 260px; }
-  .pr-section-head { margin: 48px 0 24px; }
+  .pr-feature { padding: 12px; }
+  .pr-feature__art { max-height: 240px; }
+  .pr-card image-slot { max-height: 220px; }
+  .pr-section-head { margin: 8px 0 0; }
   .pr-table td {
     grid-template-columns: 1fr;
     gap: 4px;
