@@ -411,10 +411,17 @@ em, .italic { font-style: italic; }
 
 /* ========== Image slot styling ========== */
 image-slot {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   --slot-bg: linear-gradient(160deg, #2a1d13 0%, #1a1108 100%);
   --slot-fg: rgba(234, 215, 175, 0.55);
   border-radius: 0;
   position: relative;
+}
+image-slot::part(frame) {
+  background: var(--slot-bg);
 }
 image-slot::part(label),
 image-slot::part(hint) {
