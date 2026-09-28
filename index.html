@@ -104,10 +104,14 @@
 <!-- ========== HERO ========== -->
 <section class="hero" data-screen-label="Hero" data-hero-slider>
   <div class="hero__slides" aria-hidden="true">
-    <div class="hero__slide is-active" style="background-image:url('img/hero/slide-1.png')"></div>
-    <div class="hero__slide" style="background-image:url('img/prodotti/affetato-mano.png')"></div>
-    <div class="hero__slide" style="background-image:url('img/prodotti/capocollo.png')"></div>
-    <div class="hero__slide" style="background-image:url('img/prodotti/salsiccia-bocchigliero.png')"></div>
+    <div class="hero__slide is-active" style="background-image:url('img/paese/borgo-sera.jpeg')"></div>
+    <div class="hero__slide hero__slide--product" style="background-image:url('img/capocollo.jpeg')"></div>
+    <div class="hero__slide" style="background-image:url('img/paese/borgo-sole.jpeg')"></div>
+    <div class="hero__slide hero__slide--product" style="background-image:url('img/salsiccia-2.jpeg')"></div>
+    <div class="hero__slide" style="background-image:url('img/paese/borgo-notte.jpeg')"></div>
+    <div class="hero__slide hero__slide--product" style="background-image:url('img/pancetta.jpeg')"></div>
+    <div class="hero__slide" style="background-image:url('img/paese/lago-neve.jpeg')"></div>
+    <div class="hero__slide hero__slide--product" style="background-image:url('img/soppressata-rossa.jpeg')"></div>
   </div>
   <div class="hero__inner">
     <div class="hero__copy">
@@ -132,12 +136,16 @@
   </div>
 
   <div class="hero__pager">
-    <p class="hero__counter" aria-live="polite"><span data-hero-current>01</span><span class="hero__counter-sep">/</span><span>04</span></p>
+    <p class="hero__counter" aria-live="polite"><span data-hero-current>01</span><span class="hero__counter-sep">/</span><span data-hero-total>08</span></p>
     <div class="hero__dots" role="tablist" aria-label="Foto hero">
       <button type="button" class="hero__dot is-active" aria-label="Foto 1" aria-selected="true"></button>
       <button type="button" class="hero__dot" aria-label="Foto 2" aria-selected="false"></button>
       <button type="button" class="hero__dot" aria-label="Foto 3" aria-selected="false"></button>
       <button type="button" class="hero__dot" aria-label="Foto 4" aria-selected="false"></button>
+      <button type="button" class="hero__dot" aria-label="Foto 5" aria-selected="false"></button>
+      <button type="button" class="hero__dot" aria-label="Foto 6" aria-selected="false"></button>
+      <button type="button" class="hero__dot" aria-label="Foto 7" aria-selected="false"></button>
+      <button type="button" class="hero__dot" aria-label="Foto 8" aria-selected="false"></button>
     </div>
   </div>
 
@@ -237,7 +245,7 @@
           <p class="prod-card__place">Bocchigliero</p>
         </div>
         <h3 class="prod-card__title">Capocollo<br/>di Bocchigliero</h3>
-        <image-slot id="prod-capocollo" shape="rect" fit="contain" src="img/prodotti/capocollo.png" placeholder="Capocollo intero e affettato"></image-slot>
+        <image-slot id="prod-capocollo" shape="rect" fit="contain" src="img/capocollo.jpeg" placeholder="Capocollo intero e affettato"></image-slot>
       </article>
 
       <article class="prod-card card--ornate">
@@ -245,7 +253,7 @@
           <p class="prod-card__place">Bocchigliero</p>
         </div>
         <h3 class="prod-card__title">'Nduja<br/>di Bocchigliero</h3>
-        <image-slot id="prod-nduja" shape="rect" fit="contain" src="img/prodotti/nduja.png" placeholder="'Nduja morbida e spalmabile"></image-slot>
+        <image-slot id="prod-nduja" shape="rect" fit="contain" src="img/nduja.jpeg" placeholder="'Nduja morbida e spalmabile"></image-slot>
       </article>
 
       <article class="prod-card card--ornate">
@@ -253,7 +261,7 @@
           <p class="prod-card__place">Bocchigliero</p>
         </div>
         <h3 class="prod-card__title">Soppressata<br/>casereccia</h3>
-        <image-slot id="prod-soppressata" shape="rect" fit="contain" src="img/prodotti/sopressata-caserecca.png" placeholder="Soppressata pressata, ricetta di famiglia"></image-slot>
+        <image-slot id="prod-soppressata" shape="rect" fit="contain" src="img/soppressata-1.jpeg" placeholder="Soppressata pressata, ricetta di famiglia"></image-slot>
       </article>
 
       <article class="prod-card card--ornate">
@@ -261,7 +269,7 @@
           <p class="prod-card__place">Bocchigliero</p>
         </div>
         <h3 class="prod-card__title">Salsiccia<br/>di Bocchigliero</h3>
-        <image-slot id="prod-salsiccia" shape="rect" fit="contain" src="img/prodotti/salsicce-cavallo.png" placeholder="Salsiccia legata a mano"></image-slot>
+        <image-slot id="prod-salsiccia" shape="rect" fit="contain" src="img/salsiccia-2.jpeg" placeholder="Salsiccia legata a mano"></image-slot>
       </article>
     </div>
 
@@ -406,6 +414,7 @@
     transition: opacity 1.1s ease;
   }
   .hero__slide.is-active { opacity: 1; }
+  .hero__slide--product { background-position: center; }
   .hero::before {
     content: "";
     position: absolute;
@@ -840,10 +849,12 @@
     var slides = Array.prototype.slice.call(root.querySelectorAll(".hero__slide"));
     var dots = Array.prototype.slice.call(root.querySelectorAll(".hero__dot"));
     var current = root.querySelector("[data-hero-current]");
+    var totalEl = root.querySelector("[data-hero-total]");
     if (!slides.length) return;
     var index = 0;
     var timer;
     var total = slides.length;
+    if (totalEl) totalEl.textContent = pad(total);
 
     function pad(n) {
       return n < 10 ? "0" + n : String(n);
